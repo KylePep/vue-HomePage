@@ -1,5 +1,5 @@
 // import './assets/main.css'
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css';
 import 'bootstrap'
 
 import { createApp } from 'vue'
