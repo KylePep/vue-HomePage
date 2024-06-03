@@ -1,5 +1,5 @@
 <template>
-  <div class="fs-1 fw-bold btn btn-primary text-custom-color text-custom">
+  <div class="fs-1 fw-bold btn btn-primary ">
     Custom Check
   </div>
 </template>
