@@ -8,15 +8,14 @@
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link selectable-nav active" aria-current="page" href="#">Home</a>
+          <a class="nav-link selectable-nav" href="#">About</a>
+          <a class="nav-link selectable-nav" href="#">Applications</a>
         </div>
       </div>
 
       <div class="navbar-brand">
-        <!-- <i class="mdi mdi-crystal-ball pe-2"></i> -->
-        <a class="fs-3 fw-bold" href="#">Kyle Peppersack</a>
+        <a class="title" href="#">Kyle Peppersack</a>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2"
@@ -25,9 +24,9 @@
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup2">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home2</a>
-          <a class="nav-link" href="#">Features2</a>
-          <a class="nav-link" href="#">Pricing2</a>
+          <a class="nav-link selectable-nav" href="#">Resume</a>
+          <a class="nav-link selectable-nav" href="#">Experience</a>
+          <a class="nav-link selectable-nav" href="#">Favorite Color</a>
         </div>
       </div>
 
@@ -37,20 +36,61 @@
 
 
 <script>
+import { loadState } from "@/utils/Store.js";
+import { onMounted, ref } from "vue";
+
 export default {
   setup() {
-    return {}
+
+    const theme = ref(loadState('theme') || 'custom')
+
+    onMounted(() => {
+      document.documentElement.setAttribute('data-bs-theme', theme.value)
+    })
+    return {
+
+    }
   }
 }
 </script>
 
 
 <style lang="scss" scoped>
-.navbar-brand {
-  color: var(--bs-primary);
+.title {
+  color: var(--bs-light);
+}
 
-  >a {
-    color: var(--bs-primary);
+.title:hover {
+  color: var(--bs-primary);
+  /* color: var(--bs-secondary); */
+}
+
+.selectable-nav {
+  color: var(--bs-primary);
+}
+
+.selectable-nav:hover {
+  color: var(--bs-light);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.navbar-nav .RouterLink-exact-active {
+  border-bottom: 2px solid var(--bs-primary);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    height: 64px;
+    /* height: 98px; */
   }
 }
 </style>
