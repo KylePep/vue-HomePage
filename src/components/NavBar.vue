@@ -2,31 +2,37 @@
   <nav class="navbar navbar-expand-sm sticky-top bg-secondary text-light">
     <div class="container-fluid">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link selectable-nav active" aria-current="page" href="#">Home</a>
+      <div class="navbar-brand d-block d-md-none">
+        <a class="title" href="#">Kyle Peppersack</a>
+      </div>
+
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <div class="collapse navbar-collapse justify-content-around " id="navbarNavAltMarkup">
+        <div class="navbar-nav d-none d-md-flex  w-100 justify-content-around">
           <a class="nav-link selectable-nav" href="#">About</a>
           <a class="nav-link selectable-nav" href="#">Applications</a>
         </div>
       </div>
 
-      <div class="navbar-brand">
+      <div class="navbar-brand d-none d-md-block">
         <a class="title" href="#">Kyle Peppersack</a>
       </div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup2"
-        aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup2">
-        <div class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100 justify-content-around">
+          <div class="d-flex d-md-none justify-content-around">
+            <a class="nav-link selectable-nav" href="#">About</a>
+            <a class="nav-link selectable-nav" href="#">Applications</a>
+          </div>
           <a class="nav-link selectable-nav" href="#">Resume</a>
           <a class="nav-link selectable-nav" href="#">Experience</a>
-          <a class="nav-link selectable-nav" href="#">Favorite Color</a>
         </div>
       </div>
 
@@ -62,7 +68,6 @@ export default {
 
 .title:hover {
   color: var(--bs-primary);
-  /* color: var(--bs-secondary); */
 }
 
 .selectable-nav {
