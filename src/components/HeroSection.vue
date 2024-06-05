@@ -17,7 +17,7 @@ import AnimatedBackground from './AnimatedBackground.vue'
               <h1 class="col-12">HELLO</h1>
 
 
-              <h2 class="col-12">I AM A WEB DEVELOPER</h2>
+              <h2 class="col-12">I'M A WEB DEVELOPER</h2>
 
             </row>
 
@@ -54,11 +54,11 @@ import AnimatedBackground from './AnimatedBackground.vue'
 }
 
 .hero-container {
-  width: 480px;
+  width: 330px;
 }
 
 h1 {
-  font-size: 9.8rem;
+  font-size: 6.5rem;
   font-weight: bolder;
   text-align: center;
   color: var(--bs-light);
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: center;
   color: var(--bs-light);
@@ -83,7 +83,7 @@ h2 {
   }
 
   h2 {
-    font-size: 3.25rem;
+    font-size: 3.55rem;
   }
 }
 </style>

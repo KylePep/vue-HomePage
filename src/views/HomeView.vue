@@ -13,19 +13,19 @@ import HeroSection from '../components/HeroSection.vue'
 
   <section class="row">
     <div class="col-12">
-      <HeroSection />
+      <!-- <HeroSection /> -->
     </div>
   </section>
 
   <section class="row">
     <div class="col-12">
-      <HeroSection />
+      <!-- <HeroSection /> -->
     </div>
   </section>
 
   <section class="row">
     <div class="col-12">
-      <HeroSection />
+      <!-- <HeroSection /> -->
     </div>
   </section>
 
