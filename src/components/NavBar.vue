@@ -1,26 +1,33 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-secondary">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
     <div class="container-fluid">
-      <a class="navbar-brand d-block d-lg-none title" href="#">Kyle Peppersack</a>
+
+      <a class="navbar-brand d-block d-sm-none title fs-2 fw-bold" href="#">Kyle Peppersack</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
-        <ul class="navbar-nav   mb-2 mb-lg-0 w-100 justify-content-around">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
+
           <li class="nav-item">
-            <a class="nav-link selectable-nav" aria-current="page" href="#">Home</a>
+            <a class="nav-link selectable-nav fs-4" aria-current="page" href="#">Home</a>
           </li>
 
-          <a class="navbar-brand d-none d-lg-block title" href="#">Kyle Peppersack</a>
+          <a class="navbar-brand d-none d-sm-block title fs-1 fw-bold me-0 pt-0" href="#">Kyle
+            Peppersack</a>
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav" href="#">Link</a>
+            <a class="nav-link selectable-nav fs-4" href="#">Link</a>
           </li>
 
         </ul>
 
       </div>
+
     </div>
   </nav>
 </template>
@@ -48,6 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .title {
+  text-transform: uppercase;
   color: var(--bs-light);
 }
 

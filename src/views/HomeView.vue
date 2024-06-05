@@ -1,17 +1,17 @@
+<script setup>
+import HeroSection from '../components/HeroSection.vue'
+
+</script>
+
 <template>
-  <div class="fs-1 fw-bold btn btn-primary ">
-    Custom Check
+  <div class="row">
+    <div class="col-12">
+      <HeroSection />
+    </div>
   </div>
 </template>
 
 
-<script>
-export default {
-  setup() {
-    return {}
-  }
-}
-</script>
 
 
 <style lang="scss" scoped></style>
