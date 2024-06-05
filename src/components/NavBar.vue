@@ -1,41 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-sm sticky-top bg-secondary text-light">
+  <nav class="navbar navbar-expand-lg bg-secondary">
     <div class="container-fluid">
-
-      <div class="navbar-brand d-block d-md-none">
-        <a class="title" href="#">Kyle Peppersack</a>
-      </div>
-
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-      <div class="collapse navbar-collapse justify-content-around " id="navbarNavAltMarkup">
-        <div class="navbar-nav d-none d-md-flex  w-100 justify-content-around">
-          <a class="nav-link selectable-nav" href="#">About</a>
-          <a class="nav-link selectable-nav" href="#">Applications</a>
-        </div>
-      </div>
-
-      <div class="navbar-brand d-none d-md-block">
-        <a class="title" href="#">Kyle Peppersack</a>
-      </div>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand d-block d-lg-none title" href="#">Kyle Peppersack</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-        <div class="navbar-nav w-100 justify-content-around">
-          <div class="d-flex d-md-none justify-content-around">
-            <a class="nav-link selectable-nav" href="#">About</a>
-            <a class="nav-link selectable-nav" href="#">Applications</a>
-          </div>
-          <a class="nav-link selectable-nav" href="#">Resume</a>
-          <a class="nav-link selectable-nav" href="#">Experience</a>
-        </div>
-      </div>
+      <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav   mb-2 mb-lg-0 w-100 justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link selectable-nav" aria-current="page" href="#">Home</a>
+          </li>
 
+          <a class="navbar-brand d-none d-lg-block title" href="#">Kyle Peppersack</a>
+
+          <li class="nav-item">
+            <a class="nav-link selectable-nav" href="#">Link</a>
+          </li>
+
+        </ul>
+
+      </div>
     </div>
   </nav>
 </template>
