@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-secondary">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-secondary shadow-lg">
     <div class="container-fluid">
 
-      <a class="navbar-brand d-block d-sm-none title fs-2 fw-bold" href="#">Kyle Peppersack</a>
+      <a class="navbar-brand d-block d-sm-none title fs-3 fw-bold" href="#">Kyle Peppersack</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,14 +14,22 @@
         <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-4" aria-current="page" href="#">Home</a>
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About</a>
           </li>
 
-          <a class="navbar-brand d-none d-sm-block title fs-1 fw-bold me-0 pt-0" href="#">Kyle
+          <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
             Peppersack</a>
 
-          <li class="nav-item">
-            <a class="nav-link selectable-nav fs-4" href="#">Link</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link selectable-nav fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Links
+            </a>
+            <ul class=" dropdown-menu">
+              <li><a class="dropdown-item" href="#">App 1</a></li>
+              <li><a class="dropdown-item" href="#">App 2</a></li>
+              <li><a class="dropdown-item" href="#">App 3</a></li>
+            </ul>
           </li>
 
         </ul>
@@ -65,6 +73,7 @@ export default {
 
 .selectable-nav {
   color: var(--bs-primary);
+  // width: 256px;
 }
 
 .selectable-nav:hover {

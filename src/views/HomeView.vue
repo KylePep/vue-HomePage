@@ -13,19 +13,43 @@ import HeroSection from '../components/HeroSection.vue'
 
   <section class="row">
     <div class="col-12">
-      <!-- <HeroSection /> -->
+      About Me
     </div>
   </section>
 
   <section class="row">
     <div class="col-12">
-      <!-- <HeroSection /> -->
+      Experience Categories
     </div>
   </section>
 
   <section class="row">
     <div class="col-12">
-      <!-- <HeroSection /> -->
+      Resume
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-12">
+      Applications
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-12">
+      skills
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-12">
+      Testimonials
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-12">
+      Call to action
     </div>
   </section>
 

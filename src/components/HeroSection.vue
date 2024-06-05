@@ -30,7 +30,8 @@ import AnimatedBackground from './AnimatedBackground.vue'
               </div>
 
               <div class="col-12 col-md-6">
-                <button type="submit" class="w-100 btn btn-primary py-3 fs-5 ">GET MY RESUME</button>
+                <button type="submit" class="w-100 btn btn-primary py-3 fs-5 fw-semibold text-light">GET MY
+                  RESUME</button>
               </div>
 
               <div id="emailHelp" class="text-light col-12 col-md-6 mt-3">* Get my resume directly in your mailbox</div>
