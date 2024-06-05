@@ -14,7 +14,11 @@
         <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About</a>
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About Me</a>
           </li>
 
           <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
@@ -30,6 +34,10 @@
               <li><a class="dropdown-item" href="#">App 2</a></li>
               <li><a class="dropdown-item" href="#">App 3</a></li>
             </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Contact Me</a>
           </li>
 
         </ul>
