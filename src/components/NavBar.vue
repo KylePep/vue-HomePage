@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-secondary">
     <div class="container-fluid">
 
       <a class="navbar-brand d-block d-sm-none title fs-2 fw-bold" href="#">Kyle Peppersack</a>

@@ -1,32 +1,87 @@
+<script setup>
+
+</script>
+
 <template>
-  <div class="row">
-    <h1 class="col-12 ">HELLO</h1>
-    <h2 class="col-12 ">I AM A WEB DEVELOPER</h2>
+  <div class="container position-relative">
+
+    <div class="container hero-container position-absolute start-50 translate-middle">
+
+      <row class="row">
+
+        <div class="col-12">
+
+          <row class="row">
+
+            <h1 class="col-12">HELLO</h1>
+
+
+            <h2 class="col-12">I AM A WEB DEVELOPER</h2>
+
+          </row>
+
+          <form class="row g-3">
+
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
+              <input type="email" class="form-control py-3 fs-5 " id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="EMAIL">
+            </div>
+
+            <div class="col-12 col-md-6">
+              <button type="submit" class="w-100 btn btn-primary py-3 fs-5 ">GET MY RESUME</button>
+            </div>
+
+            <div id="emailHelp" class="text-light col-12 col-md-6 mt-3">* Get my resume directly in your mailbox</div>
+          </form>
+
+        </div>
+
+      </row>
+    </div>
+
   </div>
+
 </template>
 
 
-<script>
-export default {
-  setup() {
-    return {}
-  }
-}
-</script>
-
 
 <style lang="scss" scoped>
+.container {
+  margin-top: 10rem;
+}
+
+.hero-container {
+  width: 480px;
+}
+
 h1 {
-  font-size: 20vw;
+  font-size: 9.8rem;
   font-weight: bolder;
   text-align: center;
   color: var(--bs-light);
+  padding: 0;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   color: var(--bs-light);
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    width: 640px;
+  }
+
+  h1 {
+    font-size: 13rem;
+  }
+
+  h2 {
+    font-size: 3.25rem;
+  }
 }
 </style>
