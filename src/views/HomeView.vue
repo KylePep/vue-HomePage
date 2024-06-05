@@ -11,12 +11,6 @@ import HeroSection from '../components/HeroSection.vue'
     </div>
   </section>
 
-  <!-- <section class="row">
-    <div class="col-12">
-      <HeroSection />
-    </div>
-  </section>
-
   <section class="row">
     <div class="col-12">
       <HeroSection />
@@ -27,7 +21,13 @@ import HeroSection from '../components/HeroSection.vue'
     <div class="col-12">
       <HeroSection />
     </div>
-  </section> -->
+  </section>
+
+  <section class="row">
+    <div class="col-12">
+      <HeroSection />
+    </div>
+  </section>
 
 </template>
 

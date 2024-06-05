@@ -55,7 +55,7 @@ export default {
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
-  bottom: -150px;
+  top: -300px;
 }
 
 .circles li:nth-child(1) {
@@ -141,7 +141,7 @@ export default {
   }
 
   100% {
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }

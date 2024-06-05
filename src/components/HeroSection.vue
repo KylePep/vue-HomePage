@@ -49,12 +49,8 @@ import AnimatedBackground from './AnimatedBackground.vue'
 
 
 <style lang="scss" scoped>
-.container {
-  margin-top: 10rem;
-}
-
 .hero-content {
-  margin-top: 10rem;
+  padding-top: 20rem;
 }
 
 .hero-container {
