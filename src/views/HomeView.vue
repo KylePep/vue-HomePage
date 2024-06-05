@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection.vue'
 
 <template>
 
-  <section class="row">
+  <section class="hero row">
     <div class="col-12">
       <HeroSection />
     </div>
@@ -59,7 +59,11 @@ import HeroSection from '../components/HeroSection.vue'
 
 
 <style lang="scss" scoped>
-section {
+.hero {
   min-height: 100vh;
+}
+
+section {
+  min-height: 50vh;
 }
 </style>
