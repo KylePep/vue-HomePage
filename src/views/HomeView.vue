@@ -47,12 +47,6 @@ import HeroSection from '../components/HeroSection.vue'
     </div>
   </section>
 
-  <section class="row">
-    <div class="col-12">
-      Call to action
-    </div>
-  </section>
-
 </template>
 
 
