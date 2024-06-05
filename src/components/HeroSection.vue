@@ -1,43 +1,45 @@
 <script setup>
-
+import AnimatedBackground from './AnimatedBackground.vue'
 </script>
 
 <template>
-  <div class="container position-relative">
+  <div class="container-fluid position-relative">
+    <AnimatedBackground />
+    <div class="hero-content row position-relative">
+      <div class="container hero-container position-absolute start-50 translate-middle">
 
-    <div class="container hero-container position-absolute start-50 translate-middle">
+        <row class="row">
 
-      <row class="row">
+          <div class="col-12">
 
-        <div class="col-12">
+            <row class="row">
 
-          <row class="row">
-
-            <h1 class="col-12">HELLO</h1>
+              <h1 class="col-12">HELLO</h1>
 
 
-            <h2 class="col-12">I AM A WEB DEVELOPER</h2>
+              <h2 class="col-12">I AM A WEB DEVELOPER</h2>
 
-          </row>
+            </row>
 
-          <form class="row g-3">
+            <form class="row g-3">
 
-            <div class="col-12 col-md-6">
-              <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
-              <input type="email" class="form-control py-3 fs-5 " id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="EMAIL">
-            </div>
+              <div class="col-12 col-md-6">
+                <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
+                <input type="email" class="form-control py-3 fs-5 " id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="EMAIL">
+              </div>
 
-            <div class="col-12 col-md-6">
-              <button type="submit" class="w-100 btn btn-primary py-3 fs-5 ">GET MY RESUME</button>
-            </div>
+              <div class="col-12 col-md-6">
+                <button type="submit" class="w-100 btn btn-primary py-3 fs-5 ">GET MY RESUME</button>
+              </div>
 
-            <div id="emailHelp" class="text-light col-12 col-md-6 mt-3">* Get my resume directly in your mailbox</div>
-          </form>
+              <div id="emailHelp" class="text-light col-12 col-md-6 mt-3">* Get my resume directly in your mailbox</div>
+            </form>
 
-        </div>
+          </div>
 
-      </row>
+        </row>
+      </div>
     </div>
 
   </div>
@@ -48,6 +50,10 @@
 
 <style lang="scss" scoped>
 .container {
+  margin-top: 10rem;
+}
+
+.hero-content {
   margin-top: 10rem;
 }
 
