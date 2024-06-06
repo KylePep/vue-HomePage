@@ -1,4 +1,5 @@
 <script setup>
+import AboutSection from "@/components/AboutSection.vue";
 import HeroSection from '../components/HeroSection.vue'
 
 </script>
@@ -13,7 +14,7 @@ import HeroSection from '../components/HeroSection.vue'
 
   <section class="row">
     <div class="col-12">
-      About Me
+      <AboutSection />
     </div>
   </section>
 
