@@ -1,6 +1,7 @@
 <script setup>
 import AboutSection from "@/components/AboutSection.vue";
-import HeroSection from '../components/HeroSection.vue'
+import ExperienceSection from "@/components/ExperienceSection.vue";
+import HeroSection from '../components/HeroSection.vue';
 
 </script>
 
@@ -20,7 +21,7 @@ import HeroSection from '../components/HeroSection.vue'
 
   <section class="row">
     <div class="col-12">
-      Experience Categories
+      <ExperienceSection />
     </div>
   </section>
 

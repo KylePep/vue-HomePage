@@ -54,7 +54,7 @@
 
 <style lang="scss" scoped>
 .separation {
-  margin: 1rem 0rem 1rem 12px;
+  margin: 1rem 0rem 1rem 0rem;
   width: 50px;
   border-bottom: solid var(--bs-success) 4px;
 }
