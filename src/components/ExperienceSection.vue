@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
 
       <div class="col-12 col-md-4">
@@ -51,8 +51,8 @@
 <style lang="scss" scoped>
 .btn-circular {
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
+  width: 80px;
+  height: 80px;
 }
 
 .card-title {
