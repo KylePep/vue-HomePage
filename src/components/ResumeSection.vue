@@ -6,44 +6,50 @@
   <div class="container text-light">
     <div class="row">
 
-      <div class="col-12 mb-4">
+      <div class="col-12 mb-4 text-start text-lg-center">
         <h3>MY RESUME</h3>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 col-lg-6 ">
 
         <h4>Profession Ux Design</h4>
         <p>2015 - Present</p>
-        <i class="underline-sm"></i>
+        <i class="underline-sm d-block d-lg-none"></i>
 
       </div>
 
-      <div class="col-12 ">
-        <p class="underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
+      <div class="col-12 col-lg-6 ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
-      <div class="col-12">
+      <i class="col-12 underline"></i>
+
+      <div class="col-12 col-lg-6">
         <h4>Web Designer</h4>
         <p>2011 - 2015</p>
-        <i class="underline-sm"></i>
+        <i class="underline-sm d-block d-lg-none "></i>
 
       </div>
 
-      <div class="col-12 ">
-        <p class="underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
+      <div class="col-12 col-lg-6 ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
-      <div class="col-12">
+      <i class="col-12 underline"></i>
+
+      <div class="col-12 col-lg-6">
         <h4>Diploma in graphic design</h4>
         <p>2010</p>
-        <i class="underline-sm"></i>
+        <i class="underline-sm d-block d-lg-none"></i>
       </div>
 
-      <div class="col-12 ">
-        <p class="underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
+      <div class="col-12 col-lg-6 ">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
-      <div class="col-12">
+      <i class="col-12 underline"></i>
+
+      <div class="col-12 d-flex justify-content-center">
         <button class="btn btn-success">
           LET'S WORK TOGETHER
         </button>
