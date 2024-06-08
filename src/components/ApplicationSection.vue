@@ -3,59 +3,56 @@
 
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row g-2">
 
-      <div class="col-12 col-lg-3 position-relative">
-        <div class="application-card mb-5"></div>
+      <div v-for="index in 6" :key="index" class="col-12 col-lg-4 alt-border-clr position-relative">
+        <div class="application-card d-flex flex-column justify-content-end mb-5">
+          <div class="text-light">
+            <h4>The Title of the app</h4>
+            <p>A breif description of the app</p>
+          </div>
+
+        </div>
         <div class=" card-hover">
           <img src="../assets/images/business.jpg" class="" alt="...">
         </div>
-        <!-- <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div> -->
       </div>
 
-      <div class="col-12 col-lg-3 position-relative">
-        <div class="application-card"></div>
-        <div class="  card-hover">
-          <img src="../assets/images/business.jpg" class="" alt="...">
-        </div>
-        <!-- <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div> -->
-      </div>
-
-      <div class="col-12 col-lg-3"></div>
-      <div class="col-12 col-lg-3"></div>
-      <div class="col-12 col-lg-3"></div>
-      <div class="col-12 col-lg-3"></div>
-      <div class="col-12 col-lg-3"></div>
     </div>
   </div>
 </template>
 
 
 <style lang="scss" scoped>
-.application-card,
-.card {
+.application-card {
   display: block;
-  height: 512px;
+  min-height: 384px;
   width: 100%;
+  padding: 5%;
+}
+
+.card-hover {
+  padding: 2rem;
+  margin-left: 5%;
+  background-color: var(--bs-success);
+  width: 90%;
+  height: 256px;
 }
 
 img {
   width: 100%;
-  min-height: 256px;
-  max-height: fit-content;
-  border: solid var(--bs-success) 1rem;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.297);
+}
+
+
+
+.alt-border-clr:nth-child(even) {
+  >.card-hover {
+    background-color: var(--bs-secondary);
+  }
 }
 
 .card-hover {
