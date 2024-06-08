@@ -18,6 +18,7 @@ import AnimatedBackground from './AnimatedBackground.vue'
 
 
               <h2 class="col-12">I'M A WEB DEVELOPER</h2>
+              <p class="text-center text-light">- and I'm looking for a job -</p>
 
             </row>
 
