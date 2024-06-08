@@ -3,6 +3,7 @@ import AboutSection from "@/components/AboutSection.vue";
 import ExperienceSection from "@/components/ExperienceSection.vue";
 import HeroSection from '../components/HeroSection.vue';
 import ResumeSection from "@/components/ResumeSection.vue";
+import ApplicationSection from "@/components/ApplicationSection.vue";
 
 </script>
 
@@ -34,7 +35,7 @@ import ResumeSection from "@/components/ResumeSection.vue";
 
   <section class="row">
     <div class="col-12">
-      Applications
+      <ApplicationSection />
     </div>
   </section>
 
