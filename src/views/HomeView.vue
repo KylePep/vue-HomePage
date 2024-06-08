@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection.vue';
 import ResumeSection from "@/components/ResumeSection.vue";
 import ApplicationSection from "@/components/ApplicationSection.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
+import TestimonialSection from "@/components/TestimonialSection.vue";
 
 </script>
 
@@ -48,7 +49,7 @@ import SkillsSection from "@/components/SkillsSection.vue";
 
   <section class="row">
     <div class="col-12">
-      Testimonials
+      <TestimonialSection />
     </div>
   </section>
 
