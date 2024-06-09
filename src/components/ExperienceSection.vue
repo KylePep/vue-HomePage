@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 mb-5 mb-md-0 ">
         <div class="card bg-secondary text-light h-100">
           <img src="../assets/images/business.jpg" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card bg-success h-100">
           <img src="../assets/images/internet.jpg" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card  bg-secondary text-light h-100">
           <img src="../assets/images/learning.jpg" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between align-items-center">
