@@ -63,7 +63,17 @@
 .btn-circular:hover {
   box-shadow: 0 0 40px 40px var(--bs-primary)inset;
   color: var(--bs-light);
-  scale: 1.1;
+  animation: grow 300ms alternate 100ms 1 forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(.75);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .card-img {
