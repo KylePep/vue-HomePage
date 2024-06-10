@@ -50,7 +50,7 @@
       <i class="col-12 underline"></i>
 
       <div class="col-12 d-flex justify-content-center">
-        <button class="btn btn-success">
+        <button class="work-button">
           LET'S WORK TOGETHER
         </button>
       </div>
@@ -75,5 +75,16 @@
   padding-bottom: 2rem;
   margin-bottom: 4rem;
   border-bottom: solid 2px var(--bs-light);
+}
+
+.work-button {
+  border: none;
+  padding: .5rem 1rem .5rem 1rem;
+  background-color: var(--bs-success);
+  transition: all 300ms ease-in-out;
+}
+
+.work-button:hover {
+  background-color: var(--bs-light);
 }
 </style>
