@@ -14,10 +14,14 @@
         <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
 
           <li class="nav-item">
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Portfolio</a>
           </li>
 
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link selectable-nav fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Links
@@ -27,7 +31,7 @@
               <li><a class="dropdown-item" href="#">App 2</a></li>
               <li><a class="dropdown-item" href="#">App 3</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
             Peppersack</a>
