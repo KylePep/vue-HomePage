@@ -7,7 +7,7 @@
       <div class="col-12">
 
         <div id="carouselExampleCaptions" class="carousel slide">
-          <ol class="carousel-indicators mb-5">
+          <ol class="carousel-indicators mb-0 mb-md-5 pb-3 pb-md-0">
 
             <li type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></li>
@@ -22,19 +22,22 @@
 
             <div v-for="index in 3" :key="index" :class="[index == 1 ? 'active' : '']" class="carousel-item container">
               <div class="carousel-content row d-flex flex-column">
-                <div class=" col d-flex flex-column align-items-center justify-content-end mb-5">
+                <div
+                  class=" col d-flex flex-column align-items-center justify-content-center justify-content-md-end mb-2 mb-md-5">
                   <img
                     src="https://images.unsplash.com/photo-1624797432677-6f803a98acb3?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="test-img" alt="...">
                 </div>
 
                 <div class="d-flex flex-column align-items-center col text-center">
-                  <p class="carousel-text">Some representative placeholder content for the first slide. Lorem ipsum
+                  <p class="carousel-text ">Some representative placeholder content for the first
+                    slide. Lorem
+                    ipsum
                     dolor sit
                     amet consectetur
                     adipisicing elit. Eveniet voluptas numquam debitis ab distinctio aspernatur est magnam quas qui
                     libero!</p>
-                  <h5 class="fw-semibold"> {{ index }} Testimonials Name</h5>
+                  <h5 class="fw-semibold "> {{ index }} Testimonials Name</h5>
                 </div>
 
               </div>
@@ -87,7 +90,7 @@ ol.carousel-indicators li.active {
 
 .carousel-content {
   background-color: var(--bs-success);
-  height: 416px;
+  min-height: 416px;
 }
 
 .carousel-inner:nth-child(odd) {

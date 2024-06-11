@@ -17,13 +17,6 @@
             <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Portfolio</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About Me</a>
-          </li>
-
-          <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
-            Peppersack</a>
-
           <li class="nav-item dropdown">
             <a class="nav-link selectable-nav fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -36,8 +29,15 @@
             </ul>
           </li>
 
+          <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
+            Peppersack</a>
+
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Contact Me</a>
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Contact</a>
           </li>
 
         </ul>

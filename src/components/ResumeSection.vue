@@ -4,10 +4,10 @@
 
 <template>
   <div class="container text-light">
-    <div class="row">
+    <div class="row mx-0 mx-md-5">
 
-      <div class="col-12 mb-4 text-start text-lg-center">
-        <h3>MY RESUME</h3>
+      <div class="col-12 mb-4 text-start text-lg-center mb-5">
+        <h3 class="fs-2">MY RESUME</h3>
       </div>
 
       <div class="col-12 col-lg-6 ">
@@ -18,7 +18,7 @@
 
       </div>
 
-      <div class="col-12 col-lg-6 ">
+      <div class="col-12 col-lg-6 fs-5">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
@@ -31,7 +31,7 @@
 
       </div>
 
-      <div class="col-12 col-lg-6 ">
+      <div class="col-12 col-lg-6 fs-5">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
@@ -43,13 +43,13 @@
         <i class="underline-sm d-block d-lg-none"></i>
       </div>
 
-      <div class="col-12 col-lg-6 ">
+      <div class="col-12 col-lg-6 fs-5">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
       </div>
 
       <i class="col-12 underline"></i>
 
-      <div class="col-12 d-flex justify-content-center">
+      <div class="col-12 d-flex justify-content-center mt-3">
         <button class="work-button">
           LET'S WORK TOGETHER
         </button>
@@ -63,18 +63,23 @@
 
 
 <style lang="scss" scoped>
+.resume-row {
+  margin: auto;
+  width: 60%;
+}
+
 .underline-sm {
   display: block;
   width: 50%;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  border-bottom: solid 2px var(--bs-light);
+  border-bottom: solid 1px var(--bs-light);
 }
 
 .underline {
   padding-bottom: 2rem;
   margin-bottom: 4rem;
-  border-bottom: solid 2px var(--bs-light);
+  border-bottom: solid 1px var(--bs-light);
 }
 
 .work-button {
