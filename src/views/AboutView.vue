@@ -16,7 +16,20 @@ import SkillsSection from "@/components/SkillsSection.vue";
       </div>
 
       <div class="col-12">
+        <div class="text-center fs-1 text-light">Work I've Done</div>
+        <div class="row">
+          <div class="col-3 m-auto bg-success">
+            <div class="app-card"></div>
+          </div>
+          <div class="col-3 m-auto bg-success">
+            <div class="app-card"></div>
 
+          </div>
+          <div class="col-3 m-auto bg-success">
+            <div class="app-card"></div>
+
+          </div>
+        </div>
       </div>
 
       <div class="col-12">
@@ -30,4 +43,8 @@ import SkillsSection from "@/components/SkillsSection.vue";
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app-card {
+  height: 256px;
+}
+</style>
