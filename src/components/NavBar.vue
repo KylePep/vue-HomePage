@@ -1,8 +1,10 @@
 <template>
+  <div class="spacer"></div>
   <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-secondary shadow-lg">
     <div class="container-fluid">
 
-      <a class="navbar-brand d-block d-sm-none title fs-3 fw-bold" href="#">Kyle Peppersack</a>
+      <RouterLink class="navbar-brand d-block d-sm-none title fs-3 fw-bold" :to="{ name: 'Home' }">Kyle Peppersack
+      </RouterLink>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,34 +16,38 @@
         <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Home</a>
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Home' }">Home
+            </RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Portfolio</a>
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Home' }">Portfolio
+            </RouterLink>
           </li>
 
           <!-- <li class="nav-item dropdown">
-            <a class="nav-link selectable-nav fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link selectable-nav fs-5 dropdown-toggle" :to="{ name: 'Home' }" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Links
             </a>
             <ul class=" dropdown-menu">
-              <li><a class="dropdown-item" href="#">App 1</a></li>
-              <li><a class="dropdown-item" href="#">App 2</a></li>
-              <li><a class="dropdown-item" href="#">App 3</a></li>
+              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 1</a></li>
+              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 2</a></li>
+              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 3</a></li>
             </ul>
           </li> -->
 
-          <a class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" href="#">Kyle
-            Peppersack</a>
+          <RouterLink class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" :to="{ name: 'Home' }">Kyle
+            Peppersack</RouterLink>
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">About</a>
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'About' }">About
+            </RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link selectable-nav fs-5" aria-current="page" href="#">Contact</a>
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Home' }">Contact
+            </RouterLink>
           </li>
 
         </ul>
@@ -74,6 +80,10 @@ export default {
 
 
 <style lang="scss" scoped>
+.spacer {
+  height: 64px;
+}
+
 .title {
   text-transform: uppercase;
   color: var(--bs-light);

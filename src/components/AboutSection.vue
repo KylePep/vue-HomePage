@@ -1,7 +1,7 @@
 <template>
   <div class="container text-light">
     <div class="row">
-      <div class="col-12 col-md-6">
+      <div class="" :class="[page == 'Home' ? 'col-12 col-md-6' : 'col-12']">
 
         <div class="row g-2">
           <div class="col-12 ">
@@ -18,8 +18,12 @@
 
       </div>
 
+      <!-- <div class="col-6">
+        <img src="../assets/images/internet.jpg" class="img-fluid" alt="">
+      </div> -->
 
-      <div class="col-12 col-md-6">
+
+      <div :class="[page == 'Home' ? 'col-12 col-md-6' : 'col-12']">
         <div class="row g-5">
           <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             ratione possimus,
@@ -47,6 +51,9 @@
         </div>
 
       </div>
+
+
+
     </div>
 
 
@@ -58,6 +65,10 @@
 
 
 <script setup>
+import { useRoute } from "vue-router";
+
+const route = useRoute
+const page = route.name;
 </script>
 
 
