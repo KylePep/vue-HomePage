@@ -6,8 +6,8 @@ import SkillsSection from "@/components/SkillsSection.vue";
 
 
 <template>
-  <div class="container mt-5">
-    <div class="row g-5">
+  <div class="container">
+    <div class="row top-row g-5">
       <div class="col-6">
         <AboutSection />
       </div>
@@ -44,6 +44,10 @@ import SkillsSection from "@/components/SkillsSection.vue";
 
 
 <style lang="scss" scoped>
+.top-row {
+  margin-top: 5rem;
+}
+
 .app-card {
   height: 256px;
 }

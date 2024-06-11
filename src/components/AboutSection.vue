@@ -11,9 +11,6 @@
             </h3>
           </div>
           <div class="col-12 separation"></div>
-          <div class="col-12">
-            <img src="" alt="">
-          </div>
         </div>
 
       </div>
