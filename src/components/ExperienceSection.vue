@@ -7,10 +7,12 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0 ">
         <div class="card bg-secondary text-light h-100">
-          <img src="../assets/images/frontEnd.png" class="card-img" alt="...">
-          <div class="card-body d-flex flex-column justify-content-between align-items-center">
-            <h5 class="card-title">Front End</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+          <img src="../assets/images/product-design.png" class="card-img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-around align-items-center">
+            <div>
+              <h5 class="card-title">Front End</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+            </div>
             <a href="#" class="btn-circular position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
             </a>
@@ -20,10 +22,12 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card bg-success h-100">
-          <img src="../assets/images/frontEnd.png" class="card-img" alt="...">
-          <div class="card-body d-flex flex-column justify-content-between align-items-center">
-            <h5 class="card-title">Back End</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+          <img src="../assets/images/graphic-design.png" class="card-img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-around align-items-center">
+            <div>
+              <h5 class="card-title">Back End</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+            </div>
             <a href="#" class="btn-circular bg-secondary text-light position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
             </a>
@@ -33,10 +37,12 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card  bg-secondary text-light h-100">
-          <img src="../assets/images/frontEnd.png" class="card-img" alt="...">
-          <div class="card-body d-flex flex-column justify-content-between align-items-center">
-            <h5 class="card-title">UI Design</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+          <img src="../assets/images/web-design.png" class="card-img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-around align-items-center">
+            <div>
+              <h5 class="card-title">UI Design</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+            </div>
             <a href="#" class="btn-circular first position-relative"><i
                 class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i></a>
           </div>
@@ -76,8 +82,13 @@
   }
 }
 
+.card {
+  min-height: 50vh;
+}
+
 .card-img {
   transition: all .5s ease-in-out;
+  padding: 2rem;
 }
 
 .card-img:hover {

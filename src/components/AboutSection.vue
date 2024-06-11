@@ -6,18 +6,21 @@
         <div class="row g-2">
           <div class="col-12 ">
             <h3>
-              <p>About Me</p>
-              <p>I'M A FULL STACK DEVELOPER</p>
+              <p class="fs-5 fw-normal">About Me</p>
+              <p class="fs-2">I'M A FULL STACK DEVELOPER</p>
             </h3>
           </div>
           <div class="col-12 separation"></div>
+          <div class="col-12">
+            <img src="" alt="">
+          </div>
         </div>
 
       </div>
 
 
       <div class="col-12 col-md-6">
-        <div class="row g-2">
+        <div class="row g-5">
           <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             ratione possimus,
             vitae
@@ -30,9 +33,15 @@
             Ad
             nemo quaerat amet at et.</div>
 
-          <div class="col-4 offset-md-8">
-            <p>FOLLOW ME</p>
-            <div><i class="mdi mdi-linkedin text-light"></i></div>
+          <div class="col-6 text-start fw-semibold ">
+            <p>FIND ME ON</p>
+
+            <div class="d-flex">
+              <i class="circle position-relative">
+                <i type="button"
+                  class="position-absolute mdi mdi-linkedin top-50 start-50 translate-middle me-5  fs-1"></i>
+              </i>
+            </div>
           </div>
 
         </div>
@@ -53,6 +62,24 @@
 
 
 <style lang="scss" scoped>
+.circle {
+  display: block;
+  width: 52px;
+  height: 52px;
+  scale: .9;
+  background-color: var(--bs-light);
+  color: var(--bs-secondary);
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.circle:hover {
+  scale: 1;
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-radius: 50%;
+}
+
 .separation {
   margin: 1rem 0rem 1rem 0rem;
   width: 50px;
