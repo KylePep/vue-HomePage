@@ -6,7 +6,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 <template>
 
   <div class="row position-relative">
-    <div class="col-4 application-card">
+    <div class=" application-card" :class="[props.org == 'list' ? 'col-4' : col - 12]">
 
       <div class=" card-hover">
 
@@ -15,18 +15,20 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
       </div>
     </div>
 
-    <div class="col-4 d-flex flex-column text-light text-center">
+    <div class=" d-flex flex-column text-light" :class="[props.org == 'list' ? 'col-4 text-center' : col - 12]">
+
       <h4>{{ props.title }}</h4>
-      <a href="">{{ props.githubLink }}</a>
-      <a href="">{{ props.webLink }}</a>
-      <p>{{ props.techStack }}</p>
+      <a v-if="props.org == 'list'" href="">{{ props.githubLink }}</a>
+      <a v-if="props.org == 'list'" href="">{{ props.webLink }}</a>
+      <p v-if="props.org == 'list'">{{ props.techStack }}</p>
     </div>
 
-    <div class="col-4 text-light">
+    <div class=" text-light" :class="[props.org == 'list' ? 'col-4' : col - 12]">
       <p>{{ props.description }}</p>
+      <p>{{ props.org }}</p>
     </div>
 
-    <i class="col-12 underline"></i>
+    <i v-if="props.org == 'list'" class="col-12 underline"></i>
   </div>
 
 

@@ -1,5 +1,13 @@
 <script setup>
 import ApplicationCard from "@/components/ApplicationCard.vue";
+import { ref } from "vue";
+const organizationStyle = ref('list')
+
+
+const setOrg = (organization) => {
+  organizationStyle.value = organization
+}
+
 </script>
 
 
@@ -18,13 +26,13 @@ import ApplicationCard from "@/components/ApplicationCard.vue";
       </div>
 
       <div class="col-12 m-auto separation mt-5"></div>
+      <button @click="setOrg('list')">List</button>
+      <button @click="setOrg('grid')">Grid</button>
 
-      <div class="col-12 mt-5">
-        <div v-for="index in 6" :key="index" class="">
-          <ApplicationCard org="list" img="src/assets/images/business.jpg" title="The Title of the app"
-            description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
-            githubLink="githubLink" />
-        </div>
+      <div v-for="index in 6" :key="index" class=" mt-5" :class="[organizationStyle == 'list' ? 'col-12' : 'col-4']">
+        <ApplicationCard :org="organizationStyle" img="src/assets/images/business.jpg" title="The Title of the app"
+          description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
+          githubLink="githubLink" />
       </div>
 
     </div>
