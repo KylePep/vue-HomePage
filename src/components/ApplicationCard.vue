@@ -2,6 +2,8 @@
 import AppModal from "./AppModal.vue"
 
 const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'webLink', 'githubLink'])
+
+
 </script>
 
 
@@ -10,10 +12,10 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
   <div class="row position-relative">
     <div class=" application-card" :class="[props.org == 'list' ? 'col-12 col-md-4 p-2' : col - 12]">
 
-      <AppModal button="true" modal="false">
+      <AppModal button="true" modal="false" :content="props">
         <template #icon>
           <div class=" card-hover">
-            <img :src="props.img" class="" alt="...">
+            <img :src="props.img" class="" :alt="props.title">
           </div>
         </template>
       </AppModal>
