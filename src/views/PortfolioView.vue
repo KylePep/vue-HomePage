@@ -26,11 +26,23 @@ const setOrg = (organization) => {
       </div>
 
       <div class="col-12 m-auto separation mt-5"></div>
-      <button @click="setOrg('list')">List</button>
-      <button @click="setOrg('grid')">Grid</button>
+      <div class="col-12 d-none d-md-flex justify-content-center justify-content-md-end">
+        <button v-if="organizationStyle == 'grid'" @click="setOrg('list')" class="btn text-light fs-1 mdi mdi-view-list"
+          title="list view"></button>
+        <button v-if="organizationStyle == 'list'" @click="setOrg('grid')" class="btn text-light fs-1 mdi mdi-grid"
+          title="grid view"></button>
+      </div>
 
-      <div v-for="index in 6" :key="index" class=" mt-5" :class="[organizationStyle == 'list' ? 'col-12' : 'col-4']">
+      <div v-for="index in 6" :key="index" class="d-none d-md-block mt-5"
+        :class="[organizationStyle == 'list' ? 'col-12' : 'col-4']">
         <ApplicationCard :org="organizationStyle" img="src/assets/images/business.jpg" title="The Title of the app"
+          description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
+          githubLink="githubLink" />
+      </div>
+
+      <div v-for="index in 6" :key="index" class="d-block d-md-none mt-5"
+        :class="[organizationStyle == 'list' ? 'col-12' : 'col-4']">
+        <ApplicationCard org="list" img="src/assets/images/business.jpg" title="The Title of the app"
           description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
           githubLink="githubLink" />
       </div>

@@ -16,6 +16,8 @@ import FootBar from './components/FootBar.vue'
     <FootBar />
   </footer>
 
+  <AppModal />
+
 </template>
 
 <style lang="scss">
