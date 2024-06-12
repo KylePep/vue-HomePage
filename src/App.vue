@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
 import FootBar from './components/FootBar.vue'
+import AppModal from './components/AppModal.vue'
 </script>
 
 <template>
@@ -16,7 +17,7 @@ import FootBar from './components/FootBar.vue'
     <FootBar />
   </footer>
 
-  <AppModal />
+  <AppModal button="false" modal="true" />
 
 </template>
 
