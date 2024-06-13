@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from "vue-router";
+
 function scrollToTop() {
   scrollTo(0, 0)
 }
@@ -20,9 +22,9 @@ function scrollToTop() {
     <div class="row flex-grow-1 justify-content-center align-items-center pt-2 pb-3 border-top border-light mx-3">
 
       <div class="col-6 col-sm-6">
-        <button class="btn btn-secondary">Home</button>
-        <button class="btn btn-secondary">About</button>
-        <button class="btn btn-secondary">Links</button>
+        <RouterLink :to="{ name: 'Home' }" class="btn btn-secondary">Home</RouterLink>
+        <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">About</RouterLink>
+        <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">Contact</RouterLink>
       </div>
 
       <div class="col-6 col-sm-6 text-end">
