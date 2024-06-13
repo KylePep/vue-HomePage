@@ -35,13 +35,13 @@ const setOrg = (organization) => {
 
       <div v-for="index in 6" :key="index" class="d-none d-md-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-4']">
-        <ApplicationCard :org="organizationStyle" img="src/assets/images/business.jpg" title="The Title of the app"
-          description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
-          githubLink="githubLink" />
+        <ApplicationCard :org="organizationStyle" img="src/assets/images/business.jpg"
+          :title="'The Title of the app' + index" description="A brief description of the app" techStack="Tech Stack"
+          webLink="webLink" githubLink="githubLink" />
       </div>
 
       <div v-for="index in 6" :key="index" class="col-12 d-block d-md-none mt-5">
-        <ApplicationCard org="list" img="src/assets/images/business.jpg" title="The Title of the app"
+        <ApplicationCard org="list" img="src/assets/images/business.jpg" :title="'The Title of the app' + index"
           description="A brief description of the app" techStack="Tech Stack" webLink="webLink"
           githubLink="githubLink" />
       </div>

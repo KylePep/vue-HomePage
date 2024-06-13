@@ -8,14 +8,14 @@ import SkillsSection from "@/components/SkillsSection.vue";
 <template>
   <div class="container">
     <div class="row top-row g-5">
-      <div class="col-6">
+      <div class="order-1 order-md-0 col-12 col-md-6">
         <AboutSection />
       </div>
-      <div class="col-6">
+      <div class="order-0 order-md-1 col-12 col-md-6">
         <img src="../assets/images/internet.jpg" class="img-fluid" alt="">
       </div>
 
-      <div class="col-12">
+      <div class="order-2 col-12">
         <div class="text-center fs-1 text-light">Work I've Done</div>
         <div class="row">
           <div class="col-3 m-auto bg-success">
@@ -32,7 +32,7 @@ import SkillsSection from "@/components/SkillsSection.vue";
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="order-3 col-12">
         <SkillsSection />
       </div>
 
