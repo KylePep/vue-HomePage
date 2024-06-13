@@ -81,7 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 .spacer {
-  height: 64px;
+  height: 16px;
 }
 
 .title {
