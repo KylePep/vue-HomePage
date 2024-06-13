@@ -24,7 +24,7 @@ function scrollToTop() {
       <div class="col-6 col-sm-6">
         <RouterLink :to="{ name: 'Home' }" class="btn btn-secondary">Home</RouterLink>
         <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">About</RouterLink>
-        <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">Contact</RouterLink>
+        <RouterLink :to="{ name: 'Contact' }" class="btn btn-secondary">Contact</RouterLink>
       </div>
 
       <div class="col-6 col-sm-6 text-end">

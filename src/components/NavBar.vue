@@ -46,7 +46,7 @@
           </li>
 
           <li class="nav-item">
-            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Home' }">Contact
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Contact' }">Contact
             </RouterLink>
           </li>
 
