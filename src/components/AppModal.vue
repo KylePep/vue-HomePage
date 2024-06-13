@@ -17,8 +17,8 @@ const setActiveApp = () => {
 <template>
 
   <!-- Button trigger modal -->
-  <a @click="setActiveApp()" v-if="props.button == 'true'" type="button" class="" data-bs-toggle="modal"
-    data-bs-target="#appModal">
+  <a @click="setActiveApp()" v-if="props.button == 'true'" type="button"
+    class="px-0 mx-0 bg-info d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#appModal">
     <slot name="icon"></slot>
   </a>
 

@@ -9,14 +9,16 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 
 <template>
 
-  <div class="row position-relative">
-    <div class=" application-card" :class="[props.org == 'list' ? 'col-12 col-md-4 p-2' : col - 12]">
+  <div class="row">
+    <div class="application-card position-relative" :class="[props.org == 'list' ? 'col-12 col-md-4' : 'col-12']">
 
       <AppModal button="true" modal="false" :content="props">
         <template #icon>
-          <div class=" card-hover">
+          <!-- <div class="position-absolute top-50 start-50 translate-middle"> -->
+          <div class="card-hover top-00 start-50 translate-middle-x">
             <img :src="props.img" class="" :alt="props.title">
           </div>
+          <!-- </div> -->
         </template>
       </AppModal>
 
@@ -49,19 +51,26 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 .application-card {
   display: block;
   min-height: 256px;
-  // width: 100%;
-  // padding: 5%;
 }
 
 .card-hover {
   padding: 2rem;
   background-color: var(--bs-success);
-  // width: 90%;
   height: 256px;
+  min-height: 100px;
+  position: absolute;
+  // left: calc(25% - 4rem);
+  top: 0;
+  left: 0;
+  transition: top ease 0.5s;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+  top: -10px;
 }
 
 img {
-  // width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -72,17 +81,5 @@ img {
   margin-bottom: 3rem;
   margin-top: 3rem;
   border-bottom: solid 1px var(--bs-light);
-}
-
-.card-hover {
-  min-height: 100px;
-  position: absolute;
-  top: 0;
-  transition: top ease 0.5s;
-}
-
-.card-hover:hover {
-  cursor: pointer;
-  top: -10px;
 }
 </style>
