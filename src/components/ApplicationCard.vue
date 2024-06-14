@@ -10,22 +10,21 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 <template>
 
   <div class="row">
-    <div class="application-card position-relative" :class="[props.org == 'list' ? 'col-12 col-md-6' : 'col-12']">
+    <div class="application-card position-relative"
+      :class="[props.org == 'list' ? 'col-12 col-md-6 col-lg-4' : 'col-12']">
 
       <AppModal button="true" modal="false" :content="props">
         <template #icon>
-          <!-- <div class="position-absolute top-50 start-50 translate-middle"> -->
-          <div class="card-hover top-00 start-50 translate-middle-x">
+          <div class="card-hover" :class="[props.org == 'list' ? 'card-transform' : '']">
             <img :src="props.img" class="" :alt="props.title">
           </div>
-          <!-- </div> -->
         </template>
       </AppModal>
 
     </div>
 
     <div class=" d-flex flex-column text-light"
-      :class="[props.org == 'list' ? 'col-12 col-md-3  text-center' : 'col-12 text-center']">
+      :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12 text-center']">
 
 
 
@@ -35,7 +34,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
       <p>{{ props.techStack }}</p>
     </div>
 
-    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 text-center' : 'col-12']">
+    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12']">
       <p v-if="props.org == 'list'">{{ props.description }}</p>
     </div>
 
@@ -49,7 +48,6 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 
 <style lang="scss" scoped>
 .application-card {
-  display: block;
   min-height: 256px;
 }
 
@@ -57,12 +55,23 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
   padding: 2rem;
   background-color: var(--bs-success);
   height: 256px;
-  min-height: 100px;
   position: absolute;
-  // left: calc(25% - 4rem);
   top: 0;
-  left: 0;
   transition: top ease 0.5s;
+
+}
+
+.card-transform {
+  left: 50%;
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 576px) {
+  .card-transform {
+    left: 0;
+    transform: none;
+  }
 }
 
 .card-hover:hover {
