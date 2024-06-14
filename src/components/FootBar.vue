@@ -21,13 +21,13 @@ function scrollToTop() {
 
     <div class="row flex-grow-1 justify-content-center align-items-center pt-2 pb-3 border-top border-light mx-3">
 
-      <div class="col-6 col-sm-6">
+      <div class="col-7 col-sm-6">
         <RouterLink :to="{ name: 'Home' }" class="btn btn-secondary">Home</RouterLink>
         <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">About</RouterLink>
         <RouterLink :to="{ name: 'Contact' }" class="btn btn-secondary">Contact</RouterLink>
       </div>
 
-      <div class="col-6 col-sm-6 text-end">
+      <div class="col-5 col-sm-6 text-end">
         <i class="mdi mdi-linkedin btn fs-3 text-light"></i>
         <i class="mdi mdi-github btn fs-3 text-light"></i>
         <i @click="scrollToTop()" class="mdi mdi-arrow-up btn fs-3 text-light"></i>

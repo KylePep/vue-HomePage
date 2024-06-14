@@ -13,15 +13,15 @@
 
 
           <div class="col-12 mt-5">
-            <h3 class="text-center">
+            <h3 class="">
               <p class="fs-5 fw-normal mb-4">EXPERT IN FIELD</p>
               <p class="fs-2">WHERE I AM? LET'S FIND OUT!</p>
             </h3>
           </div>
 
-          <div class="col-12 m-auto separation mt-5"></div>
+          <div class="col-12 separation"></div>
 
-          <div class="col-12 text-center">
+          <div class="col-12 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus accusantium error provident, commodi
             expedita harum aperiam animi id quia tempora consequatur labore quisquam possimus, ratione quis qui
             blanditiis
@@ -30,9 +30,9 @@
 
           <div class="col-12">
             <div class="row">
-              <div class="col-12">
-                <p><i class="mdi mdi-cellphone"></i> (775) 304 6480</p>
-                <p><i class="mdi mdi-email"></i> kylepeppersack@hotmail.com</p>
+              <div class="col-12 ">
+                <p><i class="mdi mdi-cellphone "></i> (775) 304 6480</p>
+                <p><i class="mdi mdi-email "></i> kylepeppersack@hotmail.com</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
       <div class="col-12 col-md-6">
         <div class="row g-3">
 
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-5 ">
             DROP ME A MESSAGE
           </div>
 
@@ -84,9 +84,6 @@
 
 
 <style lang="scss" scoped>
-/* -----------------------
-  Form 
------------------------ */
 .form-control {
   border-radius: 0;
 }
@@ -100,34 +97,12 @@
   margin-bottom: 25px;
 }
 
-// .form-group>label {
-//   text-transform: uppercase;
-//   font-size: 10px;
-//   color: #a1a2a3;
-//   transform-origin: 0 0;
-//   transform: scale(1.4);
-//   pointer-events: none;
-//   position: relative;
-//   z-index: 5;
-// }
-
-// .form-group>input {
-//   width: 100%;
-// }
-
 .form-group>label {
   transition: transform 0.4s;
   transform-origin: 0 0;
   transform: scale(1.4) translateY(20px);
 }
 
-// .form-group.not-empty>label {
-//   transform: none;
-// }
-
-// /*------------------------------
-// 	Form
-// ------------------------------*/
 textarea {
   resize: none;
 }
@@ -160,7 +135,7 @@ textarea::placeholder {
 }
 
 .separation {
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 1rem 0rem 1rem 0.5rem;
   width: 50px;
   border-bottom: solid var(--bs-success) 4px;
 }
