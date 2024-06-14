@@ -15,27 +15,33 @@
 
         <ul class="navbar-nav   mb-2 mb-sm-0 w-100 justify-content-around">
 
-          <li class="nav-item">
+          <li class="nav-item dropdown d-block d-sm-none">
+            <a class="nav-link selectable-nav text-primary fs-5 dropdown-toggle" :to="{ name: 'Home' }" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Links
+            </a>
+            <ul class=" dropdown-menu bg-secondary fs-2">
+              <li class="d-flex"><a class=" nav-link selectable-nav mdi mdi-linkedin text-primary me-3"
+                  :to="{ name: 'Home' }"></a><a class=" nav-link selectable-nav mdi mdi-github text-primary"
+                  :to="{ name: 'Home' }"></a></li>
+            </ul>
+          </li>
+
+          <li class="text-primary fs-2 d-none d-sm-flex">
+            <a class="nav-link selectable-nav p-0 mdi mdi-linkedin me-3" :to="{ name: 'Home' }"></a>
+            <a class="nav-link selectable-nav p-0 mdi mdi-github" :to="{ name: 'Home' }"></a>
+          </li>
+
+          <!-- <li class="nav-item">
             <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Home' }">Home
             </RouterLink>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Portfolio' }">Portfolio
             </RouterLink>
           </li>
 
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link selectable-nav fs-5 dropdown-toggle" :to="{ name: 'Home' }" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Links
-            </a>
-            <ul class=" dropdown-menu">
-              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 1</a></li>
-              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 2</a></li>
-              <li><a class="dropdown-item" :to="{ name: 'Home' }">App 3</a></li>
-            </ul>
-          </li> -->
 
           <RouterLink class="navbar-brand d-none d-sm-block title fs-2 fw-bold me-0 pt-0" :to="{ name: 'Home' }">Kyle
             Peppersack</RouterLink>
