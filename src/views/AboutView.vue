@@ -1,6 +1,11 @@
 <script setup>
+import { AppState } from "@/AppState.js";
 import AboutSection from "@/components/AboutSection.vue";
+import ApplicationCard from "@/components/ApplicationCard.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
+import { computed } from "vue";
+
+const appList = computed(() => AppState.appList)
 
 </script>
 
@@ -12,22 +17,15 @@ import SkillsSection from "@/components/SkillsSection.vue";
         <AboutSection />
       </div>
       <div class="order-0 order-md-1 col-12 col-md-6">
-        <img src="../assets/images/internet.jpg" class="img-fluid" alt="">
+        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid" alt="">
       </div>
 
       <div class="order-2 col-12">
         <div class="text-center fs-1 text-light">Work I've Done</div>
         <div class="row">
-          <div class="col-3 m-auto bg-success">
-            <div class="app-card"></div>
-          </div>
-          <div class="col-3 m-auto bg-success">
-            <div class="app-card"></div>
-
-          </div>
-          <div class="col-3 m-auto bg-success">
-            <div class="app-card"></div>
-
+          <div v-for="app in appList" :key="app" class="col-3 m-auto ">
+            <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
+              :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
           </div>
         </div>
       </div>
@@ -46,9 +44,5 @@ import SkillsSection from "@/components/SkillsSection.vue";
 <style lang="scss" scoped>
 .top-row {
   margin-top: 5rem;
-}
-
-.app-card {
-  height: 256px;
 }
 </style>

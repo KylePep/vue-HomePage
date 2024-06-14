@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+import { AppState } from "@/AppState.js";
+import { computed } from "vue";
+
+const skills = computed(() => AppState.skills)
+</script>
 
 
 <template>
@@ -9,7 +14,7 @@
         <h3 class="text-center">MY SKILLS</h3>
       </div>
 
-      <div v-for="index in 8" :key="index" class="col-12 col-md-6">
+      <div v-for="skill in skills" :key="skill" class="col-12 col-md-6">
         <div class="d-flex selectable me-2 py-3">
           <div>
             <i class="circle position-relative me-3 ms-3">
@@ -17,12 +22,8 @@
             </i>
           </div>
           <div>
-            <h4>Web Design</h4>
-            <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, nostrum voluptatem
-              quis
-              magnam
-              dolorem
-              vel.</p>
+            <h4>{{ skill.title }}</h4>
+            <p class="mb-0">{{ skill.description }}</p>
           </div>
         </div>
       </div>

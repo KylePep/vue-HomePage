@@ -1,7 +1,17 @@
 <script setup>
 import AppModal from "./AppModal.vue"
 
-const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'webLink', 'githubLink'])
+const props = defineProps({
+  org: String,
+  img: String,
+  title: String,
+  description: String,
+  techStack: Array,
+  webLink: String,
+  githubLink: String,
+})
+
+// const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'webLink', 'githubLink'])
 
 
 </script>
@@ -31,7 +41,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
       <h4 class="mt-3 mt-md-0">{{ props.title }}</h4>
       <a v-if="props.org == 'list'" href="">{{ props.githubLink }}</a>
       <a v-if="props.org == 'list'" href="">{{ props.webLink }}</a>
-      <p>{{ props.techStack }}</p>
+      <p v-for="tech in props.techStack" :key="tech">{{ tech }}</p>
     </div>
 
     <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12']">
