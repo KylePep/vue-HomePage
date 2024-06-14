@@ -10,7 +10,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
 <template>
 
   <div class="row">
-    <div class="application-card position-relative" :class="[props.org == 'list' ? 'col-12 col-md-4' : 'col-12']">
+    <div class="application-card position-relative" :class="[props.org == 'list' ? 'col-12 col-md-6' : 'col-12']">
 
       <AppModal button="true" modal="false" :content="props">
         <template #icon>
@@ -25,7 +25,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
     </div>
 
     <div class=" d-flex flex-column text-light"
-      :class="[props.org == 'list' ? 'col-12 col-md-4  text-center' : 'col-12']">
+      :class="[props.org == 'list' ? 'col-12 col-md-3  text-center' : 'col-12 text-center']">
 
 
 
@@ -35,7 +35,7 @@ const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'w
       <p>{{ props.techStack }}</p>
     </div>
 
-    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-4 text-center' : 'col-12']">
+    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 text-center' : 'col-12']">
       <p v-if="props.org == 'list'">{{ props.description }}</p>
     </div>
 
