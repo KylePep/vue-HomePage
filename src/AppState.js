@@ -11,17 +11,26 @@ export const AppState = reactive({
       img: 'src/assets/images/business.jpg',
       title: 'Landing Page',
       description: 'The landing page your are currently looking at',
-      techStack: ['Vue.js', 'JavaScript'],
-      webLink: 'home.kylepep.dev',
+      techStack: ['V'],
+      webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'bootstrap']
+      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
+    },
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'Old Landing Page',
+      description: 'My old landing page, I learned a lot making it.',
+      techStack: ['V'],
+      webLink: 'https://home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'Saiyan Clicker',
       description: 'The landing page your are currently looking at',
-      techStack: ['Vue.js', 'JavaScript'],
-      webLink: 'home.kylepep.dev',
+      techStack: ['HTML', 'CSS'],
+      webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'game']
     },
@@ -29,19 +38,28 @@ export const AppState = reactive({
       img: 'src/assets/images/business.jpg',
       title: 'Keepr',
       description: 'The landing page your are currently looking at',
-      techStack: ['Vue.js', 'JavaScript'],
-      // webLink: 'home.kylepep.dev',
+      techStack: ['MySQl', 'Express.js', 'Vue.js', 'Node.js'],
+      // webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'c#', 'mysql']
+      tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
+    },
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'CodeFitness',
+      description: 'The landing page your are currently looking at',
+      techStack: ['MongoDB', 'Express.js', 'Vue.js', 'Node.js'],
+      // webLink: 'https://home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      tags: ['web', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'PuppyLoveSuites',
       description: 'My first website created for a client',
-      techStack: ['Vue.js', 'JavaScript'],
+      techStack: ['V'],
       webLink: 'https://puppylovesuites.com',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript']
+      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     }
   ],
 

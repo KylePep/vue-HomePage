@@ -42,16 +42,13 @@ const route = useRoute();
 
       <h4 class="mt-3 mt-md-0">{{ props.title }}</h4>
       <div class="d-flex justify-content-center">
-        <a v-if="props.org == 'list'" :href="props.githubLink" :title="props.githubLink"
+        <a v-if="props.org == 'list'" :href="props.webLink" target="_blank" :title="props.webLink"
           class="mdi mdi-web fs-3 text-light me-3"></a>
-        <a v-if="props.org == 'list'" :href="props.webLink" :title="props.webLink"
+        <a v-if="props.org == 'list'" :href="props.githubLink" target="_blank" :title="props.githubLink"
           class="mdi mdi-github fs-3 text-light"></a>
       </div>
-      <div v-if="route.name != 'Home' && route.name != 'About'" class="d-flex justify-content-center">
-        <div v-for="tech, index in props.techStack" :key="index" class="me-1">{{ tech }} {{ index != techStack.length -
-          1 ?
-          '|' : ''
-          }}
+      <div v-if="route.name != 'Home' && route.name != 'About'" class="d-flex flex-column justify-content-center">
+        <div v-for="tech, index in props.techStack" :key="index" class="me-1">{{ tech }}
         </div>
       </div>
     </div>

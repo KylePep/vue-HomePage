@@ -75,7 +75,7 @@ const setFilterBy = (tag) => {
           </button>
           <ul class="dropdown-menu">
             <li>
-              <p @click="setFilterBy('BootStrap')" class="dropdown-item selectable">BootStrap</p>
+              <p @click="setFilterBy('Bootstrap')" class="dropdown-item selectable">Bootstrap</p>
             </li>
             <li>
               <p @click="setFilterBy('TailWind')" class="dropdown-item selectable">TailWind</p>
