@@ -1,4 +1,6 @@
 <script setup>
+import TestimonialSection from "@/components/TestimonialSection.vue";
+
 
 </script>
 
@@ -75,6 +77,10 @@
 
           </div>
         </div>
+      </div>
+
+      <div class="col-12 my-5">
+        <TestimonialSection />
       </div>
 
 

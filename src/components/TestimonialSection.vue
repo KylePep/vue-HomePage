@@ -7,7 +7,7 @@ const testimonyData = computed(() => AppState.testimonyData);
 
 
 <template>
-  <div class="container">
+  <div class="container text-secondary">
     <div class="row">
       <div class="col-12">
 
