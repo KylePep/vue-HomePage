@@ -1,21 +1,23 @@
-<script setup></script>
+<script setup>
+import ApplicationCard from "./ApplicationCard.vue";
+</script>
 
 
 <template>
   <div class="container">
     <div class="row g-2">
 
-      <div v-for="index in 6" :key="index" class="col-12 col-lg-4 alt-border-clr position-relative">
-        <div class="application-card d-flex flex-column justify-content-end mb-5">
-          <div class="text-light">
-            <h4>The Title of the app</h4>
-            <p>A breif description of the app</p>
-          </div>
+      <div v-for="index in 6" :key="index" class="d-none d-md-block mt-5"
+        :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
+        <ApplicationCard :org="'grid'" img="src/assets/images/business.jpg" :title="'The Title of the app' + index"
+          description="A brief description of the app" :techStack="['Tech', 'Stack']" webLink="webLink"
+          githubLink="githubLink" />
+      </div>
 
-        </div>
-        <div class=" card-hover">
-          <img src="../assets/images/business.jpg" class="" alt="...">
-        </div>
+      <div v-for="index in 6" :key="index" class="col-12 d-block d-md-none mt-5">
+        <ApplicationCard org="grid" img="src/assets/images/business.jpg" :title="'The Title of the app' + index"
+          description="A brief description of the app" :techStack="['Tech', 'Stack']" webLink="webLink"
+          githubLink="githubLink" />
       </div>
 
     </div>
