@@ -26,12 +26,12 @@ import AnimatedBackground from './AnimatedBackground.vue'
 
               <div class="col-12 col-md-6">
                 <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
-                <input type="email" class="form-control py-3 fs-5 " id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="EMAIL">
+                <input type="email" class="form-control py-3 fs-5 rounded-1" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="EMAIL">
               </div>
 
               <div class="col-12 col-md-6">
-                <button type="submit" class="w-100 btn btn-primary py-3 fs-5 fw-semibold text-light">GET MY
+                <button type="submit" class="w-100 btn btn-primary rounded-1 py-3 fs-5 fw-semibold text-light">GET MY
                   RESUME</button>
               </div>
 

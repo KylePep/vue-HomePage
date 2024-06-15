@@ -38,14 +38,15 @@
             <p>FIND ME ON</p>
 
             <div class="d-flex">
-              <i class="circle position-relative me-1">
+              <a class="circle position-relative me-1" href="https://www.linkedin.com/in/kyle-peppersack"
+                target="_blank">
                 <i type="button"
                   class="position-absolute mdi mdi-linkedin top-50 start-50 translate-middle me-5  fs-1"></i>
-              </i>
-              <i class="circle position-relative">
+              </a>
+              <a class="circle position-relative" href="https://github.com/KylePep" target="_blank">
                 <i type="button"
                   class="position-absolute mdi mdi-github top-50 start-50 translate-middle me-5  fs-1"></i>
-              </i>
+              </a>
             </div>
           </div>
 

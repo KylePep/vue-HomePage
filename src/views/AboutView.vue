@@ -17,7 +17,7 @@ const appList = computed(() => AppState.appList)
         <AboutSection />
       </div>
       <div class="order-0 order-md-1 col-12 col-md-6">
-        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid" alt="">
+        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid rounded" alt="">
       </div>
 
       <div class="order-2 col-12">

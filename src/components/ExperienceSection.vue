@@ -6,7 +6,7 @@
     <div class="row">
 
       <div class="col-12 col-md-4 mb-5 mb-md-0 ">
-        <div class="card bg-secondary text-light h-100">
+        <div class="card rounded-1  bg-secondary text-light h-100">
           <img src="../assets/images/product-design.png" class="card-img" alt="...">
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
@@ -21,7 +21,7 @@
       </div>
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
-        <div class="card bg-success h-100">
+        <div class="card rounded-1 bg-success h-100">
           <img src="../assets/images/graphic-design.png" class="card-img" alt="...">
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
-        <div class="card  bg-secondary text-light h-100">
+        <div class="card rounded-1  bg-secondary text-light h-100">
           <img src="../assets/images/web-design.png" class="card-img" alt="...">
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>

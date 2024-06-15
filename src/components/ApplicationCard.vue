@@ -27,7 +27,7 @@ const route = useRoute();
 
       <AppModal button="true" modal="false" :content="props">
         <template #icon>
-          <div class="card-hover" :class="[props.org == 'list' ? 'card-transform' : '']">
+          <div class="card-hover " :class="[props.org == 'list' ? 'card-transform' : '']">
             <img :src="props.img" class="" :alt="props.title">
           </div>
         </template>
@@ -72,6 +72,7 @@ const route = useRoute();
 .card-hover {
   padding: 2rem;
   background-color: var(--bs-success);
+  border-radius: 2px;
   height: 256px;
   position: absolute;
   top: 0;
