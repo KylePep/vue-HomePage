@@ -14,8 +14,7 @@ export const AppState = reactive({
       techStack: ['Vue.js', 'JavaScript'],
       webLink: 'home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      favorite: true,
-      homePage: true
+      tags: ['homePage', 'favorite', 'Vue.js', 'JavaScript', 'bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
@@ -24,8 +23,7 @@ export const AppState = reactive({
       techStack: ['Vue.js', 'JavaScript'],
       webLink: 'home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      favorite: true,
-      homePage: true
+      tags: ['homePage', 'favorite', 'Vue.js', 'JavaScript', 'game']
     },
     {
       img: 'src/assets/images/business.jpg',
@@ -34,8 +32,7 @@ export const AppState = reactive({
       techStack: ['Vue.js', 'JavaScript'],
       // webLink: 'home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      favorite: false,
-      homePage: true
+      tags: ['homePage', 'Vue.js', 'JavaScript', 'c#', 'mysql']
     },
     {
       img: 'src/assets/images/business.jpg',
@@ -44,8 +41,7 @@ export const AppState = reactive({
       techStack: ['Vue.js', 'JavaScript'],
       webLink: 'https://puppylovesuites.com',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      favorite: true,
-      homePage: true
+      tags: ['homePage', 'favorite', 'Vue.js', 'JavaScript']
     }
   ],
 

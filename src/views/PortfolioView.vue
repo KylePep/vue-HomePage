@@ -29,11 +29,27 @@ const setOrg = (organization) => {
       </div>
 
       <div class="col-12 m-auto separation mt-5"></div>
-      <div class="col-12 d-none d-md-flex justify-content-center justify-content-md-end">
-        <button v-if="organizationStyle == 'grid'" @click="setOrg('list')" class="btn text-light fs-1 mdi mdi-view-list"
-          title="list view"></button>
-        <button v-if="organizationStyle == 'list'" @click="setOrg('grid')" class="btn text-light fs-1 mdi mdi-grid"
-          title="grid view"></button>
+      <div class="col-12 d-flex justify-content-between justify-content-md-end">
+
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Filter by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vue.js</a></li>
+            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+            <li><a class="dropdown-item" href="#">TypeScript</a></li>
+            <li><a class="dropdown-item" href="#">MongoDb</a></li>
+            <li><a class="dropdown-item" href="#">MySql</a></li>
+          </ul>
+        </div>
+
+
+        <button v-if="organizationStyle == 'grid'" @click="setOrg('list')"
+          class="d-none d-md-block btn text-light fs-3 mdi mdi-view-list" title="list view"></button>
+        <button v-if="organizationStyle == 'list'" @click="setOrg('grid')"
+          class="d-none d-md-block btn text-light fs-3 mdi mdi-grid" title="grid view"></button>
       </div>
 
       <div v-for="app, index in appData" :key="index" class="d-none d-md-block mt-5"

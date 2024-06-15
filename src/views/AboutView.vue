@@ -6,7 +6,7 @@ import SkillsSection from "@/components/SkillsSection.vue";
 import { computed } from "vue";
 
 const appData = computed(() => AppState.appList)
-const favoriteApps = appData.value.filter((a) => a.favorite == true)
+const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
 </script>
 
 

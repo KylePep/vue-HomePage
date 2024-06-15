@@ -5,7 +5,7 @@ import { AppState } from "@/AppState.js";
 
 
 const appData = computed(() => AppState.appList)
-const homePageApps = appData.value.filter((a) => a.homePage == true)
+const homePageApps = appData.value.filter((a) => a.tags.includes('homePage'))
 </script>
 
 
