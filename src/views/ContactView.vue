@@ -32,9 +32,13 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
 
           <div class="col-12">
             <div class="row">
-              <div class="col-12 ">
-                <p><i class="mdi mdi-cellphone "></i> (775) 304 6480</p>
-                <p><i class="mdi mdi-email "></i> kylepeppersack@hotmail.com</p>
+              <div class="col-12 d-flex flex-column align-items-start">
+                <a class="selectable text-light mb-2 py-1 px-2" href="tel:7753046480"><i class="mdi mdi-cellphone"></i>
+                  (775)
+                  304 6480</a>
+                <a class="selectable text-light py-1 px-2" href="mailto:kylepeppersack@hotmail.com"><i
+                    class="mdi mdi-email "></i>
+                  kylepeppersack@hotmail.com</a>
               </div>
             </div>
           </div>
@@ -55,22 +59,18 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
             <form class="mt-4 mt-md-0">
 
               <div class="form-group">
-                <!-- <label for="name">NAME</label> -->
                 <input class="form-control" type="text" placeholder="NAME" />
               </div>
 
               <div class="form-group">
-                <!-- <label for="email">E-Mail</label> -->
                 <input class="form-control" type="email" placeholder="E-Mail" />
               </div>
 
               <div class="form-group">
-                <!-- <label for="message">MESSAGE</label> -->
                 <textarea class="form-control" name="Message" id="Message" placeholder="MESSAGE"></textarea>
               </div>
 
               <div class="form-group">
-                <!-- <label for="submit">CONTACT ME</label> -->
                 <button type="submit" class="form-control">CONTACT ME</button>
               </div>
             </form>

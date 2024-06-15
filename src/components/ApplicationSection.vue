@@ -1,5 +1,11 @@
 <script setup>
+import { computed } from "vue";
 import ApplicationCard from "./ApplicationCard.vue";
+import { AppState } from "@/AppState.js";
+
+
+const appData = computed(() => AppState.appList)
+const homePageApps = appData.value.filter((a) => a.homePage == true)
 </script>
 
 
@@ -7,17 +13,15 @@ import ApplicationCard from "./ApplicationCard.vue";
   <div class="container">
     <div class="row g-2">
 
-      <div v-for="index in 6" :key="index" class="d-none d-md-block mt-5"
+      <div v-for="app, index in homePageApps" :key="index" class="d-none d-md-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
-        <ApplicationCard :org="'grid'" img="src/assets/images/business.jpg" :title="'The Title of the app' + index"
-          description="A brief description of the app" :techStack="['Tech', 'Stack']" webLink="webLink"
-          githubLink="githubLink" />
+        <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
+          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
       </div>
 
-      <div v-for="index in 6" :key="index" class="col-12 d-block d-md-none mt-5">
-        <ApplicationCard org="grid" img="src/assets/images/business.jpg" :title="'The Title of the app' + index"
-          description="A brief description of the app" :techStack="['Tech', 'Stack']" webLink="webLink"
-          githubLink="githubLink" />
+      <div v-for="app, index in homePageApps" :key="index" class="col-12 d-block d-md-none mt-5">
+        <ApplicationCard org="grid" :img="app.img" :title="app.title" :description="app.description"
+          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
       </div>
 
     </div>

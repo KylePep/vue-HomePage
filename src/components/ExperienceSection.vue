@@ -13,9 +13,9 @@
               <h5 class="card-title">Front End</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
             </div>
-            <a href="#" class="btn-circular position-relative">
+            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
-            </a>
+            </RouterLink>
           </div>
         </div>
       </div>
@@ -28,9 +28,9 @@
               <h5 class="card-title">Back End</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
             </div>
-            <a href="#" class="btn-circular bg-secondary text-light position-relative">
+            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular bg-secondary text-light position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
-            </a>
+            </RouterLink>
           </div>
         </div>
       </div>
@@ -43,8 +43,9 @@
               <h5 class="card-title">UI Design</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
             </div>
-            <a href="#" class="btn-circular first position-relative"><i
-                class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i></a>
+            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular first position-relative"><i
+                class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
+            </RouterLink>
           </div>
         </div>
       </div>

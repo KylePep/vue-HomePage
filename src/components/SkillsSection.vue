@@ -1,6 +1,7 @@
 <script setup>
 import { AppState } from "@/AppState.js";
 import { computed } from "vue";
+import { RouterLink } from "vue-router";
 
 const skills = computed(() => AppState.skills)
 </script>
@@ -15,7 +16,7 @@ const skills = computed(() => AppState.skills)
       </div>
 
       <div v-for="skill in skills" :key="skill" class="col-12 col-md-6">
-        <div class="d-flex selectable me-2 py-3 h-100">
+        <RouterLink :to="{ name: 'Portfolio' }" class="d-flex selectable me-2 py-3 h-100 text-light">
           <div>
             <i class="circle position-relative me-3 ms-3">
               <i class="position-absolute mdi mdi-check-bold top-50 start-50 translate-middle me-5"></i>
@@ -25,7 +26,7 @@ const skills = computed(() => AppState.skills)
             <h4>{{ skill.title }}</h4>
             <p class="mb-0">{{ skill.description }}</p>
           </div>
-        </div>
+        </RouterLink>
       </div>
 
     </div>

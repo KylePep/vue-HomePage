@@ -5,8 +5,8 @@ import ApplicationCard from "@/components/ApplicationCard.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
 import { computed } from "vue";
 
-const appList = computed(() => AppState.appList)
-
+const appData = computed(() => AppState.appList)
+const favoriteApps = appData.value.filter((a) => a.favorite == true)
 </script>
 
 
@@ -16,14 +16,14 @@ const appList = computed(() => AppState.appList)
       <div class="order-1 order-md-0 col-12 col-md-6">
         <AboutSection />
       </div>
-      <div class="order-0 order-md-1 col-12 col-md-6">
+      <div class="order-0 order-md-1 col-12 col-md-6 d-flex justify-content-center">
         <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid rounded" alt="">
       </div>
 
       <div class="order-2 col-12">
         <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
-          <div v-for="app in appList" :key="app" class="col-3 m-auto ">
+          <div v-for="app in favoriteApps" :key="app" class="col-6  col-lg-4">
             <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
               :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
           </div>
@@ -42,6 +42,10 @@ const appList = computed(() => AppState.appList)
 
 
 <style lang="scss" scoped>
+img {
+  max-height: 50vh;
+}
+
 .top-row {
   margin-top: 5rem;
 }

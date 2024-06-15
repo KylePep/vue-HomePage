@@ -6,11 +6,63 @@ export const AppState = reactive({
   activeApp: {},
 
   /** @type {{img, title, description, techStack, webLink, githubLink}} active Item Info*/
-  appList: [{ img: 'src/assets/images/business.jpg', title: 'Landing Page', description: 'The landing page your are currently looking at', techStack: ['Vue.js', 'JavaScript'], webLink: 'home.kylepep.dev', githubLink: 'https://github.com/KylePep/vue-HomePage' }],
+  appList: [
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'Landing Page',
+      description: 'The landing page your are currently looking at',
+      techStack: ['Vue.js', 'JavaScript'],
+      webLink: 'home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      favorite: true,
+      homePage: true
+    },
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'Saiyan Clicker',
+      description: 'The landing page your are currently looking at',
+      techStack: ['Vue.js', 'JavaScript'],
+      webLink: 'home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      favorite: true,
+      homePage: true
+    },
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'Keepr',
+      description: 'The landing page your are currently looking at',
+      techStack: ['Vue.js', 'JavaScript'],
+      // webLink: 'home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      favorite: false,
+      homePage: true
+    },
+    {
+      img: 'src/assets/images/business.jpg',
+      title: 'PuppyLoveSuites',
+      description: 'My first website created for a client',
+      techStack: ['Vue.js', 'JavaScript'],
+      webLink: 'https://puppylovesuites.com',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      favorite: true,
+      homePage: true
+    }
+  ],
 
   /** @type {{title, description}} active Item Info*/
   skills: [
-    { title: 'Web Design', description: 'Designs for the world wide web!' }, { title: 'JavaScript', description: 'Using JS for front end and back end development' }, { title: 'Vue.js', description: 'Created several applications using the Vue framework' }
+    {
+      title: 'Web Design',
+      description: 'Designs for the world wide web!'
+    },
+    {
+      title: 'JavaScript',
+      description: 'Using JS for front end and back end development'
+    },
+    {
+      title: 'Vue.js',
+      description: 'Created several applications using the Vue framework'
+    }
   ],
   /** @type {{title, description, duration}} active Item Info*/
   resumeData: [
