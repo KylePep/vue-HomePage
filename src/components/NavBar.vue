@@ -20,16 +20,20 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Links
             </a>
-            <ul class=" dropdown-menu bg-secondary fs-2">
-              <li class="d-flex"><a class=" nav-link selectable-nav mdi mdi-linkedin text-primary me-3"
-                  :to="{ name: 'Home' }"></a><a class=" nav-link selectable-nav mdi mdi-github text-primary"
-                  :to="{ name: 'Home' }"></a></li>
+            <ul class=" dropdown-menu bg-secondary border-0 fs-1">
+              <li class="d-flex">
+                <a class=" nav-link selectable-nav mdi mdi-linkedin text-primary mx-3"
+                  href="https://www.linkedin.com/in/kyle-peppersack" target="_blank"></a>
+                <a class=" nav-link selectable-nav mdi mdi-github text-primary" href="https://github.com/KylePep"
+                  target="_blank"></a>
+              </li>
             </ul>
           </li>
 
           <li class="text-primary fs-2 d-none d-sm-flex">
-            <a class="nav-link selectable-nav p-0 mdi mdi-linkedin me-3" :to="{ name: 'Home' }"></a>
-            <a class="nav-link selectable-nav p-0 mdi mdi-github" :to="{ name: 'Home' }"></a>
+            <a class="nav-link selectable-nav p-0 mdi mdi-linkedin me-3"
+              href="https://www.linkedin.com/in/kyle-peppersack" target="_blank"></a>
+            <a class="nav-link selectable-nav p-0 mdi mdi-github" href="https://github.com/KylePep" target="_blank"></a>
           </li>
 
           <!-- <li class="nav-item">
@@ -38,7 +42,8 @@
           </li> -->
 
           <li class="nav-item">
-            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Portfolio' }">Portfolio
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Portfolio' }"
+              :class="[route.name == 'Portfolio' ? 'active' : '']">Portfolio
             </RouterLink>
           </li>
 
@@ -47,12 +52,14 @@
             Peppersack</RouterLink>
 
           <li class="nav-item">
-            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'About' }">About
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'About' }"
+              :class="[route.name == 'About' ? 'active' : '']">About
             </RouterLink>
           </li>
 
           <li class="nav-item">
-            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Contact' }">Contact
+            <RouterLink class="nav-link selectable-nav fs-5" aria-current="page" :to="{ name: 'Contact' }"
+              :class="[route.name == 'Contact' ? 'active' : '']">Contact
             </RouterLink>
           </li>
 
@@ -68,6 +75,7 @@
 <script>
 import { loadState } from "@/utils/Store.js";
 import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   setup() {
@@ -77,8 +85,9 @@ export default {
     onMounted(() => {
       document.documentElement.setAttribute('data-bs-theme', theme.value)
     })
+    const route = useRoute()
     return {
-
+      route
     }
   }
 }

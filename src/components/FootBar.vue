@@ -22,15 +22,20 @@ function scrollToTop() {
     <div class="row flex-grow-1 justify-content-center align-items-center pt-2 pb-3 border-top border-light mx-3">
 
       <div class="col-7 col-sm-6">
-        <RouterLink :to="{ name: 'Home' }" class="btn btn-secondary">Home</RouterLink>
+        <RouterLink :to="{ name: 'Home' }" class="btn btn-secondary d-none d-sm-inline">Home</RouterLink>
         <RouterLink :to="{ name: 'About' }" class="btn btn-secondary">About</RouterLink>
         <RouterLink :to="{ name: 'Contact' }" class="btn btn-secondary">Contact</RouterLink>
       </div>
 
-      <div class="col-5 col-sm-6 text-end">
-        <i class="mdi mdi-linkedin btn fs-3 text-light"></i>
-        <i class="mdi mdi-github btn fs-3 text-light"></i>
-        <i @click="scrollToTop()" class="mdi mdi-arrow-up btn fs-3 text-light"></i>
+      <div class="col-5 col-sm-6 text-end px-0">
+
+        <a class="mdi mdi-linkedin btn btn-secondary fs-3 text-light px-1 px-sm-3"
+          href="https://www.linkedin.com/in/kyle-peppersack" target="_blank"></a>
+
+        <a class=" mdi mdi-github btn btn-secondary fs-3 text-light px-1 px-sm-3" href="https://github.com/KylePep"
+          target="_blank"></a>
+
+        <i @click="scrollToTop()" class="mdi mdi-arrow-up btn btn-secondary fs-3 text-light px-1 px-sm-3"></i>
       </div>
 
     </div>

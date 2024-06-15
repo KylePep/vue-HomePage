@@ -21,7 +21,7 @@ const appList = computed(() => AppState.appList)
       </div>
 
       <div class="order-2 col-12">
-        <div class="text-center fs-1 text-light">Work I've Done</div>
+        <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
           <div v-for="app in appList" :key="app" class="col-3 m-auto ">
             <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
