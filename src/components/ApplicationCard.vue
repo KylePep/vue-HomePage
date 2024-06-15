@@ -1,4 +1,5 @@
 <script setup>
+import { useRoute } from "vue-router";
 import AppModal from "./AppModal.vue"
 
 const props = defineProps({
@@ -13,6 +14,7 @@ const props = defineProps({
 
 // const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'webLink', 'githubLink'])
 
+const route = useRoute();
 
 </script>
 
@@ -41,7 +43,13 @@ const props = defineProps({
       <h4 class="mt-3 mt-md-0">{{ props.title }}</h4>
       <a v-if="props.org == 'list'" href="">{{ props.githubLink }}</a>
       <a v-if="props.org == 'list'" href="">{{ props.webLink }}</a>
-      <p v-for="tech in props.techStack" :key="tech">{{ tech }}</p>
+      <div v-if="route.name != 'Home'" class="d-flex justify-content-center">
+        <div v-for="tech, index in props.techStack" :key="index" class="me-1">{{ tech }} {{ index != techStack.length -
+          1 ?
+          '|' : ''
+          }}
+        </div>
+      </div>
     </div>
 
     <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12']">
@@ -77,7 +85,7 @@ const props = defineProps({
   transform: translate(-50%, 0);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .card-transform {
     left: 0;
     transform: none;
