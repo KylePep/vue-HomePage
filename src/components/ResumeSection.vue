@@ -1,6 +1,9 @@
 <script setup>
+import { AppState } from "@/AppState.js";
+import { computed } from "vue";
 import { RouterLink } from "vue-router";
 
+const resumeData = computed(() => AppState.resumeData);
 
 </script>
 
@@ -12,44 +15,28 @@ import { RouterLink } from "vue-router";
         <h3 class="fs-2">MY RESUME</h3>
       </div>
 
-      <div class="col-12 col-lg-6 ">
+      <div v-for="resumeItem in resumeData" :key="resumeItem">
+        <div class="row">
+          <div class="col-12 col-lg-6 ">
 
-        <h4>Profession Ux Design</h4>
-        <p>2015 - Present</p>
-        <i class="underline-sm d-block d-lg-none"></i>
+            <h4>{{ resumeItem.title }}</h4>
+            <p>{{ resumeItem.duration }}</p>
+            <i class="underline-sm d-block d-lg-none"></i>
+
+          </div>
+
+
+
+          <div class="col-12 col-lg-6 fs-5">
+            <p>{{ resumeItem.description }}</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <i class="col-12 underline"></i>
+        </div>
 
       </div>
-
-      <div class="col-12 col-lg-6 fs-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
-      </div>
-
-      <i class="col-12 underline"></i>
-
-      <div class="col-12 col-lg-6">
-        <h4>Web Designer</h4>
-        <p>2011 - 2015</p>
-        <i class="underline-sm d-block d-lg-none "></i>
-
-      </div>
-
-      <div class="col-12 col-lg-6 fs-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
-      </div>
-
-      <i class="col-12 underline"></i>
-
-      <div class="col-12 col-lg-6">
-        <h4>Diploma in graphic design</h4>
-        <p>2010</p>
-        <i class="underline-sm d-block d-lg-none"></i>
-      </div>
-
-      <div class="col-12 col-lg-6 fs-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugit.</p>
-      </div>
-
-      <i class="col-12 underline"></i>
 
       <div class="col-12 d-flex justify-content-center mt-3">
         <RouterLink :to="{ name: 'Contact' }" class="work-button text-secondary">
@@ -66,6 +53,7 @@ import { RouterLink } from "vue-router";
 
 <style lang="scss" scoped>
 .resume-row {
+  display: block;
   margin: auto;
   width: 60%;
 }
