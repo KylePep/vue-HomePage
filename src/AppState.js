@@ -29,5 +29,26 @@ export const AppState = reactive({
       description: 'Worked alongside CodeWorks alumni to develop a post grad platform for furthering their education.',
       duration: '2023-2024'
     }
+  ],
+  /** @type {{title, description, duration}} active Item Info*/
+  testimonyData: [
+    {
+      name: 'Jane Doe',
+      testimony: 'Did a really really... really good job, like, let me tell you. A Goood job.',
+      title: 'Business Person',
+      img: 'src/assets/images/backEnd.png'
+    },
+    {
+      name: 'Jorgis Mcborngus',
+      testimony: 'Grumble grumlble mc-fumblerington goo. HRmmmmmmMMmm. Yes quite.',
+      title: 'Hill Man',
+      img: 'src/assets/images/frontEnd.png'
+    },
+    {
+      name: 'Mr. Misterson',
+      testimony: 'Kyle Peppersack is good at the thing that he does and he does it well.',
+      title: 'Mister',
+      img: 'src/assets/images/business.jpg'
+    }
   ]
 })

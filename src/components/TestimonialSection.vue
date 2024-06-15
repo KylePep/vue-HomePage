@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+import { AppState } from "@/AppState.js";
+import { computed } from "vue";
+
+const testimonyData = computed(() => AppState.testimonyData);
+</script>
 
 
 <template>
@@ -20,24 +25,17 @@
 
           <div class="carousel-inner">
 
-            <div v-for="index in 3" :key="index" :class="[index == 1 ? 'active' : '']" class="carousel-item container">
+            <div v-for="testimonyItem, index in testimonyData" :key="index" :class="[index == 0 ? 'active' : '']"
+              class="carousel-item container">
               <div class="carousel-content row d-flex flex-column">
                 <div
                   class=" col d-flex flex-column align-items-center justify-content-center justify-content-md-end mb-2 mb-md-5">
-                  <img
-                    src="https://images.unsplash.com/photo-1624797432677-6f803a98acb3?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="test-img" alt="...">
+                  <img :src="testimonyItem.img" class="test-img" alt="...">
                 </div>
 
                 <div class="d-flex flex-column align-items-center col text-center">
-                  <p class="carousel-text ">Some representative placeholder content for the first
-                    slide. Lorem
-                    ipsum
-                    dolor sit
-                    amet consectetur
-                    adipisicing elit. Eveniet voluptas numquam debitis ab distinctio aspernatur est magnam quas qui
-                    libero!</p>
-                  <h5 class="fw-semibold "> {{ index }} Testimonials Name</h5>
+                  <p class="carousel-text ">{{ testimonyItem.testimony }}</p>
+                  <h5 class="fw-semibold "> {{ testimonyItem.name }} - {{ testimonyItem.title }}</h5>
                 </div>
 
               </div>
