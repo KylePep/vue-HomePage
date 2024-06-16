@@ -16,14 +16,14 @@ const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
       <div class="order-1 order-md-0 col-12 col-md-6">
         <AboutSection />
       </div>
-      <div class="order-0 order-md-1 col-12 col-md-6 d-flex justify-content-center">
+      <div class="order-0 order-md-1 col-12 col-lg-6 d-flex justify-content-start justify-content-md-end">
         <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid rounded" alt="">
       </div>
 
       <div class="order-2 col-12">
         <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
-          <div v-for="app in favoriteApps" :key="app" class="col-6  col-lg-4">
+          <div v-for="app in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
             <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
               :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
           </div>
