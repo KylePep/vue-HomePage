@@ -5,7 +5,9 @@ export const AppState = reactive({
   /** @type {{org, img, title, description, techStack, webLink, githubLink}} active Item Info*/
   activeApp: {},
 
-  /** @type {{img, title, description, techStack, webLink, githubLink}} active Item Info*/
+  activeFilter: 'web',
+
+  /** @type {[{img, title, description, techStack, webLink, githubLink}]} active Item Info*/
   appList: [
     {
       img: 'src/assets/images/business.jpg',
@@ -50,7 +52,7 @@ export const AppState = reactive({
       techStack: ['MongoDB', 'Express.js', 'Vue.js', 'Node.js'],
       // webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      tags: ['web', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
+      tags: ['web', 'Vue.js', 'JavaScript', 'MongoDB', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
@@ -63,22 +65,25 @@ export const AppState = reactive({
     }
   ],
 
-  /** @type {{title, description}} active Item Info*/
+  /** @type {[{title, tag, description}]} active Item Info*/
   skills: [
     {
       title: 'Web Design',
+      tag: 'web',
       description: 'Designs for the world wide web!'
     },
     {
       title: 'JavaScript',
+      tag: 'JavaScript',
       description: 'Using JS for front end and back end development'
     },
     {
       title: 'Vue.js',
+      tag: 'Vue.js',
       description: 'Created several applications using the Vue framework'
     }
   ],
-  /** @type {{title, description, duration}} active Item Info*/
+  /** @type {[{title, description, duration}]} active Item Info*/
   resumeData: [
     {
       title: 'CodeWorks Volunteer Developer',

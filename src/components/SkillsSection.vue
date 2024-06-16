@@ -4,6 +4,11 @@ import { computed } from "vue";
 import { RouterLink } from "vue-router";
 
 const skills = computed(() => AppState.skills)
+
+const setFilterBy = (tag) => {
+  AppState.activeFilter = tag
+}
+
 </script>
 
 
@@ -16,7 +21,8 @@ const skills = computed(() => AppState.skills)
       </div>
 
       <div v-for="skill in skills" :key="skill" class="col-12 col-md-6">
-        <RouterLink :to="{ name: 'Portfolio' }" class="d-flex selectable me-2 py-3 h-100 text-light">
+        <RouterLink :to="{ name: 'Portfolio' }" @click="setFilterBy(skill.tag)"
+          class="d-flex selectable me-2 py-3 h-100 text-light">
           <div>
             <i class="circle position-relative me-3 ms-3">
               <i class="position-absolute mdi mdi-check-bold top-50 start-50 translate-middle me-5"></i>

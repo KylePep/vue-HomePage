@@ -1,9 +1,13 @@
 <script setup>
 import { AppState } from "@/AppState.js";
 import ApplicationCard from "@/components/ApplicationCard.vue";
-import { computed, ref } from "vue";
+import { computed, onUnmounted, ref } from "vue";
 
-let filterBy = ref('web')
+onUnmounted(() => {
+  AppState.activeFilter = 'web'
+})
+
+let filterBy = computed(() => AppState.activeFilter)
 const appData = computed(() => AppState.appList)
 let appList = appData.value.filter((a) => a.tags.includes(filterBy.value))
 
@@ -14,7 +18,7 @@ const setOrg = (organization) => {
 }
 
 const setFilterBy = (tag) => {
-  filterBy.value = tag
+  AppState.activeFilter = tag
   appList = appData.value.filter((a) => a.tags.includes(filterBy.value))
 }
 
