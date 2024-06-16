@@ -5,7 +5,7 @@ import { computed } from "vue";
 const props = defineProps(['button', 'modal', 'content'
 ])
 
-const appState = computed(() => AppState)
+const activeApp = computed(() => AppState.activeApp)
 // const now = computed(() => Date.now())
 
 const setActiveApp = () => {
@@ -27,17 +27,17 @@ const setActiveApp = () => {
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="appModalLabel">{{ appState.activeApp.title }}</h1>
+        <div class="modal-header test" :style="{ backgroundColor: activeApp.appColor }">
+          <h1 class="modal-title fs-5" id="appModalLabel">{{ activeApp.title }}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          <img :src="activeApp.img" :alt="activeApp.title" class="img-fluid">
+          <a href="">{{ activeApp.githubLink }}</a>
+          <a href="">{{ activeApp.webLink }}</a>
+          <p>{{ activeApp.techStack }}</p>
 
-          <a href="">{{ appState.activeApp.githubLink }}</a>
-          <a href="">{{ appState.activeApp.webLink }}</a>
-          <p>{{ appState.activeApp.techStack }}</p>
-
-          <p>{{ appState.activeApp.description }}</p>
+          <p>{{ activeApp.description }}</p>
 
         </div>
         <!-- <div class="modal-footer">
@@ -50,4 +50,8 @@ const setActiveApp = () => {
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.test {
+  background-color: var();
+}
+</style>

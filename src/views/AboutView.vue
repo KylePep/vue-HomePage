@@ -24,8 +24,7 @@ const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
         <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
           <div v-for="app in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
-            <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
-              :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
+            <ApplicationCard :org="'grid'" :app=app />
           </div>
         </div>
       </div>

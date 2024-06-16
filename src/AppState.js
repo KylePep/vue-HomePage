@@ -2,12 +2,12 @@ import { reactive } from 'vue'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
-  /** @type {{org, img, title, description, techStack, webLink, githubLink}} active Item Info*/
+  /** @type {{org, img, title, description, techStack, webLink, githubLink, tags, appColor}} active Item Info*/
   activeApp: {},
 
   activeFilter: 'web',
 
-  /** @type {[{img, title, description, techStack, webLink, githubLink}]} active Item Info*/
+  /** @type {[{img, title, description, techStack, webLink, githubLink, tags, appColor}]} active Item Info*/
   appList: [
     {
       img: 'src/assets/images/business.jpg',
@@ -16,6 +16,7 @@ export const AppState = reactive({
       techStack: ['V'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -25,6 +26,7 @@ export const AppState = reactive({
       techStack: ['V'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -34,6 +36,7 @@ export const AppState = reactive({
       techStack: ['HTML', 'CSS'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'game']
     },
     {
@@ -43,6 +46,7 @@ export const AppState = reactive({
       techStack: ['MySQl', 'Express.js', 'Vue.js', 'Node.js'],
       // webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
     },
     {
@@ -52,6 +56,7 @@ export const AppState = reactive({
       techStack: ['MongoDB', 'Express.js', 'Vue.js', 'Node.js'],
       // webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'Vue.js', 'JavaScript', 'MongoDB', 'Bootstrap']
     },
     {
@@ -61,6 +66,7 @@ export const AppState = reactive({
       techStack: ['V'],
       webLink: 'https://puppylovesuites.com',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#ff8c00',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     }
   ],

@@ -15,13 +15,11 @@ const homePageApps = appData.value.filter((a) => a.tags.includes('homePage'))
 
       <div v-for="app, index in homePageApps" :key="index" class="d-none d-md-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
-        <ApplicationCard :org="'grid'" :img="app.img" :title="app.title" :description="app.description"
-          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
+        <ApplicationCard :org="'grid'" :app=app />
       </div>
 
       <div v-for="app, index in homePageApps" :key="index" class="col-12 d-block d-md-none mt-5">
-        <ApplicationCard org="grid" :img="app.img" :title="app.title" :description="app.description"
-          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
+        <ApplicationCard org="grid" :app=app />
       </div>
 
     </div>

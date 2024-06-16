@@ -125,13 +125,11 @@ const setFilterBy = (tag) => {
 
       <div v-for="app, index in appList" :key="index" class="d-none d-md-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
-        <ApplicationCard :org="organizationStyle" :img="app.img" :title="app.title" :description="app.description"
-          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
+        <ApplicationCard :org="organizationStyle" :app=app />
       </div>
 
       <div v-for="app, index in appList" :key="index" class="col-12 d-block d-md-none mt-5">
-        <ApplicationCard org="list" :img="app.img" :title="app.title" :description="app.description"
-          :techStack="app.techStack" :webLink="app.webLink" :githubLink="app.githubLink" />
+        <ApplicationCard org="list" :app=app />
       </div>
 
     </div>
