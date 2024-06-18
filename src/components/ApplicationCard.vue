@@ -22,9 +22,9 @@ const route = useRoute();
 
       <AppModal button="true" modal="false" :content="props.app">
         <template #icon>
-          <div class="card-hover " :class="[props.org == 'list' ? 'card-transform' : '']"
+          <div class="card-hover" :class="[props.org == 'list' ? 'card-transform' : '']"
             :style="{ backgroundColor: props.app.appColor }">
-            <img :src="props.app.img" class="" :alt="props.app.title">
+            <img :src="props.app.img[0]" class="w-100" :alt="props.app.title">
           </div>
         </template>
       </AppModal>
@@ -33,8 +33,6 @@ const route = useRoute();
 
     <div class=" d-flex flex-column text-light"
       :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12 text-center']">
-
-
 
       <h4 class="mt-3 mt-md-0">{{ props.app.title }}</h4>
       <div class="d-flex justify-content-center">
@@ -68,6 +66,7 @@ const route = useRoute();
 
 .card-hover {
   padding: 2rem;
+  width: calc(100% - 2rem);
   // background-color: var(--bs-success);
   border-radius: 2px;
   height: 256px;

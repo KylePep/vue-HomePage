@@ -40,7 +40,10 @@ const setFilterBy = (tag) => {
       </div>
 
       <div class="col-12 m-auto separation mt-5"></div>
-      <div class="col-12 d-flex justify-content-between justify-content-md-around">
+
+
+      <div
+        class="col-12 d-flex flex-column flex-md-row justify-content-between justify-content-md-around align-items-center">
 
         <div class="dropdown">
           <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
@@ -64,7 +67,7 @@ const setFilterBy = (tag) => {
           </button>
           <ul class="dropdown-menu">
             <li>
-              <p @click="setFilterBy('MongoDb')" class="dropdown-item selectable">MongoDb</p>
+              <p @click="setFilterBy('MongoDB')" class="dropdown-item selectable">MongoDB</p>
             </li>
             <li>
               <p @click="setFilterBy('MySQL')" class="dropdown-item selectable">MySQL</p>
