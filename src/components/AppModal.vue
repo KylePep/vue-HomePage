@@ -46,7 +46,7 @@ const setActiveApp = () => {
   <!-- Modal -->
   <div v-if="props.modal == 'true'">
     <div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="appModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content rounded-0 modal-shadow">
           <div class="container m-0">
             <div class="row p-0 ">
@@ -61,7 +61,6 @@ const setActiveApp = () => {
               </div>
 
               <div class=" col-12 col-md-6 px-0">
-                <!-- <img :src="activeApp.img[0]" :alt="activeApp.title" class="img-fluid"> -->
                 <AppCarousel />
               </div>
 
@@ -84,7 +83,15 @@ const setActiveApp = () => {
                     <a class="px-3 d-block text-light mdi mdi-github custom-button" :ref="activeApp.githubLink"
                       target="_blank" :title="activeApp.githubLink"></a>
                   </div>
-                  <p class="px-3">{{ activeApp.techStack }}</p>
+                  <p v-for="item in activeApp.frontEnd" :key="item" class="px-3">{{ item }}</p>
+                  <div v-if="activeApp.backEnd != ''">
+                    <p v-for="item in activeApp.backEnd" :key="item" class="px-3">{{ item }}</p>
+                  </div>
+                  <div v-if="activeApp.dataBase != ''">
+                    <p class="px-3">{{ activeApp.dataBase }}</p>
+                  </div>
+                  <p v-for="item in activeApp.languages" :key="item" class="px-3">{{ item }}</p>
+                  <p v-for="item in activeApp.cssFrameworks" :key="item" class="px-3">{{ item }}</p>
                   <p class="px-3">{{ activeApp.description }} </p>
                 </div>
 

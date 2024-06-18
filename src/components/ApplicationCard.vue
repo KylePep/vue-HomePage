@@ -24,7 +24,7 @@ const route = useRoute();
         <template #icon>
           <div class="card-hover" :class="[props.org == 'list' ? 'card-transform' : '']"
             :style="{ backgroundColor: props.app.appColor }">
-            <img :src="props.app.img[0]" class="w-100" :alt="props.app.title">
+            <img :src="props.app.img[0]" class="w-100 bg-dark" :alt="props.app.title">
           </div>
         </template>
       </AppModal>
@@ -42,8 +42,15 @@ const route = useRoute();
           class="mdi mdi-github fs-3 text-light custom-button"></a>
       </div>
       <div v-if="route.name != 'Home' && route.name != 'About'" class="d-flex flex-column justify-content-center">
-        <div v-for="tech, index in props.app.techStack" :key="index" class="me-1">{{ tech }}
+        <p v-for="item in props.app.frontEnd" :key="item" class="px-3">{{ item }}</p>
+        <div v-if="props.app.backEnd != ''">
+          <p v-for="item in props.app.backEnd" :key="item" class="px-3">{{ item }}</p>
         </div>
+        <div v-if="props.app.dataBase != ''">
+          <p class="px-3">{{ props.app.dataBase }}</p>
+        </div>
+        <p v-for="item in props.app.languages" :key="item" class="px-3">{{ item }}</p>
+        <p v-for="item in props.app.cssFrameworks" :key="item" class="px-3">{{ item }}</p>
       </div>
     </div>
 
