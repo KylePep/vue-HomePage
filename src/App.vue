@@ -28,6 +28,27 @@ import AppModal from './components/AppModal.vue'
   --main-height: calc(100vh - 32px - 64px);
 }
 
+.custom-button {
+
+  -webkit-transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+  animation: grow 300ms alternate 100ms 1 forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   article {

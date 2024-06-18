@@ -2,19 +2,23 @@ import { reactive } from 'vue'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
-  /** @type {{org, img, title, description, techStack, webLink, githubLink, tags, appColor}} active Item Info*/
+  /** @type {{org, img, title, description, frontEnd, webLink, githubLink, languages, cssFrameworks,  tags, appColor}} active Item Info*/
   activeApp: {},
 
   activeFilter: 'web',
 
-  /** @type {[{img, title, description, techStack, webLink, githubLink, tags, appColor}]} active Item Info*/
+  /** @type {[{img, title, description, frontEnd, webLink, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
   appList: [
     {
       img: 'src/assets/images/business.jpg',
       title: 'Landing Page',
       description: 'The landing page your are currently looking at',
-      techStack: ['V'],
+      frontEnd: ['Vue.js'],
+      backEnd: [],
+      dataBase: '',
       webLink: 'https://home.kylepep.dev',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#ff8c00',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
@@ -23,50 +27,70 @@ export const AppState = reactive({
       img: 'src/assets/images/business.jpg',
       title: 'Old Landing Page',
       description: 'My old landing page, I learned a lot making it.',
-      techStack: ['V'],
+      frontEnd: ['Vue.js'],
+      backEnd: [],
+      dataBase: '',
       webLink: 'https://home.kylepep.dev',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#420fe2',
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'Saiyan Clicker',
       description: 'The landing page your are currently looking at',
-      techStack: ['HTML', 'CSS'],
+      frontEnd: [],
+      backEnd: [],
+      dataBase: '',
       webLink: 'https://home.kylepep.dev',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#3a0740',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'game']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'Keepr',
       description: 'The landing page your are currently looking at',
-      techStack: ['MySQl', 'Express.js', 'Vue.js', 'Node.js'],
-      // webLink: 'https://home.kylepep.dev',
+      frontEnd: ['Vue.js'],
+      backEnd: ['Express.js', 'Node.js'],
+      dataBase: 'MySQl',
+      webLink: '',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#62b739',
       tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'CodeFitness',
       description: 'The landing page your are currently looking at',
-      techStack: ['MongoDB', 'Express.js', 'Vue.js', 'Node.js'],
-      // webLink: 'https://home.kylepep.dev',
+      frontEnd: ['Vue.js'],
+      backEnd: ['Express.js', 'Node.js'],
+      dataBase: 'MongoDB',
+      webLink: '',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#febe3e',
       tags: ['web', 'Vue.js', 'JavaScript', 'MongoDB', 'Bootstrap']
     },
     {
       img: 'src/assets/images/business.jpg',
       title: 'PuppyLoveSuites',
       description: 'My first website created for a client',
-      techStack: ['V'],
+      frontEnd: ['Vue.js'],
+      backEnd: [],
+      dataBase: '',
       webLink: 'https://puppylovesuites.com',
+      languages: ['JavaScript'],
+      cssFrameworks: ['bootstrap'],
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#e24400',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     }
   ],

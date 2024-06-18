@@ -38,10 +38,10 @@ const route = useRoute();
 
       <h4 class="mt-3 mt-md-0">{{ props.app.title }}</h4>
       <div class="d-flex justify-content-center">
-        <a v-if="props.org == 'list'" :href="props.app.webLink" target="_blank" :title="props.app.webLink"
-          class="mdi mdi-web fs-3 text-light me-3"></a>
+        <a v-if="props.org == 'list' && props.app.webLink != ''" :href="props.app.webLink" target="_blank"
+          :title="props.app.webLink" class="mdi mdi-web fs-3 text-light me-3 custom-button"></a>
         <a v-if="props.org == 'list'" :href="props.app.githubLink" target="_blank" :title="props.app.githubLink"
-          class="mdi mdi-github fs-3 text-light"></a>
+          class="mdi mdi-github fs-3 text-light custom-button"></a>
       </div>
       <div v-if="route.name != 'Home' && route.name != 'About'" class="d-flex flex-column justify-content-center">
         <div v-for="tech, index in props.app.techStack" :key="index" class="me-1">{{ tech }}
