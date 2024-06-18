@@ -1,15 +1,18 @@
 <script setup>
 import { AppState } from "@/AppState.js";
 import ApplicationCard from "@/components/ApplicationCard.vue";
+import filterBar from "@/components/filterBar.vue";
 import { computed, onUnmounted, ref } from "vue";
 
 onUnmounted(() => {
   AppState.activeFilter = 'web'
 })
 
-let filterBy = computed(() => AppState.activeFilter)
 const appData = computed(() => AppState.appList)
-let appList = appData.value.filter((a) => a.tags.includes(filterBy.value))
+
+let filterBy = computed(() => AppState.activeFilter)
+
+let appList = computed(() => appData.value.filter((a) => a.tags.includes(filterBy.value)))
 
 const organizationStyle = ref('list')
 
@@ -19,8 +22,11 @@ const setOrg = (organization) => {
 
 const setFilterBy = (tag) => {
   AppState.activeFilter = tag
-  appList = appData.value.filter((a) => a.tags.includes(filterBy.value))
+
 }
+
+
+
 
 </script>
 
@@ -41,89 +47,8 @@ const setFilterBy = (tag) => {
 
       <div class="col-12 m-auto separation mt-5"></div>
 
-
-      <div
-        class="col-12 d-flex flex-column flex-md-row justify-content-between justify-content-md-around align-items-center">
-
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            FRONT END
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <p @click="setFilterBy('Vue.js')" class="dropdown-item selectable">Vue.js</p>
-            </li>
-            <li>
-              <p @click="setFilterBy('React')" class="dropdown-item selectable">React</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            BACK END
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <p @click="setFilterBy('MongoDB')" class="dropdown-item selectable">MongoDB</p>
-            </li>
-            <li>
-              <p @click="setFilterBy('MySQL')" class="dropdown-item selectable">MySQL</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            CSS
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <p @click="setFilterBy('Bootstrap')" class="dropdown-item selectable">Bootstrap</p>
-            </li>
-            <li>
-              <p @click="setFilterBy('TailWind')" class="dropdown-item selectable">TailWind</p>
-            </li>
-
-
-          </ul>
-        </div>
-
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle fs-4 text-light" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Language
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <p @click="setFilterBy('JavaScript')" class="dropdown-item selectable">JavaScript</p>
-            </li>
-            <li>
-              <p @click="setFilterBy('TypeScript')" class="dropdown-item selectable">TypeScript</p>
-            </li>
-            <li>
-              <p @click="setFilterBy('C#')" class="dropdown-item selectable">C#</p>
-            </li>
-          </ul>
-        </div>
-
-
-        <button v-if="organizationStyle == 'grid'" @click="setOrg('list')"
-          class="d-none d-md-block btn text-light fs-3 mdi mdi-view-list" title="list view"></button>
-        <button v-if="organizationStyle == 'list'" @click="setOrg('grid')"
-          class="d-none d-md-block btn text-light fs-3 mdi mdi-grid" title="grid view"></button>
-      </div>
-
-      <div v-if="filterBy != 'web'" @click="setFilterBy('web')"
-        class="col-12 filter-bar  border border-1 border-light text-center p-1">
-        <div class="filter">
-          {{ filterBy }}
-        </div>
-        <div class="mdi mdi-close-thick filter-clear" title="clear filter">
-        </div>
+      <div class="col-12">
+        <filterBar @set-org="setOrg" @set-filter-by="setFilterBy" :organizationStyle="organizationStyle" />
       </div>
 
       <div v-for="app, index in appList" :key="index" class="d-none d-md-block mt-5"
@@ -150,26 +75,5 @@ const setFilterBy = (tag) => {
   margin: 1rem 0rem 1rem 0rem;
   width: 50px;
   border-bottom: solid var(--bs-success) 4px;
-}
-
-.filter-clear {
-  display: none;
-}
-
-.filter {
-  display: block;
-}
-
-.filter-bar:hover {
-  cursor: pointer;
-  background-color: var(--bs-secondary);
-
-  .filter-clear {
-    display: block;
-  }
-
-  .filter {
-    display: none;
-  }
 }
 </style>

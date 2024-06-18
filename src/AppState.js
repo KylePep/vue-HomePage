@@ -2,17 +2,17 @@ import { reactive } from 'vue'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
-  /** @type {{org, img, title, description, frontEnd, webLink, githubLink, languages, cssFrameworks,  tags, appColor}} active Item Info*/
+  /** @type {{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}} active Item Info*/
   activeApp: {
-    img: 'src/assets/images/business.jpg',
+    img: ['src/assets/images/frontEnd.png', 'src/assets/images/frontEnd.png'],
     title: 'Landing Page',
     description: 'The landing page your are currently looking at',
     frontEnd: ['Vue.js'],
     backEnd: [],
     dataBase: '',
-    webLink: 'https://home.kylepep.dev',
     languages: ['JavaScript'],
-    cssFrameworks: ['bootstrap'],
+    cssFrameworks: ['Bootstrap'],
+    webLink: 'https://home.kylepep.dev',
     githubLink: 'https://github.com/KylePep/vue-HomePage',
     appColor: '#ff8c00',
     tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
@@ -20,7 +20,7 @@ export const AppState = reactive({
 
   activeFilter: 'web',
 
-  /** @type {[{img, title, description, frontEnd, webLink, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
+  /** @type {[{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
   appList: [
     {
       img: ['src/assets/images/frontEnd.png', 'src/assets/images/frontEnd.png'],
@@ -30,7 +30,7 @@ export const AppState = reactive({
       backEnd: [],
       dataBase: '',
       languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#ff8c00',
@@ -44,7 +44,7 @@ export const AppState = reactive({
       backEnd: [],
       dataBase: '',
       languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#420fe2',
@@ -58,11 +58,11 @@ export const AppState = reactive({
       backEnd: [],
       dataBase: '',
       languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#3a0740',
-      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'game']
+      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
@@ -71,26 +71,26 @@ export const AppState = reactive({
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js', 'Node.js'],
       dataBase: 'MySQl',
-      languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      languages: ['JavaScript', 'C#'],
+      cssFrameworks: ['Bootstrap'],
       webLink: '',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#62b739',
-      tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'C#', 'mysql', 'Bootstrap']
+      tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
       title: 'CodeFitness',
       description: 'The landing page your are currently looking at',
       frontEnd: ['Vue.js'],
-      backEnd: ['Express.js', 'Node.js'],
+      backEnd: ['Express.js'],
       dataBase: 'MongoDB',
       languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      cssFrameworks: ['Bootstrap'],
       webLink: 'https://github.com/KylePep/vue-HomePage',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#febe3e',
-      tags: ['web', 'Vue.js', 'JavaScript', 'MongoDB', 'Bootstrap']
+      tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
@@ -100,11 +100,25 @@ export const AppState = reactive({
       backEnd: [],
       dataBase: '',
       languages: ['JavaScript'],
-      cssFrameworks: ['bootstrap'],
+      cssFrameworks: ['Bootstrap'],
       webLink: 'https://puppylovesuites.com',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#e24400',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
+    },
+    {
+      img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
+      title: 'Postit',
+      description: 'My first website created for a client',
+      frontEnd: ['React'],
+      backEnd: ['NextAuth.js', 'Next.js'],
+      dataBase: 'PostgreSQL',
+      languages: ['JavaScript'],
+      cssFrameworks: ['Tailwind', 'PostCSS'],
+      webLink: 'https://postit-4enw.vercel.app/',
+      githubLink: 'https://github.com/KylePep/postit',
+      appColor: '#e24400',
+      tags: ['web', 'homePage', 'favorite', 'React', 'JavaScript', 'Tailwind', 'PostCSS', 'NextAuth.js', 'PostgreSQL']
     }
   ],
 

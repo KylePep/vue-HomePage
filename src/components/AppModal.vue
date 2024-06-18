@@ -54,7 +54,8 @@ const setActiveApp = () => {
               <div class="d-block d-md-none col-12 d-flex justify-content-between align-items-center p-3"
                 :style="{ backgroundColor: activeApp.appColor }">
 
-                <h1 class="modal-title fs-5" :style="{ color: textColor }" id="appModalLabel">{{ activeApp.title }}
+                <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
+                  activeApp.title }}
                 </h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
@@ -68,7 +69,8 @@ const setActiveApp = () => {
 
                 <div class="d-none d-md-flex justify-content-between p-3 align-items-center"
                   :style="{ backgroundColor: activeApp.appColor }">
-                  <h1 class="modal-title fs-5" :style="{ color: textColor }" id="appModalLabel">{{ activeApp.title }}
+                  <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
+                    activeApp.title }}
                   </h1>
                   <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3" :style="{ color: textColor }"
                     data-bs-dismiss="modal" aria-label="Close"></button>
