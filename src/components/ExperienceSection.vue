@@ -1,4 +1,8 @@
 <script setup>
+import BackEnd from "./icons/BackEnd.vue";
+import FrontEnd from "./icons/FrontEnd.vue";
+import UIDestign from "./icons/UIDestign.vue";
+
 
 </script>
 <template>
@@ -7,7 +11,9 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0 ">
         <div class="card rounded-1  bg-secondary text-light h-100">
-          <img src="../assets/images/product-design.png" class="card-img" alt="...">
+          <div class="card-img">
+            <FrontEnd class="svg" />
+          </div>
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
               <h5 class="card-title">Front End</h5>
@@ -22,7 +28,9 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card rounded-1 bg-success h-100">
-          <img src="../assets/images/web-design.png" class="card-img" alt="...">
+          <div class="card-img">
+            <BackEnd class="svg text-secondary" />
+          </div>
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
               <h5 class="card-title">Back End</h5>
@@ -37,7 +45,9 @@
 
       <div class="col-12 col-md-4 mb-5 mb-md-0">
         <div class="card rounded-1  bg-secondary text-light h-100">
-          <img src="../assets/images/graphic-design.png" class="card-img" alt="...">
+          <div class="card-img">
+            <UIDestign class="svg" />
+          </div>
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
               <h5 class="card-title">UI Design</h5>
@@ -88,12 +98,23 @@
 }
 
 .card-img {
+
+  background-size: contain;
   transition: all .5s ease-in-out;
   padding: 2rem;
+  height: auto;
+  width: 100%;
+
 }
 
 .card-img:hover {
   scale: 1.05;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  color: var(--bs-success);
 }
 
 .card-title {
