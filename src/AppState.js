@@ -76,7 +76,7 @@ export const AppState = reactive({
       webLink: '',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#62b739',
-      tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap']
+      tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
@@ -90,7 +90,7 @@ export const AppState = reactive({
       webLink: 'https://github.com/KylePep/vue-HomePage',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#febe3e',
-      tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap']
+      tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
@@ -118,7 +118,7 @@ export const AppState = reactive({
       webLink: 'https://postit-4enw.vercel.app/',
       githubLink: 'https://github.com/KylePep/postit',
       appColor: '#e24400',
-      tags: ['web', 'homePage', 'favorite', 'React', 'JavaScript', 'Tailwind', 'PostCSS', 'NextAuth.js', 'PostgreSQL']
+      tags: ['web', 'React', 'JavaScript', 'Tailwind', 'PostCSS', 'NextAuth.js', 'PostgreSQL', 'SQL']
     }
   ],
 

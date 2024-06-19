@@ -8,11 +8,11 @@ import AnimatedBackground from './AnimatedBackground.vue'
     <div class="hero-content row position-relative">
       <div class="container hero-container position-absolute start-50 translate-middle">
 
-        <row class="row">
+        <div class="row">
 
           <div class="col-12">
 
-            <row class="row">
+            <div class="row">
 
               <h1 class="col-12">HELLO</h1>
 
@@ -20,7 +20,7 @@ import AnimatedBackground from './AnimatedBackground.vue'
               <h2 class="col-12">I'M A WEB DEVELOPER</h2>
               <p class="text-center text-light">- and I'm looking for a job -</p>
 
-            </row>
+            </div>
 
             <form class="row g-3">
 
@@ -40,7 +40,7 @@ import AnimatedBackground from './AnimatedBackground.vue'
 
           </div>
 
-        </row>
+        </div>
       </div>
     </div>
 

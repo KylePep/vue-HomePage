@@ -13,8 +13,7 @@ const homePageApps = appData.value.filter((a) => a.tags.includes('homePage'))
   <div class="container">
     <div class="row g-2">
 
-      <div v-for="app, index in homePageApps" :key="index" class="d-none d-md-block mt-5"
-        :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
+      <div v-for="app, index in homePageApps" :key="index" class="d-none d-md-block mt-5 col-6 col-lg-4">
         <ApplicationCard :org="'grid'" :app=app />
       </div>
 

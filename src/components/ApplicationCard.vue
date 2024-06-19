@@ -35,27 +35,30 @@ const route = useRoute();
       :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12 text-center']">
 
       <h4 class="mt-3 mt-md-0">{{ props.app.title }}</h4>
+
       <div class="d-flex justify-content-center">
         <a v-if="props.org == 'list' && props.app.webLink != ''" :href="props.app.webLink" target="_blank"
           :title="props.app.webLink" class="mdi mdi-web fs-3 text-light me-3 custom-button"></a>
         <a v-if="props.org == 'list'" :href="props.app.githubLink" target="_blank" :title="props.app.githubLink"
           class="mdi mdi-github fs-3 text-light custom-button"></a>
       </div>
+
       <div v-if="route.name != 'Home' && route.name != 'About'" class="d-flex flex-column justify-content-center">
         <p v-for="item in props.app.frontEnd" :key="item" class="px-3">{{ item }}</p>
-        <div v-if="props.app.backEnd != ''">
+        <div v-if="props.app.backEnd != ''" class="d-none d-md-block">
           <p v-for="item in props.app.backEnd" :key="item" class="px-3">{{ item }}</p>
         </div>
         <div v-if="props.app.dataBase != ''">
           <p class="px-3">{{ props.app.dataBase }}</p>
         </div>
         <p v-for="item in props.app.languages" :key="item" class="px-3">{{ item }}</p>
-        <p v-for="item in props.app.cssFrameworks" :key="item" class="px-3">{{ item }}</p>
+        <p v-for="item in props.app.cssFrameworks" :key="item" class="px-3 d-none d-md-block ">{{ item }}</p>
       </div>
+
     </div>
 
     <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12']">
-      <p v-if="props.org == 'list'">{{ props.app.description }}</p>
+      <p v-if="props.org == 'list'" class="d-none d-md-block">{{ props.app.description }}</p>
     </div>
 
 
