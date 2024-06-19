@@ -19,6 +19,28 @@ export const AppState = reactive({
   },
 
   activeFilter: 'web',
+  tagOption: [
+    'web',
+    'homePage',
+    'favorite',
+    'Vue.js',
+    'JavaScript',
+    'Bootstrap',
+    'Express.js',
+    'Node.js',
+    'C#',
+    'MySQL',
+    'MongoDB',
+    'SQL',
+    'NoSQL',
+    'React',
+    'Tailwind',
+    'NextAuth.js',
+    'Next.js',
+    'PostgreSQL',
+    'Three.js',
+    'TypeScript'
+  ],
 
   /** @type {[{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
   appList: [
@@ -44,11 +66,11 @@ export const AppState = reactive({
       backEnd: [],
       dataBase: '',
       languages: ['JavaScript'],
-      cssFrameworks: ['Bootstrap'],
+      cssFrameworks: ['Bootstrap', 'Three.js'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#DEE3E2',
-      tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
+      tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap', 'Three.js']
     },
     {
       img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
@@ -111,14 +133,14 @@ export const AppState = reactive({
       title: 'Postit',
       description: 'My first website created for a client',
       frontEnd: ['React'],
-      backEnd: ['NextAuth.js', 'Next.js'],
+      backEnd: ['Next.js'],
       dataBase: 'PostgreSQL',
-      languages: ['JavaScript'],
-      cssFrameworks: ['Tailwind', 'PostCSS'],
+      languages: ['TypeScript'],
+      cssFrameworks: ['Tailwind'],
       webLink: 'https://postit-4enw.vercel.app/',
       githubLink: 'https://github.com/KylePep/postit',
       appColor: '#18B0B0',
-      tags: ['web', 'React', 'JavaScript', 'Tailwind', 'PostCSS', 'NextAuth.js', 'PostgreSQL', 'SQL']
+      tags: ['web', 'React', 'JavaScript', 'TypeScript', 'Tailwind', 'NextAuth.js', 'PostgreSQL', 'SQL']
     }
   ],
 

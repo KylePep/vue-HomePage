@@ -1,4 +1,4 @@
 import * as data from './data.json'
 export const {
-  accentColors
+  ICON_LIST
 } = data

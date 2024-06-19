@@ -1,3 +1,18 @@
 {
-  "accentColors": ["#DE7119", "#DEE3E2", "#116979", "#18B0B0"]
+  "ICON_LIST": {
+    "Vue.js": "src/assets/images/icons/vue.png",
+    "JavaScript": "src/assets/images/icons/JS.png",
+    "Bootstrap": "src/assets/images/icons/Bootstrap.svg",
+    "Express.js": "src/assets/images/icons/Expressjs.png",
+    "Node.js": "src/assets/images/icons/nodejs.svg",
+    "C#": "src/assets/images/icons/Csharp.png",
+    "MySQl": "src/assets/images/icons/mysql.png",
+    "MongoDB": "src/assets/images/icons/Mongodb.png",
+    "React": "src/assets/images/icons/React.svg.png",
+    "Tailwind": "src/assets/images/icons/tailwindcss.svg",
+    "PostgreSQL": "src/assets/images/icons/PostgreSQL.svg",
+    "Three.js": "src/assets/images/icons/Threejs.png",
+    "TypeScript": "src/assets/images/icons/Typescript.png",
+    "Next.js": "src/assets/images/icons/Nextjs.png"
+  }
 }

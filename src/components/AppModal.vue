@@ -1,6 +1,7 @@
 <script setup>
 import { AppState } from "@/AppState.js";
 import { computed } from "vue";
+import { ICON_LIST } from '../../shared/constants/index.js'
 import AppCarousel from '../components/AppCarousel.vue'
 
 const props = defineProps(['button', 'modal', 'content', 'accentColor'])
@@ -82,27 +83,43 @@ const setActiveApp = () => {
                     data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div
-                  class="flex-grow-1 d-flex flex-column justify-content-around align-items-center bg-secondary text-light">
+                <div class="row flex-grow-1 bg-secondary text-light mx-0">
 
-                  <div class="d-flex fs-2">
-                    <a v-if="activeApp.webLink != ''" class="px-3 d-block text-light mdi mdi-web custom-button"
-                      :href="activeApp.webLink" target="_blank" :title="activeApp.webLink"></a>
-                    <a class="px-3 d-block text-light mdi mdi-github custom-button" :ref="activeApp.githubLink"
-                      target="_blank" :title="activeApp.githubLink"></a>
+                  <div class="col-6 px-0 d-flex flex-column justify-content-around align-items-center  my-4">
+
+                    <div class="row w-100 flex-grow-1 align-items-center justify-content-center px-4">
+
+                      <div v-if="activeApp.frontEnd != ''" class="col-4 icon-img">
+                        <img v-for="item in activeApp.frontEnd" :key="item" :src="ICON_LIST[item]" :title="item">
+                      </div>
+
+                      <div v-for="item in activeApp.backEnd" :key="item" class="col-4 d-none d-md-block icon-img">
+                        <img :src="ICON_LIST[item]" :title="item">
+                      </div>
+
+                      <div v-if="activeApp.dataBase != ''" class="col-4 icon-img">
+                        <img :src="ICON_LIST[activeApp.dataBase]" :title="activeApp.dataBase">
+                      </div>
+
+                      <div v-for="item in activeApp.languages" :key="item" class="col-4 icon-img">
+                        <img :src="ICON_LIST[item]" :title="item">
+                      </div>
+
+                      <div v-for="item in activeApp.cssFrameworks" :key="item"
+                        class="col-4 icon-img d-none d-md-block ">
+                        <img :src="ICON_LIST[item]" :title="item">
+                      </div>
+                    </div>
                   </div>
-                  <p v-for="item in activeApp.frontEnd" :key="item" class="px-3">{{ item }}</p>
-                  <div v-if="activeApp.backEnd != ''">
-                    <p v-for="item in activeApp.backEnd" :key="item" class="px-3">{{ item }}</p>
+
+                  <div class="col-6 px-0 border-start border-1 border-success my-4">
+
+                    <p class="px-3 py-4">{{ activeApp.description }} </p>
+
                   </div>
-                  <div v-if="activeApp.dataBase != ''">
-                    <p class="px-3">{{ activeApp.dataBase }}</p>
-                  </div>
-                  <p v-for="item in activeApp.languages" :key="item" class="px-3">{{ item }}</p>
-                  <p v-for="item in activeApp.cssFrameworks" :key="item" class="px-3">{{ item }}</p>
-                  <p class="px-3">{{ activeApp.description }} </p>
+
+
                 </div>
-
               </div>
 
             </div>
@@ -121,6 +138,18 @@ img {
   object-fit: cover;
   object-position: center;
   max-height: 50vh;
+}
+
+.icon-img {
+  >img {
+    background-color: var(--bs-page);
+    padding: 4px;
+    border-radius: 4px;
+    height: 48px;
+    width: 48px;
+    object-fit: scale-down;
+    object-position: center;
+  }
 }
 
 .modal-shadow {
