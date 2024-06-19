@@ -12,12 +12,7 @@ let appList = computed(() => appData.value.filter((a) => a.tags.includes(filterB
 
 const organizationStyle = ref('list')
 
-const borderColorList = [
-  '#DE7119',
-  '#DEE3E2',
-  '#116979',
-  '#18B0B0'
-]
+const borderColorList = computed(() => AppState.accentColors)
 
 onUnmounted(() => {
   AppState.activeFilter = 'web'

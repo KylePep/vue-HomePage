@@ -178,5 +178,11 @@ export const AppState = reactive({
       title: 'Mister',
       img: 'src/assets/images/business.jpg'
     }
+  ],
+  accentColors: [
+    '#DE7119',
+    '#DEE3E2',
+    '#116979',
+    '#18B0B0'
   ]
 })

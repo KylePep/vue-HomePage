@@ -6,12 +6,7 @@ import { AppState } from "@/AppState.js";
 
 const appData = computed(() => AppState.appList)
 const homePageApps = appData.value.filter((a) => a.tags.includes('homePage'))
-const borderColorList = [
-  '#DE7119',
-  '#DEE3E2',
-  '#116979',
-  '#18B0B0'
-]
+const borderColorList = computed(() => AppState.accentColors)
 </script>
 
 

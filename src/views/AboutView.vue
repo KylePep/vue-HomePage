@@ -7,12 +7,7 @@ import { computed } from "vue";
 
 const appData = computed(() => AppState.appList)
 const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
-const borderColorList = [
-  '#DE7119',
-  '#DEE3E2',
-  '#116979',
-  '#18B0B0'
-]
+const borderColorList = computed(() => AppState.accentColors)
 </script>
 
 
