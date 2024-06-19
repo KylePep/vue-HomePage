@@ -15,10 +15,6 @@
 
       </div>
 
-      <!-- <div class="col-6">
-        <img src="../assets/images/internet.jpg" class="img-fluid" alt="">
-      </div> -->
-
 
       <div :class="[page == 'Home' ? 'col-12 col-md-6' : 'col-12']">
         <div class="row g-5">

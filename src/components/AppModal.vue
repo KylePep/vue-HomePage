@@ -3,10 +3,10 @@ import { AppState } from "@/AppState.js";
 import { computed } from "vue";
 import AppCarousel from '../components/AppCarousel.vue'
 
-const props = defineProps(['button', 'modal', 'content'
-])
+const props = defineProps(['button', 'modal', 'content', 'accentColor'])
 
 const activeApp = computed(() => AppState.activeApp)
+
 
 function isColorDark(color) {
   // Remove the '#' if it's there
@@ -25,12 +25,18 @@ function isColorDark(color) {
 }
 
 const textColor = computed(() => {
-  return isColorDark(activeApp.value.appColor) ? '#ffffff' : '#000000'
+  if (activeApp.value.appColor) {
+    return isColorDark(activeApp.value.appColor) ? '#ffffff' : '#000000'
+  } else {
+    return isColorDark("ffffff") ? '#ffffff' : '#000000'
+  }
 })
 
 
 const setActiveApp = () => {
   AppState.activeApp = props.content
+  activeApp.value.appColor = props.accentColor;
+
 }
 </script>
 

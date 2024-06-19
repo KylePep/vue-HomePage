@@ -33,7 +33,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#ff8c00',
+      appColor: '#DE7119',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -47,7 +47,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#420fe2',
+      appColor: '#DEE3E2',
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -61,7 +61,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#3a0740',
+      appColor: '#116979',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -75,7 +75,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: '',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#62b739',
+      appColor: '#18B0B0',
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
     {
@@ -89,7 +89,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://github.com/KylePep/vue-HomePage',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#febe3e',
+      appColor: '#DE7119',
       tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
@@ -103,7 +103,7 @@ export const AppState = reactive({
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://puppylovesuites.com',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#e24400',
+      appColor: '#DEE3E2',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
@@ -117,7 +117,7 @@ export const AppState = reactive({
       cssFrameworks: ['Tailwind', 'PostCSS'],
       webLink: 'https://postit-4enw.vercel.app/',
       githubLink: 'https://github.com/KylePep/postit',
-      appColor: '#e24400',
+      appColor: '#18B0B0',
       tags: ['web', 'React', 'JavaScript', 'Tailwind', 'PostCSS', 'NextAuth.js', 'PostgreSQL', 'SQL']
     }
   ],

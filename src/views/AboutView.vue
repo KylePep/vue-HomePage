@@ -7,6 +7,12 @@ import { computed } from "vue";
 
 const appData = computed(() => AppState.appList)
 const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
+const borderColorList = [
+  '#DE7119',
+  '#DEE3E2',
+  '#116979',
+  '#18B0B0'
+]
 </script>
 
 
@@ -23,8 +29,8 @@ const favoriteApps = appData.value.filter((a) => a.tags.includes('favorite'))
       <div class="order-2 col-12">
         <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
-          <div v-for="app in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
-            <ApplicationCard :org="'grid'" :app=app />
+          <div v-for="app, index in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
+            <ApplicationCard :org="'grid'" :app=app :borderColor="borderColorList[index % 4]" />
           </div>
         </div>
       </div>

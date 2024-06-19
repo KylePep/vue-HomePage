@@ -31,7 +31,7 @@ import AnimatedBackground from './AnimatedBackground.vue'
               </div>
 
               <div class="col-12 col-md-6">
-                <button type="submit" class="w-100 btn btn-primary rounded-1 py-3 fs-5 fw-semibold text-light">GET MY
+                <button type="submit" class="w-100 btn-hero rounded-1 py-3 fs-5 fw-semibold">GET MY
                   RESUME</button>
               </div>
 
@@ -73,6 +73,39 @@ h2 {
   text-align: center;
   color: var(--bs-light);
   padding: 0;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bs-light);
+  border: 3px solid var(--bs-light);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.btn-hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bs-success);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.btn-hero:hover::before {
+  transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {

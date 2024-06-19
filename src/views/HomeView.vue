@@ -60,7 +60,7 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
 
 <style lang="scss" scoped>
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 section {

@@ -4,10 +4,6 @@ import ApplicationCard from "@/components/ApplicationCard.vue";
 import filterBar from "@/components/filterBar.vue";
 import { computed, onUnmounted, ref } from "vue";
 
-onUnmounted(() => {
-  AppState.activeFilter = 'web'
-})
-
 const appData = computed(() => AppState.appList)
 
 let filterBy = computed(() => AppState.activeFilter)
@@ -15,6 +11,18 @@ let filterBy = computed(() => AppState.activeFilter)
 let appList = computed(() => appData.value.filter((a) => a.tags.includes(filterBy.value)))
 
 const organizationStyle = ref('list')
+
+const borderColorList = [
+  '#DE7119',
+  '#DEE3E2',
+  '#116979',
+  '#18B0B0'
+]
+
+onUnmounted(() => {
+  AppState.activeFilter = 'web'
+})
+
 
 const setOrg = (organization) => {
   organizationStyle.value = organization
@@ -50,11 +58,11 @@ const setFilterBy = (tag) => {
 
       <div v-for="app, index in appList" :key="index" class="d-none d-md-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
-        <ApplicationCard :org="organizationStyle" :app=app />
+        <ApplicationCard :org="organizationStyle" :app=app :borderColor="borderColorList[index % 4]" />
       </div>
 
       <div v-for="app, index in appList" :key="index" class="col-12 d-block d-md-none mt-5">
-        <ApplicationCard org="list" :app=app />
+        <ApplicationCard org="list" :app=app :borderColor="borderColorList[index % 4]" />
       </div>
 
     </div>

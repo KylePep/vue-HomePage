@@ -4,10 +4,9 @@ import AppModal from "./AppModal.vue"
 
 const props = defineProps({
   org: String,
-  app: Object
+  app: Object,
+  borderColor: String
 })
-
-// const props = defineProps(['org', 'img', 'title', 'description', 'techStack', 'webLink', 'githubLink'])
 
 const route = useRoute();
 
@@ -20,10 +19,10 @@ const route = useRoute();
     <div class="application-card position-relative"
       :class="[props.org == 'list' ? 'col-12 col-md-6 col-lg-4' : 'col-12']">
 
-      <AppModal button="true" modal="false" :content="props.app">
+      <AppModal button="true" modal="false" :content="props.app" :accentColor="props.borderColor">
         <template #icon>
           <div class="card-hover" :class="[props.org == 'list' ? 'card-transform' : '']"
-            :style="{ backgroundColor: props.app.appColor }">
+            :style="{ backgroundColor: props.borderColor }">
             <img :src="props.app.img[0]" class="w-100 bg-dark" :alt="props.app.title">
           </div>
         </template>
