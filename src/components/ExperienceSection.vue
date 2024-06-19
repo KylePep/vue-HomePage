@@ -17,7 +17,10 @@ import UIDestign from "./icons/UIDestign.vue";
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
               <h5 class="card-title">Front End</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+              <p class="card-text mb-4 mx-0 mx-sm-5">I’m passionate about crafting sleek and responsive web interfaces
+                with
+                Vue.js
+                and React. Whether it’s building dynamic UIs or optimizing performance, I’ve got you covered.</p>
             </div>
             <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
@@ -34,7 +37,9 @@ import UIDestign from "./icons/UIDestign.vue";
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
               <h5 class="card-title">Back End</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+              <p class="card-text mb-4 mx-0 mx-sm-5">I love diving into the backend with MongoDB and MySQL to create
+                robust and scalable databases. From crafting efficient queries to ensuring data integrity, I’ve got it
+                covered.</p>
             </div>
             <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular bg-secondary position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
@@ -50,8 +55,9 @@ import UIDestign from "./icons/UIDestign.vue";
           </div>
           <div class="card-body d-flex flex-column justify-content-around align-items-center">
             <div>
-              <h5 class="card-title">UI Design</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
+              <h5 class="card-title">API Development</h5>
+              <p class="card-text mb-4 mx-0 mx-sm-5">I craft robust and scalable APIs to connect your front end with
+                your back end effortlessly. Whether it's RESTful services or GraphQL, I've got you covered.</p>
             </div>
             <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular first position-relative"><i
                 class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>

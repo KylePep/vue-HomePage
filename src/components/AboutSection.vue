@@ -18,17 +18,24 @@
 
       <div :class="[page == 'Home' ? 'col-12 col-md-6' : 'col-12']">
         <div class="row g-5">
-          <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            ratione possimus,
-            vitae
-            eveniet dolorem beatae! Dolorum voluptatem ab, quo quod deserunt dolore impedit eos perferendis aliquid illo
-            similique, saepe eaque.</div>
-          <div class="col-12 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam debitis
-            temporibus impedit
-            laudantium similique dolore, alias, minima, dignissimos asperiores repellendus suscipit? Animi, voluptates
-            a.
-            Ad
-            nemo quaerat amet at et.</div>
+
+          <div v-if="route.name == 'Home'" class="col-12">Hi, my names Kyle Peppersack. You've probably noticed because
+            it's inescapably attached to
+            a sticky-top navbar. I'm a full-stack developer and If you've found my landing page it means I'm looking for
+            a job.</div>
+          <div v-if="route.name == 'Home'" class="col-12 ">I'm trying to change careers and if you've never done that
+            it's rough. I work tirelessly
+            on my weekends, I eat my lunch on my break so I can program for my entire lunch. My point is, is that I'm
+            taking this seriously and I'm pretty good at it too.</div>
+          <!--  -->
+          <div v-if="route.name == 'About'" class="col-12">Hello again, Thanks for making it this far!</div>
+          <div v-if="route.name == 'About'" class="col-12">I've been a retail manager multiple times and while I was
+            learning valuable soft skills and exercising accountability I was always working on something. That
+            something was usually coding.</div>
+          <div v-if="route.name == 'About'" class="col-12 ">I've spent countless hours working on games using Game Maker
+            Studios, I started with a drag & drop tutorial in highschool. After a while I was writing scripts and
+            dreaming up games. I actually made one to ask my now wife to prom. It's always been a hobby until I went to
+            CodeWorks, I thrived while coding every day and I'm going to make this my career.</div>
 
           <div class="col-6 text-start fw-semibold ">
             <p>FIND ME ON</p>
@@ -65,7 +72,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 
-const route = useRoute
+const route = useRoute()
 const page = route.name;
 </script>
 

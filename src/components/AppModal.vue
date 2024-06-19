@@ -64,7 +64,8 @@ const setActiveApp = () => {
                 <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
                   activeApp.title }}
                 </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3" :style="{ color: textColor }"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
 
               </div>
 
@@ -85,7 +86,14 @@ const setActiveApp = () => {
 
                 <div class="row flex-grow-1 bg-secondary text-light mx-0">
 
-                  <div class="col-6 px-0 d-flex flex-column justify-content-around align-items-center  my-4">
+                  <div class="col-6 px-0 d-flex flex-column justify-content-around align-items-center my-4">
+
+                    <div class="d-flex fs-1">
+                      <a v-if="activeApp.webLink != ''" class="px-3 d-block text-light mdi mdi-web custom-button"
+                        :href="activeApp.webLink" target="_blank" :title="activeApp.webLink"></a>
+                      <a class="px-3 d-block text-light mdi mdi-github custom-button" :ref="activeApp.githubLink"
+                        target="_blank" :title="activeApp.githubLink"></a>
+                    </div>
 
                     <div class="row w-100 flex-grow-1 align-items-center justify-content-center px-4">
 
@@ -105,8 +113,7 @@ const setActiveApp = () => {
                         <img :src="ICON_LIST[item]" :title="item">
                       </div>
 
-                      <div v-for="item in activeApp.cssFrameworks" :key="item"
-                        class="col-4 icon-img d-none d-md-block ">
+                      <div v-for="item in activeApp.cssFrameworks" :key="item" class="col-4 icon-img">
                         <img :src="ICON_LIST[item]" :title="item">
                       </div>
                     </div>

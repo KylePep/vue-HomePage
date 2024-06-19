@@ -14,7 +14,7 @@ const setFilterBy = (tag) => {
 
 <template>
   <div class="container text-light">
-    <div class="row g-3">
+    <div class="row g-3 px-0 px-md-5">
 
       <div class="col-12 d-flex justify-content-center">
         <h3 class="text-center">MY SKILLS</h3>
