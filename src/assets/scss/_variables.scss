@@ -35,17 +35,32 @@
 // #E4E5EA lightest
 
 $custom-theme: (
-  'primary': #6b99c3,
-  'secondary': #16354d,
-  'success': #6bc36d,
+  //Light page orange accent
+  'primary': #eeeeee,
+  'secondary': #373a40,
+  'success': #dc5f00,
   'info': #17a2b8,
   'warning': #f7c32e,
   'danger': #d6293e,
   'text': #d2d2d4,
   'light': #d2d2d4,
-  'page': #184d75,
+  'page': #686d76,
   'dark': #0c151c
 );
+
+// $custom-theme: (
+//   //Orange page teal/blue accent
+//   'primary': #3498db,
+//   'secondary': #116979,
+//   'success': #18b0b0,
+//   'info': #17a2b8,
+//   'warning': #f7c32e,
+//   'danger': #d6293e,
+//   'text': #d2d2d4,
+//   'light': #dee3e2,
+//   'page': #de7119,
+//   'dark': #373a40
+// );
 
 // $dark-theme: (
 //   "primary": #ff22ff,

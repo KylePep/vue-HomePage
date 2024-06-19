@@ -28,7 +28,7 @@
               <h5 class="card-title">Back End</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quod.</p>
             </div>
-            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular bg-secondary text-light position-relative">
+            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular bg-secondary position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
             </RouterLink>
           </div>
@@ -69,7 +69,7 @@
 
 .btn-circular:hover {
   box-shadow: 0 0 40px 40px var(--bs-primary)inset;
-  color: var(--bs-light);
+  color: var(--bs-secondary);
   animation: grow 300ms alternate 100ms 1 forwards;
 }
 

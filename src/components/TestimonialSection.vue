@@ -7,7 +7,7 @@ const testimonyData = computed(() => AppState.testimonyData);
 
 
 <template>
-  <div class="container text-secondary">
+  <div class="container text-dark">
     <div class="row">
       <div class="col-12">
 
@@ -103,13 +103,13 @@ ol.carousel-indicators li.active {
 
 
 .carousel-prev {
-  background: linear-gradient(90deg, rgba(20, 123, 4, 0.25), #ffffff00);
+  background: linear-gradient(90deg, rgba(12, 4, 123, 0.25), #ffffff00);
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
 
 .carousel-next {
-  background: linear-gradient(-90deg, rgba(20, 123, 4, 0.25), #ffffff00);
+  background: linear-gradient(-90deg, rgba(12, 4, 123, 0.25), #ffffff00);
   opacity: 0;
   transition: all 300ms ease-in-out;
 }

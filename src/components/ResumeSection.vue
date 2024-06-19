@@ -39,7 +39,7 @@ const resumeData = computed(() => AppState.resumeData);
       </div>
 
       <div class="col-12 d-flex justify-content-center mt-3">
-        <RouterLink :to="{ name: 'Contact' }" class="work-button text-secondary">
+        <RouterLink :to="{ name: 'Contact' }" class="work-button text-dark">
           LET'S WORK TOGETHER
         </RouterLink>
       </div>
