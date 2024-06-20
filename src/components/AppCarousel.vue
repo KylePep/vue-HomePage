@@ -1,6 +1,5 @@
 <script setup>
 import { AppState } from "@/AppState.js";
-import { logger } from "@/utils/Logger.js";
 import { computed, watch } from "vue";
 
 
@@ -11,18 +10,13 @@ const activeAppImg = computed(() => AppState.activeApp.img)
 watch(activeAppImg, () => {
   const carouselItems = document.getElementsByClassName('carousel-item')
 
-  logger.log(carouselItems.length)
-
-
-  const deactiateCarouselItems = Array.prototype.filter.call(
+  Array.prototype.filter.call(
     carouselItems,
     (carouselItem) => carouselItem.classList.remove('active')
   )
 
-
-
   const firstCarousel = document.getElementById('firstSlide');
-  logger.log(firstCarousel)
+
   if (!firstCarousel.classList.contains('active')) {
     firstCarousel.classList.add('active')
   }
