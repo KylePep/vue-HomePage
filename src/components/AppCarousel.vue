@@ -14,7 +14,7 @@ const activeAppImg = computed(() => AppState.activeApp.img)
     <div class="carousel-inner">
       <div v-for="appImg, index in activeAppImg" :key="index" :class="[index == 0 ? 'active' : '']"
         class="carousel-item">
-        <div class="w-100">
+        <div class="img-container d-flex justify-content-center align-items-center">
           <img :src="appImg" alt="...">
         </div>
       </div>
@@ -37,9 +37,16 @@ const activeAppImg = computed(() => AppState.activeApp.img)
   max-height: 416px;
 }
 
+.img-container {
+  background-color: var(--bs-dark);
+  width: 100%;
+  height: auto;
+  min-height: 416px;
+}
+
 img {
   width: 100%;
-  height: 416px;
+  height: auto;
   object-fit: cover;
   object-position: center;
 }
