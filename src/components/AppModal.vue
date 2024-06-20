@@ -37,7 +37,6 @@ const textColor = computed(() => {
 const setActiveApp = () => {
   AppState.activeApp = props.content
   activeApp.value.appColor = props.accentColor;
-
 }
 </script>
 

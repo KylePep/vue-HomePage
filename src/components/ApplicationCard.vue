@@ -124,7 +124,7 @@ const route = useRoute();
 .app-img {
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.297);
 }
 
