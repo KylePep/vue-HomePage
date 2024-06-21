@@ -18,7 +18,7 @@ const route = useRoute();
 
   <div class="row">
     <div class="application-card position-relative"
-      :class="[props.org == 'list' ? 'col-12 col-md-6 col-lg-4' : 'col-12']">
+      :class="[props.org == 'list' ? 'col-12 col-lg-6 col-xl-4' : 'col-12']">
 
       <AppModal button="true" modal="false" :content="props.app" :accentColor="props.borderColor">
         <template #icon>
@@ -32,9 +32,9 @@ const route = useRoute();
     </div>
 
     <div class=" d-flex flex-column text-light"
-      :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12 text-center']">
+      :class="[props.org == 'list' ? 'col-12 col-lg-3 col-xl-4 text-center' : 'col-12 text-center']">
 
-      <h4 class="mt-3 mt-md-0">{{ props.app.title }}</h4>
+      <h4 class="mt-3 mt-lg-0">{{ props.app.title }}</h4>
 
       <div class="d-flex justify-content-center">
         <a v-if="props.org == 'list' && props.app.webLink != ''" :href="props.app.webLink" target="_blank"
@@ -47,35 +47,35 @@ const route = useRoute();
         class="row flex-grow-1 align-items-center justify-content-center mx-5">
 
         <div v-if="props.app.frontEnd != ''" class="icon-img"
-          :class="[props.org == 'list' ? 'col-4 mt-2 mt-md-0 ' : 'col-3 mt-2']">
+          :class="[props.org == 'list' ? 'col-3 col-lg-4 mt-2 mt-lg-0 ' : 'col-3 mt-2']">
           <img v-for="item in props.app.frontEnd" :key="item" :src="ICON_LIST[item]" :title="item">
         </div>
 
-        <div v-for="item in props.app.backEnd" :key="item" class="d-none d-md-block icon-img"
-          :class="[props.org == 'list' ? 'col-4 mt-2 mt-md-0 ' : 'col-3 mt-2']">
+        <div v-for="item in props.app.backEnd" :key="item" class="d-none d-lg-block icon-img"
+          :class="[props.org == 'list' ? 'col-3 col-lg-4 mt-2 mt-lg-0 ' : 'col-3 mt-2']">
           <img :src="ICON_LIST[item]" :title="item">
         </div>
 
         <div v-if="props.app.dataBase != ''" class=" icon-img"
-          :class="[props.org == 'list' ? 'col-4 mt-2 mt-md-0 ' : 'col-3 mt-2']">
+          :class="[props.org == 'list' ? 'col-3 col-lg-4 mt-2 mt-lg-0 ' : 'col-3 mt-2']">
           <img :src="ICON_LIST[props.app.dataBase]" :title="props.app.dataBase">
         </div>
 
         <div v-for="item in props.app.languages" :key="item" class=" icon-img"
-          :class="[props.org == 'list' ? 'col-4 mt-2 mt-md-0 ' : 'col-3 mt-2']">
+          :class="[props.org == 'list' ? 'col-3 col-lg-4 mt-2 mt-lg-0 ' : 'col-3 mt-2']">
           <img :src="ICON_LIST[item]" :title="item">
         </div>
 
-        <div v-for="item in props.app.cssFrameworks" :key="item" class="icon-img d-none d-md-block "
-          :class="[props.org == 'list' ? 'col-4 mt-2 mt-md-0 ' : 'col-3 mt-2']">
+        <div v-for="item in props.app.cssFrameworks" :key="item" class="icon-img d-none d-lg-block "
+          :class="[props.org == 'list' ? 'col-3 col-lg-4 mt-2 mt-lg-0 ' : 'col-3 mt-2']">
           <img :src="ICON_LIST[item]" :title="item">
         </div>
       </div>
 
     </div>
 
-    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-md-3 col-lg-4 text-center' : 'col-12']">
-      <p v-if="props.org == 'list'" class="d-none d-md-block">{{ props.app.description }}</p>
+    <div class=" text-light" :class="[props.org == 'list' ? 'col-12 col-lg-3 col-xl-4 text-center' : 'col-12']">
+      <p v-if="props.org == 'list'" class="d-none d-lg-block">{{ props.app.description }}</p>
     </div>
 
 
@@ -93,14 +93,12 @@ const route = useRoute();
 
 .card-hover {
   padding: 2rem;
-  width: calc(100% - 2rem);
-  // background-color: var(--bs-success);
+  width: calc(100% - 1rem);
   border-radius: 2px;
   height: 256px;
   position: absolute;
   top: 0;
   transition: top ease 0.5s;
-
 }
 
 .card-transform {
@@ -109,10 +107,14 @@ const route = useRoute();
   transform: translate(-50%, 0);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .card-transform {
     left: 0;
     transform: none;
+  }
+
+  .card-hover {
+    width: calc(100% - 2rem);
   }
 }
 

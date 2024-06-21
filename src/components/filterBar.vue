@@ -88,9 +88,9 @@ const setFilterTag = (tag) => {
       </div>
 
       <button v-if="props.organizationStyle == 'grid'" @click="$emit('setOrg', 'list')"
-        class="d-none d-md-block btn text-light fs-3 mdi mdi-view-list" title="list view"></button>
+        class="d-none d-lg-block btn text-light fs-3 mdi mdi-view-list" title="list view"></button>
       <button v-if="props.organizationStyle == 'list'" @click="$emit('setOrg', 'grid')"
-        class="d-none d-md-block btn text-light fs-3 mdi mdi-grid" title="grid view"></button>
+        class="d-none d-lg-block btn text-light fs-3 mdi mdi-grid" title="grid view"></button>
 
     </div>
 

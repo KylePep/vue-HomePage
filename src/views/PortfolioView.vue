@@ -51,12 +51,12 @@ const setFilterBy = (tag) => {
         <filterBar @set-org="setOrg" @set-filter-by="setFilterBy" :organizationStyle="organizationStyle" />
       </div>
 
-      <div v-for="app, index in appList" :key="index" class="d-none d-md-block mt-5"
+      <div v-for="app, index in appList" :key="index" class="d-none d-lg-block mt-5"
         :class="[organizationStyle == 'list' ? 'col-12' : 'col-6 col-lg-4']">
         <ApplicationCard :org="organizationStyle" :app=app :borderColor="borderColorList[index % 4]" />
       </div>
 
-      <div v-for="app, index in appList" :key="index" class="col-12 d-block d-md-none mt-5">
+      <div v-for="app, index in appList" :key="index" class="col-12 col-md-6 d-block d-lg-none mt-5">
         <ApplicationCard org="list" :app=app :borderColor="borderColorList[index % 4]" />
       </div>
 

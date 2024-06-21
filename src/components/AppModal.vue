@@ -58,7 +58,7 @@ const setActiveApp = () => {
           <div class="container m-0">
             <div class="row p-0 bg-dark">
 
-              <div class="d-block d-md-none col-12 d-flex justify-content-between align-items-center p-3"
+              <div class="d-block d-lg-none col-12 d-flex justify-content-between align-items-center p-3"
                 :style="{ backgroundColor: activeApp.appColor }">
 
                 <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
@@ -69,13 +69,13 @@ const setActiveApp = () => {
 
               </div>
 
-              <div class=" col-12 col-md-6 px-0 d-flex flex-column align-items-center justify-content-center">
+              <div class=" col-12 col-lg-6 px-0 d-flex flex-column align-items-center justify-content-center">
                 <AppCarousel />
               </div>
 
-              <div class=" col-12 col-md-6 px-0 d-flex flex-column">
+              <div class=" col-12 col-lg-6 px-0 d-flex flex-column">
 
-                <div class="d-none d-md-flex justify-content-between p-3 align-items-center"
+                <div class="d-none d-lg-flex justify-content-between p-3 align-items-center"
                   :style="{ backgroundColor: activeApp.appColor }">
                   <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
                     activeApp.title }}
@@ -86,9 +86,9 @@ const setActiveApp = () => {
 
                 <div class="row flex-grow-1 bg-secondary text-light mx-0">
 
-                  <div class="col-6 px-0 d-flex flex-column justify-content-around align-items-center my-4">
+                  <div class="col-12 col-lg-6 px-0 d-flex flex-column justify-content-around align-items-center my-4">
 
-                    <div class="d-flex fs-1">
+                    <div class="d-flex fs-1 mb-3">
                       <a v-if="activeApp.webLink != ''" class="px-3 d-block text-light mdi mdi-web custom-button"
                         :href="activeApp.webLink" target="_blank" :title="activeApp.webLink"></a>
                       <a class="px-3 d-block text-light mdi mdi-github custom-button" :ref="activeApp.githubLink"
@@ -97,31 +97,34 @@ const setActiveApp = () => {
 
                     <div class="row w-100 flex-grow-1 align-items-center justify-content-center px-4">
 
-                      <div v-if="activeApp.frontEnd != ''" class="col-4 icon-img">
+                      <div v-if="activeApp.frontEnd != ''" class="col-4 icon-img d-flex justify-content-center mb-3">
                         <img v-for="item in activeApp.frontEnd" :key="item" :src="ICON_LIST[item]" :title="item">
                       </div>
 
-                      <div v-for="item in activeApp.backEnd" :key="item" class="col-4 d-none d-md-block icon-img">
+                      <div v-for="item in activeApp.backEnd" :key="item"
+                        class="col-4 d-none d-md-flex icon-img justify-content-center mb-3">
                         <img :src="ICON_LIST[item]" :title="item">
                       </div>
 
-                      <div v-if="activeApp.dataBase != ''" class="col-4 icon-img">
+                      <div v-if="activeApp.dataBase != ''" class="col-4 icon-img d-flex justify-content-center mb-3">
                         <img :src="ICON_LIST[activeApp.dataBase]" :title="activeApp.dataBase">
                       </div>
 
-                      <div v-for="item in activeApp.languages" :key="item" class="col-4 icon-img">
+                      <div v-for="item in activeApp.languages" :key="item"
+                        class="col-4 icon-img d-flex justify-content-center mb-3">
                         <img :src="ICON_LIST[item]" :title="item">
                       </div>
 
-                      <div v-for="item in activeApp.cssFrameworks" :key="item" class="col-4 icon-img">
+                      <div v-for="item in activeApp.cssFrameworks" :key="item"
+                        class="col-4 icon-img d-flex justify-content-center mb-3">
                         <img :src="ICON_LIST[item]" :title="item">
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-6 px-0 border-start border-1 border-success my-4">
+                  <div class="col-12 col-lg-6 descript-border my-4">
 
-                    <p class="px-3 py-4">{{ activeApp.description }} </p>
+                    <p class="px-3 py-4 ">{{ activeApp.description }} </p>
 
                   </div>
 
@@ -144,6 +147,7 @@ const setActiveApp = () => {
 img {
   object-fit: cover;
   object-position: center;
+  image-rendering: optimizeQuality;
   max-height: 50vh;
 }
 
@@ -156,6 +160,17 @@ img {
     width: 48px;
     object-fit: scale-down;
     object-position: center;
+  }
+}
+
+.descript-border {
+  border-left: solid 2px var(--bs-success);
+}
+
+@media only screen and (max-width: 992px) {
+  .descript-border {
+    border-top: solid 2px var(--bs-success);
+    border-left: none;
   }
 }
 
