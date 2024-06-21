@@ -52,7 +52,8 @@ import AnimatedBackground from './AnimatedBackground.vue'
 
 <style lang="scss" scoped>
 .hero-content {
-  padding-top: 40vh;
+  padding-top: calc(15rem + 10vh);
+  min-height: 400px;
 }
 
 .hero-container {

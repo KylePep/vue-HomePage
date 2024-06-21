@@ -9,7 +9,7 @@ import UIDestign from "./icons/UIDestign.vue";
   <div class="container">
     <div class="row">
 
-      <div class="col-12 col-md-4 mb-5 mb-md-0 ">
+      <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0 ">
         <div class="card rounded-1  bg-secondary text-light h-100">
           <div class="card-img">
             <FrontEnd class="svg" />
@@ -29,7 +29,7 @@ import UIDestign from "./icons/UIDestign.vue";
         </div>
       </div>
 
-      <div class="col-12 col-md-4 mb-5 mb-md-0">
+      <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
         <div class="card rounded-1 bg-success h-100">
           <div class="card-img">
             <BackEnd class="svg text-secondary" />
@@ -48,7 +48,7 @@ import UIDestign from "./icons/UIDestign.vue";
         </div>
       </div>
 
-      <div class="col-12 col-md-4 mb-5 mb-md-0">
+      <div class="col-12 col-md-6 col-lg-4 mx-0 mx-md-auto mx-lg-0 mb-5 mb-lg-0">
         <div class="card rounded-1  bg-secondary text-light h-100">
           <div class="card-img">
             <UIDestign class="svg" />
