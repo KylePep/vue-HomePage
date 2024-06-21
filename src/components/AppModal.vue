@@ -26,6 +26,7 @@ function isColorDark(color) {
 }
 
 const textColor = computed(() => {
+
   if (activeApp.value.appColor) {
     return isColorDark(activeApp.value.appColor) ? '#ffffff' : '#000000'
   } else {
@@ -55,7 +56,7 @@ const setActiveApp = () => {
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content rounded-0 modal-shadow">
           <div class="container m-0">
-            <div class="row p-0 ">
+            <div class="row p-0 bg-dark">
 
               <div class="d-block d-md-none col-12 d-flex justify-content-between align-items-center p-3"
                 :style="{ backgroundColor: activeApp.appColor }">
@@ -63,12 +64,12 @@ const setActiveApp = () => {
                 <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
                   activeApp.title }}
                 </h1>
-                <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3" :style="{ color: textColor }"
-                  data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3 selectable"
+                  :style="{ color: textColor }" data-bs-dismiss="modal" aria-label="Close"></button>
 
               </div>
 
-              <div class=" col-12 col-md-6 px-0">
+              <div class=" col-12 col-md-6 px-0 d-flex flex-column align-items-center justify-content-center">
                 <AppCarousel />
               </div>
 
@@ -79,8 +80,8 @@ const setActiveApp = () => {
                   <h1 class="modal-title fs-4 fw-semibold" :style="{ color: textColor }" id="appModalLabel">{{
                     activeApp.title }}
                   </h1>
-                  <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3" :style="{ color: textColor }"
-                    data-bs-dismiss="modal" aria-label="Close"></button>
+                  <button type="button" class="btn  mdi mdi-close py-0 border-0 fs-3 selectable"
+                    :style="{ color: textColor }" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="row flex-grow-1 bg-secondary text-light mx-0">

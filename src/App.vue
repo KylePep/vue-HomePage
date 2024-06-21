@@ -28,8 +28,12 @@ import AppModal from './components/AppModal.vue'
   --main-height: calc(100vh - 32px - 64px);
 }
 
-.custom-button {
+section {
+  min-height: 30vh;
+  margin-bottom: 20vh;
+}
 
+.custom-button {
   -webkit-transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
 }

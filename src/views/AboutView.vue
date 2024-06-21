@@ -21,18 +21,18 @@ const borderColorList = computed(() => AppState.accentColors)
         <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid rounded" alt="">
       </div>
 
-      <div class="order-2 col-12">
+      <section class="order-2 col-12">
         <div class="text-center fs-1 text-light">My Favorite Works</div>
         <div class="row">
           <div v-for="app, index in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
             <ApplicationCard :org="'grid'" :app=app :borderColor="borderColorList[index % 4]" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="order-3 col-12">
+      <section class="order-3 col-12">
         <SkillsSection />
-      </div>
+      </section>
 
     </div>
 

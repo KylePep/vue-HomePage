@@ -54,6 +54,6 @@ function scrollToTop() {
 <style lang="scss" scoped>
 .container-fluid {
   min-height: 96px;
-  margin-top: 32px;
+  margin-top: 25vh;
 }
 </style>

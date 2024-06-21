@@ -7,7 +7,7 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
 
 <template>
   <div class="container text-light">
-    <div class="row top-row">
+    <section class="row top-row">
 
 
       <div class="col-12 col-md-6">
@@ -79,12 +79,13 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
         </div>
       </div>
 
+    </section>
+
+    <section class="row">
       <div class="col-12 my-5">
         <TestimonialSection />
       </div>
-
-
-    </div>
+    </section>
   </div>
 </template>
 

@@ -109,7 +109,7 @@ export default {
 }
 
 .selectable-nav {
-  color: var(--bs-primary);
+  color: var(--bs-success);
   // width: 256px;
 }
 

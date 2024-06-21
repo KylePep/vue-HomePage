@@ -35,7 +35,7 @@ const setFilterBy = (tag) => {
   <div class="container text-light">
 
 
-    <div class="row top-row">
+    <section class="row top-row">
 
       <div class="col-12 mt-5">
         <h3 class="text-center">
@@ -60,7 +60,7 @@ const setFilterBy = (tag) => {
         <ApplicationCard org="list" :app=app :borderColor="borderColorList[index % 4]" />
       </div>
 
-    </div>
+    </section>
 
   </div>
 </template>

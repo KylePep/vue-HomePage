@@ -62,9 +62,4 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
 .hero {
   min-height: 80vh;
 }
-
-section {
-  min-height: 30vh;
-  margin-bottom: 20vh;
-}
 </style>

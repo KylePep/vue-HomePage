@@ -84,14 +84,14 @@ const page = route.name;
   height: 52px;
   scale: .9;
   background-color: var(--bs-light);
-  color: var(--bs-secondary);
+  color: var(--bs-success);
   border-radius: 50%;
   transition: all 300ms ease-in-out;
 }
 
 .circle:hover {
   scale: 1;
-  background-color: var(--bs-secondary);
+  background-color: var(--bs-success);
   color: var(--bs-light);
   border-radius: 50%;
 }

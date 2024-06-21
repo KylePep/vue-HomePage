@@ -45,7 +45,8 @@ const setFilterBy = (tag) => {
   display: block;
   width: 28px;
   height: 28px;
-  border: solid 3px var(--bs-light);
+  color: var(--bs-light);
+  border: solid 3px var(--bs-success);
   border-radius: 50%;
 }
 </style>
