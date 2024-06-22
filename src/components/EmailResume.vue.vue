@@ -1,13 +1,38 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import emailjs from '@emailjs/browser';
+import Pop from "@/utils/Pop.js";
+import { logger } from "@/utils/Logger.js";
+
+
+const userEmail = ref({})
+function sendResume() {
+  let params = {
+    user_email: userEmail.value.email_id,
+    to_name: userEmail.value.email_id,
+    from_name: 'Kyle Peppersack'
+  }
+  emailjs.send("service_mwyiktp", "template_us6a49b", params).then(
+    () => {
+      Pop.success(`My resume is on its way!`)
+      logger.log('SUCCESS!');
+    },
+    (error) => {
+      logger.log('FAILED...', error.text);
+    },
+  )
+  userEmail.value = {}
+}
+</script>
 
 
 <template>
-  <form class="row g-3">
+  <form @submit.prevent="sendResume()" class="row g-3">
 
     <div class="col-12 col-md-6">
       <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
-      <input type="email" class="form-control py-3 fs-5 rounded-1" id="exampleInputEmail1" aria-describedby="emailHelp"
-        placeholder="EMAIL">
+      <input type="email" v-model="userEmail.email_id" class="form-control input-hero py-3 fs-5 rounded-1"
+        id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
     </div>
 
     <div class="col-12 col-md-6">
@@ -21,6 +46,20 @@
 
 
 <style lang="scss" scoped>
+::placeholder {
+  color: var(--bs-light);
+}
+
+.input-hero {
+  color: var(--bs-light);
+  border: 3px solid var(--bs-light);
+  background-color: transparent;
+}
+
+.input-hero:focus {
+  box-shadow: 0px 0px 4px var(--bs-success);
+}
+
 .btn-hero {
   display: inline-block;
   padding: 0.9rem 1.8rem;
