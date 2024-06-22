@@ -1,5 +1,5 @@
 <script setup>
-import TestimonialSection from "@/components/TestimonialSection.vue";
+// import TestimonialSection from "@/components/TestimonialSection.vue";
 
 
 </script>
@@ -81,11 +81,11 @@ import TestimonialSection from "@/components/TestimonialSection.vue";
 
     </section>
 
-    <section class="row">
+    <!-- <section class="row">
       <div class="col-12 my-5">
         <TestimonialSection />
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 

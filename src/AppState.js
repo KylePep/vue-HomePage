@@ -238,7 +238,7 @@ export const AppState = reactive({
       duration: '2019 - 2020'
     },
     {
-      title: 'Office Max: Customer Service Writer',
+      title: 'Office Max: Customer Service Manager',
       description: 'My first experience as a manager, It was a time of rapid change and progress. I would be promoted to another manger position. I left on good terms and would work for them again at a different store that I trained at.',
       duration: '2017 - 2019'
     }
