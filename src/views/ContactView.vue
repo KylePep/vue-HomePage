@@ -1,5 +1,6 @@
 <script setup>
 // import TestimonialSection from "@/components/TestimonialSection.vue";
+import EmailMe from "@/components/EmailMe.vue";
 
 
 </script>
@@ -23,7 +24,7 @@
 
           <div class="col-12 separation"></div>
 
-          <div class="col-12 ">
+          <div class="col-12 pe-md-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus accusantium error provident, commodi
             expedita harum aperiam animi id quia tempora consequatur labore quisquam possimus, ratione quis qui
             blanditiis
@@ -49,33 +50,7 @@
 
       <div class="col-12 col-md-6">
         <div class="row g-3">
-
-          <div class="col-12 mt-5 ">
-            DROP ME A MESSAGE
-          </div>
-
-          <div class="col-12">
-
-            <form class="mt-4 mt-md-0">
-
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="NAME" />
-              </div>
-
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="E-Mail" />
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control" name="Message" id="Message" placeholder="MESSAGE"></textarea>
-              </div>
-
-              <div class="form-group">
-                <button type="submit" class="form-control">CONTACT ME</button>
-              </div>
-            </form>
-
-          </div>
+          <EmailMe />
         </div>
       </div>
 
@@ -91,52 +66,6 @@
 
 
 <style lang="scss" scoped>
-.form-control {
-  border-radius: 0;
-}
-
-.form-control:focus {
-  box-shadow: none;
-}
-
-.form-group {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.form-group>label {
-  transition: transform 0.4s;
-  transform-origin: 0 0;
-  transform: scale(1.4) translateY(20px);
-}
-
-textarea {
-  resize: none;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: var(--bs-light);
-}
-
-.form-control {
-  border: 0;
-  border-bottom: 1px solid #a1a2a3;
-}
-
-.form-control,
-.form-control:focus,
-.form-control:focus:hover {
-  color: var(--bs-success);
-  background-color: var(--bs-secondary);
-  outline: none;
-}
-
-.form-control:focus,
-.form-control:focus:hover {
-  border-bottom: 1px solid var(--bs-success);
-}
-
 .top-row {
   margin-top: 5rem;
 }
