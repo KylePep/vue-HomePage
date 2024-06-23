@@ -27,7 +27,7 @@ function sendMail() {
 
 
 <template>
-  <div class="col-12 mt-5 ">
+  <div class="col-12 fs-2 mt-5 mt-md-3">
     DROP ME A MESSAGE
   </div>
 
@@ -50,7 +50,7 @@ function sendMail() {
       </div>
 
       <div class="form-group">
-        <button type="submit" class="form-control">CONTACT ME</button>
+        <button type="submit" class="form-control">SEND</button>
       </div>
     </form>
 

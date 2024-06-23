@@ -21,9 +21,10 @@ function scrollToTop() {
       </div>
       <div class="col-1 d-none d-sm-block"> | </div>
       <div class="col-12 col-sm-5 mx-auto text-center text-sm-start">
-        <a href="tel:7753046480" class="selectable text-light p-1">
+        <RouterLink :to="{ name: 'Contact' }" class="selectable text-light p-1">Reach out to me right now?</RouterLink>
+        <!-- <a href="tel:7753046480" class="selectable text-light p-1">
           775 - 304 - 6480
-        </a>
+        </a> -->
       </div>
     </div>
 

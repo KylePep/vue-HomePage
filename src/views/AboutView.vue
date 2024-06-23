@@ -18,11 +18,11 @@ const borderColorList = computed(() => AppState.accentColors)
         <AboutSection />
       </div>
       <div class="order-0 order-md-1 col-12 col-lg-6 d-flex justify-content-start justify-content-md-end">
-        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="img-fluid rounded" alt="">
+        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="rounded-1" alt="">
       </div>
 
       <section class="order-2 col-12">
-        <div class="text-center fs-1 text-light">My Favorite Works</div>
+        <div class="text-center fs-1 text-light mb-3">Some of my favorites</div>
         <div class="row">
           <div v-for="app, index in favoriteApps" :key="app" class="col-12 col-md-6  col-lg-4">
             <ApplicationCard :org="'grid'" :app=app :borderColor="borderColorList[index % 4]" />
@@ -44,6 +44,12 @@ const borderColorList = computed(() => AppState.accentColors)
 <style lang="scss" scoped>
 img {
   max-height: 50vh;
+}
+
+@media only screen and (min-width: 992px) {
+  img {
+    max-height: calc(80vh - 32px);
+  }
 }
 
 .top-row {
