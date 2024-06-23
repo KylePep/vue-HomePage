@@ -7,13 +7,7 @@ import SubmitCelebrate from "./SubmitCelebrate.vue";
 
 const emailData = ref({})
 let submitCelebration = ref('none');
-function setCeleb() {
-  if (submitCelebration.value == 'none') {
-    submitCelebration.value = 'celebrate'
-  } else {
-    submitCelebration.value = 'none'
-  }
-}
+
 function sendMail() {
   let params = {
     from_name: `${emailData.value.name}`,
@@ -40,7 +34,6 @@ function sendMail() {
   <div class="col-12 fs-2 mt-5 mt-md-3">
     DROP ME A MESSAGE
   </div>
-  <button @click="setCeleb()" class="btn btn-success"> Celebrate </button>
 
   <div class="col-12">
 
