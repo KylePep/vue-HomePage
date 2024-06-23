@@ -3,8 +3,17 @@ import Pop from "@/utils/Pop.js";
 import { ref } from "vue";
 import emailjs from '@emailjs/browser';
 import { logger } from "@/utils/Logger.js";
+import SubmitCelebrate from "./SubmitCelebrate.vue";
 
 const emailData = ref({})
+let submitCelebration = ref('none');
+function setCeleb() {
+  if (submitCelebration.value == 'none') {
+    submitCelebration.value = 'celebrate'
+  } else {
+    submitCelebration.value = 'none'
+  }
+}
 function sendMail() {
   let params = {
     from_name: `${emailData.value.name}`,
@@ -16,6 +25,7 @@ function sendMail() {
     () => {
       Pop.success(`Thank you for your message!`)
       logger.log('SUCCESS!');
+      submitCelebration.value = 'celebrate'
     },
     (error) => {
       logger.log('FAILED...', error.text);
@@ -30,6 +40,7 @@ function sendMail() {
   <div class="col-12 fs-2 mt-5 mt-md-3">
     DROP ME A MESSAGE
   </div>
+  <button @click="setCeleb()" class="btn btn-success"> Celebrate </button>
 
   <div class="col-12">
 
@@ -54,6 +65,11 @@ function sendMail() {
       </div>
     </form>
 
+  </div>
+
+  <div>
+    {{ submitCelebration }}
+    <SubmitCelebrate :celebration="submitCelebration" />
   </div>
 </template>
 
