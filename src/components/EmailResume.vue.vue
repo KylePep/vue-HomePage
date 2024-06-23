@@ -31,7 +31,7 @@ function sendResume() {
 
     <div class="col-12 col-md-6">
       <label for="exampleInputEmail1" class="form-label d-none ">Email address</label>
-      <input type="email" v-model="userEmail.email_id" class="form-control input-hero py-3 fs-5 rounded-1"
+      <input type="email" required v-model="userEmail.email_id" class="form-control input-hero py-3 fs-5 rounded-1"
         id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="EMAIL">
     </div>
 
@@ -42,6 +42,7 @@ function sendResume() {
 
     <div id="emailHelp" class="text-light col-12 col-md-6 mt-3">* Get my resume directly in your mailbox</div>
   </form>
+
 </template>
 
 
@@ -54,6 +55,17 @@ function sendResume() {
   color: var(--bs-light);
   border: 3px solid var(--bs-light);
   background-color: transparent;
+}
+
+input:autofill {
+  border: 1px solid var(--bs-success);
+}
+
+form:invalid {
+  >div>button {
+    color: var(--bs-secondary);
+    border: 3px solid var(--bs-light);
+  }
 }
 
 .input-hero:focus {

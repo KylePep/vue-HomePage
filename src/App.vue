@@ -33,6 +33,10 @@ section {
   margin-bottom: 20vh;
 }
 
+input:autofill {
+  border: 1px solid var(--bs-success);
+}
+
 .custom-button {
   -webkit-transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 400ms ease-in-out;
