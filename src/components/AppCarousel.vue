@@ -1,5 +1,6 @@
 <script setup>
 import { AppState } from "@/AppState.js";
+import { logger } from "@/utils/Logger.js";
 import { computed, ref, watch } from "vue";
 
 
@@ -7,35 +8,42 @@ const activeAppImg = computed(() => AppState.activeApp.img)
 
 let bgSelector = 0
 
-let activeImage = ref(activeAppImg.value[bgSelector])
+const activeBGImage = ref(activeAppImg.value[bgSelector])
+
 // logger.log(activeImage.value)
 watch(activeAppImg, () => {
   updateBg('reset')
 })
 
 function updateBg(direction) {
+  const activeElement = document.getElementsByClassName('active carousel-item')
+  const activeImage = activeElement[0].getElementsByTagName('img')[0].src
+  const activeImageName = activeImage.split('/').pop()
+  const activeBgName = activeBGImage.value.split('/').pop()
+  logger.log('[activeImageName]', activeImageName, '[activeBgName]', activeBgName)
 
   if (direction == 'reset') {
     bgSelector = 0
   }
-
-  if (direction == '+') {
-    if (bgSelector + 1 >= activeAppImg.value.length) {
-      bgSelector = 0
-    } else {
-      bgSelector += 1
-    }
-  } else if (direction == '-') {
-    if (bgSelector - 1 < 0) {
-      bgSelector = activeAppImg.value.length - 1
-    } else {
-      bgSelector -= 1
+  if (activeImageName == activeBgName) {
+    if (direction == '+') {
+      if (bgSelector + 1 >= activeAppImg.value.length) {
+        bgSelector = 0
+      } else {
+        bgSelector += 1
+      }
+    } else if (direction == '-') {
+      if (bgSelector - 1 < 0) {
+        bgSelector = activeAppImg.value.length - 1
+      } else {
+        bgSelector -= 1
+      }
     }
   }
 
-  activeImage.value = activeAppImg.value[bgSelector]
+  activeBGImage.value = activeAppImg.value[bgSelector]
 
-  // logger.log('[bgSelector]', bgSelector, direction, '[activeImage]', activeImage.value)
+  // logger.log('[bgSelector]', bgSelector, direction, '[activeBGImage]', activeBGImage.value)
 }
 
 watch(activeAppImg, () => {
@@ -60,7 +68,7 @@ watch(activeAppImg, () => {
 
 <template>
   <div class="d-flex flex-column flex-grow-1 carousel-background"
-    v-bind:style="{ backgroundImage: 'url(' + activeImage + ')' }">
+    v-bind:style="{ backgroundImage: 'url(' + activeBGImage + ')' }">
     <div class="d-flex flex-column flex-grow-1 glassmorph justify-content-center">
 
       <div id="carouselExample" class="carousel slide ">
