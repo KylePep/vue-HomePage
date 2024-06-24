@@ -45,7 +45,7 @@ export const AppState = reactive({
   /** @type {[{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
   appList: [
     {
-      img: ['src/assets/images/frontEnd.png', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/landing.png', 'src/assets/images/apps/landing2.png'],
       title: 'Landing Page',
       description: 'The landing page your are currently looking at',
       frontEnd: ['Vue.js'],
@@ -56,10 +56,10 @@ export const AppState = reactive({
       webLink: 'https://home.kylepep.dev',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#DE7119',
-      tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
+      tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
-      img: ['src/assets/images/apps/oldLandingPage.jpg', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/oldLanding.png', 'src/assets/images/apps/oldLanding2.png', 'src/assets/images/apps/oldLanding3.png', 'src/assets/images/apps/oldLanding4.png',],
       title: 'Old Landing Page',
       description: "My old landing page. I made a new one because I wanted to take what I've learned over the months and develope something more maintainable and scalable. Three.js was super fun to figure out, but I'm glad I gave it another shot. ",
       frontEnd: ['Vue.js'],
@@ -73,7 +73,7 @@ export const AppState = reactive({
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap', 'Three.js']
     },
     {
-      img: ['src/assets/images/apps/saiyanClicker.png', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/saiyanClicker.png', 'src/assets/images/apps/saiyanClicker3.png', 'src/assets/images/apps/saiyanClicker2.png', 'src/assets/images/apps/saiyanClicker4.png',],
       title: 'Saiyan Clicker',
       description: "This was a lot of fun to make. It's a clicker game that you get to fight your way through enemies from Dragon Ball Z! There is a shop you can purchase upgrades from and unlockable characters. A great Javascript exercise and helped my learn a lot about Html and Css. You can even play it!",
       frontEnd: [],
@@ -115,7 +115,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
     {
-      img: ['src/assets/images/apps/codefitness.png', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/codeFitness.png', 'src/assets/images/apps/codeFitness2.png', 'src/assets/images/apps/codeFitness3.png', 'src/assets/images/apps/codeFitness4.png'],
       title: 'CodeFitness',
       description: 'CodeFitness transforms fitness into an engaging game. Users access a vast exercise library, crafting personalized routines. These routines are gamified, rewarding completion with points and levels. Join thriving communities, compete for top rankings, and unlock achievements, fostering motivation and camaraderie. CodeFitness reimagines workouts as an exhilarating journey towards better health.',
       frontEnd: ['Vue.js'],
@@ -123,7 +123,7 @@ export const AppState = reactive({
       dataBase: 'MongoDB',
       languages: ['JavaScript'],
       cssFrameworks: ['Bootstrap'],
-      webLink: 'https://github.com/KylePep/vue-HomePage',
+      webLink: 'https://codefitness-16iw.onrender.com/',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#DE7119',
       tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
@@ -140,10 +140,10 @@ export const AppState = reactive({
       webLink: 'https://github.com/KylePep/vue-HomePage',
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#DE7119',
-      tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
+      tags: ['web', 'favorite', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
-      img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/puppylovesuites.png', 'src/assets/images/apps/puppylovesuites2.png', 'src/assets/images/apps/puppylovesuites3.png',],
       title: 'PuppyLoveSuites',
       description: 'My first website created for a client',
       frontEnd: ['Vue.js'],
@@ -157,7 +157,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
-      img: ['src/assets/images/business.jpg', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/postIt.png', 'src/assets/images/apps/postIt2.png'],
       title: 'Postit',
       description: 'My first website created for a client',
       frontEnd: ['React'],

@@ -61,7 +61,6 @@ function sendMail() {
   </div>
 
   <div>
-    {{ submitCelebration }}
     <SubmitCelebrate :celebration="submitCelebration" />
   </div>
 </template>
