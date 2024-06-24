@@ -3,7 +3,7 @@ import { AppState } from "@/AppState.js";
 import { computed } from "vue";
 
 const emit = defineEmits(['setOrg', 'setFilterBy'])
-const props = defineProps(['organizationStyle'])
+const props = defineProps(['organizationStyle', 'resultLength'])
 
 let filterBy = computed(() => AppState.activeFilter)
 
@@ -105,6 +105,9 @@ const setFilterTag = (tag) => {
     </div>
     <div class="mdi mdi-close-thick filter-clear" title="clear filter">
     </div>
+  </div>
+  <div v-if="filterBy != 'web'" class="col-12 text-center text-light">
+    Results: {{ props.resultLength }}
   </div>
 
 </template>

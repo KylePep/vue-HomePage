@@ -2,6 +2,7 @@
 import { AppState } from "@/AppState.js";
 import ApplicationCard from "@/components/ApplicationCard.vue";
 import filterBar from "@/components/filterBar.vue";
+import { logger } from "@/utils/Logger.js";
 import { computed, onUnmounted, ref } from "vue";
 
 const appData = computed(() => AppState.appList)
@@ -9,6 +10,8 @@ const appData = computed(() => AppState.appList)
 let filterBy = computed(() => AppState.activeFilter)
 
 let appList = computed(() => appData.value.filter((a) => a.tags.includes(filterBy.value)))
+const resultLength = computed(() => appList.value.length)
+logger.log(resultLength)
 
 const organizationStyle = ref('list')
 
@@ -48,7 +51,8 @@ const setFilterBy = (tag) => {
       <div class="col-12 m-auto separation mt-5"></div>
 
       <div class="col-12">
-        <filterBar @set-org="setOrg" @set-filter-by="setFilterBy" :organizationStyle="organizationStyle" />
+        <filterBar @set-org="setOrg" @set-filter-by="setFilterBy" :organizationStyle="organizationStyle"
+          :resultLength="resultLength" />
       </div>
 
       <div v-for="app, index in appList" :key="index" class="d-none d-lg-block mt-5"
