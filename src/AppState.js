@@ -59,7 +59,7 @@ export const AppState = reactive({
       tags: ['web', 'favorite', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
-      img: ['src/assets/images/apps/keepr.png', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/keepr.png', 'src/assets/images/apps/keepr2.png', 'src/assets/images/apps/keepr3.png'],
       title: 'Keepr',
       description: 'Keepr, a dynamic web app, empowers users to share cherished memories through "keeps" – images posted and neatly stored in customizable vaults. Seamlessly create, organize, and collaborate on vaults with fellow users, fostering connections and preserving special moments. Keepr revolutionizes photo-sharing, enhancing personal connections and digital memories.',
       frontEnd: ['Vue.js'],
@@ -101,7 +101,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
-      img: ['src/assets/images/apps/allspice.png', 'src/assets/images/frontEnd.png'],
+      img: ['src/assets/images/apps/allSpice.png', 'src/assets/images/apps/allSpice2.png', 'src/assets/images/apps/allSpice3.png'],
       title: 'All-Spice',
       description: 'All-Spice is a culinary haven in the digital world, where users curate their favorite recipes, discover a treasure trove of culinary delights, and express their admiration for dishes with the "favorite" feature. This web app elevates recipe sharing, making it a delectable journey for food enthusiasts to savor and explore.',
       frontEnd: ['Vue.js'],

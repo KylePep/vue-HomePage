@@ -21,7 +21,7 @@ export function saveState(key, value) {
 }
 
 export function loadState(key, instanceType) {
-  logger.log('loadState', key, instanceType)
+  // logger.log('loadState', key, instanceType)
 
   try {
     const keyName = `${APP_NAME}_${key}`
