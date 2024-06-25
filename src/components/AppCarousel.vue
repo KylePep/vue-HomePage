@@ -1,6 +1,5 @@
 <script setup>
 import { AppState } from "@/AppState.js";
-import { logger } from "@/utils/Logger.js";
 import { computed, ref, watch } from "vue";
 
 
@@ -10,7 +9,6 @@ let bgSelector = 0
 
 const activeBGImage = ref(activeAppImg.value[bgSelector])
 
-// logger.log(activeImage.value)
 watch(activeAppImg, () => {
   updateBg('reset')
 })
@@ -20,7 +18,6 @@ function updateBg(direction) {
   const activeImage = activeElement[0].getElementsByTagName('img')[0].src
   const activeImageName = activeImage.split('/').pop()
   const activeBgName = activeBGImage.value.split('/').pop()
-  logger.log('[activeImageName]', activeImageName, '[activeBgName]', activeBgName)
 
   if (direction == 'reset') {
     bgSelector = 0
@@ -43,7 +40,6 @@ function updateBg(direction) {
 
   activeBGImage.value = activeAppImg.value[bgSelector]
 
-  // logger.log('[bgSelector]', bgSelector, direction, '[activeBGImage]', activeBGImage.value)
 }
 
 watch(activeAppImg, () => {

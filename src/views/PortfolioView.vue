@@ -2,7 +2,6 @@
 import { AppState } from "@/AppState.js";
 import ApplicationCard from "@/components/ApplicationCard.vue";
 import filterBar from "@/components/filterBar.vue";
-import { logger } from "@/utils/Logger.js";
 import { computed, onUnmounted, ref } from "vue";
 
 const appData = computed(() => AppState.appList)
@@ -11,7 +10,6 @@ let filterBy = computed(() => AppState.activeFilter)
 
 let appList = computed(() => appData.value.filter((a) => a.tags.includes(filterBy.value)))
 const resultLength = computed(() => appList.value.length)
-logger.log(resultLength)
 
 const organizationStyle = ref('list')
 
