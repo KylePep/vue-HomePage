@@ -40,7 +40,7 @@ import UIDestign from "./icons/UIDestign.vue";
               <p class="card-text mb-4 mx-0 mx-sm-5">I love diving into the backend with MongoDB and MySQL to create
                 robust and scalable databases. From crafting efficient queries to ensuring data integrity.</p>
             </div>
-            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular bg-secondary position-relative">
+            <RouterLink :to="{ name: 'Portfolio' }" class="btn-circular dark-btn bg-secondary position-relative">
               <i class="mdi mdi-arrow-right-thick fs-3 position-absolute start-50 top-50 translate-middle"></i>
             </RouterLink>
           </div>
@@ -87,6 +87,10 @@ import UIDestign from "./icons/UIDestign.vue";
   box-shadow: 0 0 40px 40px var(--bs-primary)inset;
   color: var(--bs-secondary);
   animation: grow 300ms alternate 100ms 1 forwards;
+}
+
+.dark-btn {
+  color: var(--bs-success);
 }
 
 @keyframes grow {

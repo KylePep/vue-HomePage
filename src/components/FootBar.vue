@@ -15,13 +15,14 @@ function scrollToTop() {
       <div class="col-12 fs-4 fw-semibold">Are You Ready to Work with Me?</div>
       <div class="col-12 fs-4 fw-semibold pb-3">Don't be Shy, Say Hello!</div>
       <div class="col-12 col-sm-5 mx-auto text-center text-sm-end ">
-        <a href="mailto:kylepeppersack@hotmail.com" class="selectable text-light p-1">
+        <a href="mailto:kylepeppersack@hotmail.com" class="selectable rounded-1 text-light p-1">
           kylepeppersack@hotmail.com
         </a>
       </div>
       <div class="col-1 d-none d-sm-block"> | </div>
       <div class="col-12 col-sm-5 mx-auto text-center text-sm-start">
-        <RouterLink :to="{ name: 'Contact' }" class="selectable text-light p-1">Reach out to me right now?</RouterLink>
+        <RouterLink :to="{ name: 'Contact' }" class="selectable rounded-1 text-light p-1">Reach out to me right now?
+        </RouterLink>
         <!-- <a href="tel:7753046480" class="selectable text-light p-1">
           775 - 304 - 6480
         </a> -->
@@ -55,6 +56,6 @@ function scrollToTop() {
 <style lang="scss" scoped>
 .container-fluid {
   min-height: 96px;
-  margin-top: 25vh;
+  margin-top: 15vh;
 }
 </style>

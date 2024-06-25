@@ -14,10 +14,10 @@ const borderColorList = computed(() => AppState.accentColors)
 <template>
   <div class="container">
     <div class="row top-row g-5">
-      <div class="order-1 order-md-0 col-12 col-md-6">
+      <div class="order-1 order-lg-0 col-12 col-lg-6">
         <AboutSection />
       </div>
-      <div class="order-0 order-md-1 col-12 col-lg-6 d-flex justify-content-start justify-content-md-end">
+      <div class="order-0 order-lg-1 col-12 col-lg-6 d-flex justify-content-start justify-content-md-end">
         <img src="../assets/images/KylePeppersackHeadShot.jpg" class="rounded-1" alt="">
       </div>
 
@@ -48,7 +48,7 @@ img {
 
 @media only screen and (min-width: 992px) {
   img {
-    max-height: calc(80vh - 32px);
+    // max-height: calc(80vh - 32px);
   }
 }
 
