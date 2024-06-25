@@ -185,16 +185,16 @@ export const AppState = reactive({
       appColor: '#18B0B0',
       tags: ['web', 'React', 'TypeScript', 'Tailwind']
     }, {
-      img: ['src/assets/images/apps/codeFitness.png', 'src/assets/images/apps/codeFitness2.png', 'src/assets/images/apps/codeFitness3.png', 'src/assets/images/apps/codeFitness4.png'],
+      img: ['src/assets/images/apps/tower.png', 'src/assets/images/apps/tower2.png', 'src/assets/images/apps/tower3.png'],
       title: 'Tower',
-      description: 'Get some ticket reserved and such.',
+      description: 'Tower is a versatile web app facilitating event creation, discovery, and ticket reservations. Users effortlessly organize gatherings, explore diverse events, and secure tickets with ease. Tower streamlines event management, fosters community engagement, and simplifies the event-going experience, making it an essential tool for event enthusiasts and organizers alike.',
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js'],
       dataBase: 'MongoDB',
       languages: ['JavaScript'],
       cssFrameworks: ['Bootstrap'],
-      webLink: 'https://codefitness-16iw.onrender.com/',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      webLink: '',
+      githubLink: 'https://github.com/KylePep/Tower',
       appColor: '#DE7119',
       tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
