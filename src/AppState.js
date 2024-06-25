@@ -53,8 +53,8 @@ export const AppState = reactive({
       dataBase: 'MongoDB',
       languages: ['JavaScript'],
       cssFrameworks: ['Bootstrap'],
-      webLink: 'https://github.com/KylePep/vue-HomePage',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      webLink: '',
+      githubLink: 'https://github.com/codeworksacademy/challenges.codeworksacademy.com',
       appColor: '#DE7119',
       tags: ['web', 'favorite', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
@@ -68,7 +68,7 @@ export const AppState = reactive({
       languages: ['JavaScript', 'C#'],
       cssFrameworks: ['Bootstrap'],
       webLink: '',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      githubLink: 'https://github.com/KylePep/Keepr',
       appColor: '#18B0B0',
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
@@ -82,14 +82,14 @@ export const AppState = reactive({
       languages: ['JavaScript'],
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://codefitness-16iw.onrender.com/',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      githubLink: 'https://github.com/EwanStubblefield-Allen/CodeFitness',
       appColor: '#DE7119',
-      tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
+      tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
       img: ['src/assets/images/apps/puppylovesuites.png', 'src/assets/images/apps/puppylovesuites2.png', 'src/assets/images/apps/puppylovesuites3.png',],
       title: 'PuppyLoveSuites',
-      description: 'My first website created for a client',
+      description: 'A web page created for a client that has driven traffic to there site. This website was a huge help in learning more about SEO as it was a focal point for the client.',
       frontEnd: ['Vue.js'],
       backEnd: [],
       dataBase: '',
@@ -99,20 +99,6 @@ export const AppState = reactive({
       githubLink: 'https://github.com/KylePep/vue-HomePage',
       appColor: '#DEE3E2',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
-    },
-    {
-      img: ['src/assets/images/apps/landing.png', 'src/assets/images/apps/landing2.png'],
-      title: 'Landing Page',
-      description: 'The landing page your are currently looking at',
-      frontEnd: ['Vue.js'],
-      backEnd: [],
-      dataBase: '',
-      languages: ['JavaScript'],
-      cssFrameworks: ['Bootstrap'],
-      webLink: 'https://home.kylepep.dev',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
-      appColor: '#DE7119',
-      tags: ['web', 'homePage', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
       img: ['src/assets/images/apps/allspice.png', 'src/assets/images/frontEnd.png'],
@@ -127,6 +113,20 @@ export const AppState = reactive({
       githubLink: 'https://github.com/KylePep/allSpice.git',
       appColor: '#18B0B0',
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
+    },
+    {
+      img: ['src/assets/images/apps/landing.png', 'src/assets/images/apps/landing2.png'],
+      title: 'Landing Page',
+      description: "The landing page you are currently on. I wanted to include this in the list because it helps show the way my landing page evolved on a second pass.",
+      frontEnd: ['Vue.js'],
+      backEnd: [],
+      dataBase: '',
+      languages: ['JavaScript'],
+      cssFrameworks: ['Bootstrap'],
+      webLink: 'https://home.kylepep.dev',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#DE7119',
+      tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
       img: ['src/assets/images/apps/oldLanding.png', 'src/assets/images/apps/oldLanding2.png', 'src/assets/images/apps/oldLanding3.png', 'src/assets/images/apps/oldLanding4.png',],
@@ -152,7 +152,7 @@ export const AppState = reactive({
       languages: ['JavaScript'],
       cssFrameworks: ['Bootstrap'],
       webLink: 'https://kylepep.github.io/saiyanClicker',
-      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      githubLink: 'https://github.com/KylePep/saiyanClicker',
       appColor: '#116979',
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
@@ -160,7 +160,7 @@ export const AppState = reactive({
     {
       img: ['src/assets/images/apps/postIt.png', 'src/assets/images/apps/postIt2.png'],
       title: 'Postit',
-      description: 'My first website created for a client',
+      description: 'Postit is a react based full-stack application that uses PostgreSQL to create a web forum where users can create posts and comment on them. Can sign in using your google account!',
       frontEnd: ['React'],
       backEnd: ['Next.js'],
       dataBase: 'PostgreSQL',
@@ -170,7 +170,34 @@ export const AppState = reactive({
       githubLink: 'https://github.com/KylePep/postit',
       appColor: '#18B0B0',
       tags: ['web', 'React', 'TypeScript', 'Tailwind', 'NextAuth.js', 'PostgreSQL', 'SQL']
-    }
+    },
+    {
+      img: ['src/assets/images/apps/glxTrvl.png', 'src/assets/images/apps/glxTrvl2.png'],
+      title: 'glx-trvl',
+      description: 'A reproduction of a futuristic galaxy travel agency.',
+      frontEnd: ['React'],
+      backEnd: [],
+      dataBase: '',
+      languages: ['TypeScript'],
+      cssFrameworks: ['Tailwind'],
+      webLink: '',
+      githubLink: 'https://github.com/KylePep/glx-trvl',
+      appColor: '#18B0B0',
+      tags: ['web', 'React', 'TypeScript', 'Tailwind']
+    }, {
+      img: ['src/assets/images/apps/codeFitness.png', 'src/assets/images/apps/codeFitness2.png', 'src/assets/images/apps/codeFitness3.png', 'src/assets/images/apps/codeFitness4.png'],
+      title: 'Tower',
+      description: 'Get some ticket reserved and such.',
+      frontEnd: ['Vue.js'],
+      backEnd: ['Express.js'],
+      dataBase: 'MongoDB',
+      languages: ['JavaScript'],
+      cssFrameworks: ['Bootstrap'],
+      webLink: 'https://codefitness-16iw.onrender.com/',
+      githubLink: 'https://github.com/KylePep/vue-HomePage',
+      appColor: '#DE7119',
+      tags: ['web', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
+    },
   ],
 
   /** @type {[{title, tag, description}]} active Item Info*/
