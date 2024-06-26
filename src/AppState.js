@@ -40,7 +40,8 @@ export const AppState = reactive({
     'PostgreSQL',
     'Three.js',
     'TypeScript',
-    'new'
+    'new',
+    'funz'
   ],
 
   /** @type {[{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
