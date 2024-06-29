@@ -1,8 +1,9 @@
 {
-  "include": ["./src/**/*.vue", "./src/**/*.js"],
   "compilerOptions": {
-    "jsx": "preserve",
-    "allowJs": true,
-    "checkJs": true
-  }
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
 }
