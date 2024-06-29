@@ -1,4 +1,3 @@
-# run please2
 name: Docker Build
 
 on:
@@ -31,6 +30,6 @@ jobs:
         with:
           platforms: linux/arm64, linux/amd64
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.REPO_NAME }}:latest
-          file: server/Dockerfile
+          file: ./Dockerfile
           context: .
           push: true
