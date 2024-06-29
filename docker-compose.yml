@@ -1,6 +1,9 @@
 version: '3'
 services:
-  web:
+  app:
     image: ${DOCKER_USERNAME}/${REPO_NAME}:latest
+    restart: unless-stopped
+    env_file:
+      - homepage-env
     ports:
       - '80:80'
