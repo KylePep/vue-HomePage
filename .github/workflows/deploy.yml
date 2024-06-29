@@ -1,4 +1,3 @@
-#There is no env echo
 name: Deploy to EC2 ☁️
 
 on:
@@ -33,6 +32,10 @@ jobs:
       - name: Send Docker Compose 🐋
         run: |
           scp -i ~/.ssh/id_rsa.pem -o StrictHostKeyChecking=no docker-compose.yml $EC2_USERNAME@$EC2_IP_ADDRESS:~/$REPO_NAME-compose.yml
+
+      - name: Send Environment File 🌎
+        run: |
+          echo "$ENV_FILE" | ssh -i ~/.ssh/id_rsa.pem -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_IP_ADDRESS "cat > ~/$REPO_NAME-env"
 
       - name: Docker pull -> up 🐳
         run: |
