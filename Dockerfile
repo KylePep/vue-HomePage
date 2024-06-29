@@ -1,28 +1,29 @@
-# Use an official Node runtime as a parent image
-FROM node:20.11.1-alpine as build
+# Use an official Node.js runtime as the base image
+FROM node:20-slim AS build
 
 # Set the working directory
 WORKDIR /app
 
-# Install dependencies
-COPY package.json package-lock.json ./
-RUN npm ci
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Copy the source code
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application
 COPY . .
 
-# Build the Vue.js application
+# Build the application
 RUN npm run build
 
-# Use an Nginx image to serve the static files
+# Use nginx to serve the built application
 FROM nginx:alpine
 
-# Copy the built files from the build stage
+# Copy built files to nginx directory
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose the port
+# Expose port 80
 EXPOSE 80
 
-# Start Nginx server
+# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
-
