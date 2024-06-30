@@ -18,7 +18,7 @@ const borderColorList = computed(() => AppState.accentColors)
         <AboutSection />
       </div>
       <div class="order-0 order-lg-1 col-12 col-lg-6 d-flex justify-content-start justify-content-md-end">
-        <img src="../assets/images/KylePeppersackHeadShot.jpg" class="rounded-1" alt="">
+        <img src="/images/KylePeppersackHeadShot.jpg" class="rounded-1" alt="">
       </div>
 
       <section class="order-2 col-12">

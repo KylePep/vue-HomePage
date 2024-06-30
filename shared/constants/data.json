@@ -1,18 +1,18 @@
 {
   "ICON_LIST": {
-    "Vue.js": "src/assets/images/icons/vue.png",
-    "JavaScript": "src/assets/images/icons/JS.png",
-    "Bootstrap": "src/assets/images/icons/Bootstrap.svg",
-    "Express.js": "src/assets/images/icons/Expressjs.png",
-    "Node.js": "src/assets/images/icons/nodejs.svg",
-    "C#": "src/assets/images/icons/Csharp.png",
-    "MySQl": "src/assets/images/icons/mysql.png",
-    "MongoDB": "src/assets/images/icons/Mongodb.png",
-    "React": "src/assets/images/icons/React.svg.png",
-    "Tailwind": "src/assets/images/icons/tailwindcss.svg",
-    "PostgreSQL": "src/assets/images/icons/PostgreSQL.svg",
-    "Three.js": "src/assets/images/icons/Threejs.png",
-    "TypeScript": "src/assets/images/icons/Typescript.png",
-    "Next.js": "src/assets/images/icons/Nextjs.png"
+    "Vue.js": "/images/icons/vue.png",
+    "JavaScript": "/images/icons/JS.png",
+    "Bootstrap": "/images/icons/Bootstrap.svg",
+    "Express.js": "/images/icons/Expressjs.png",
+    "Node.js": "/images/icons/nodejs.svg",
+    "C#": "/images/icons/Csharp.png",
+    "MySQl": "/images/icons/mysql.png",
+    "MongoDB": "/images/icons/Mongodb.png",
+    "React": "/images/icons/React.svg.png",
+    "Tailwind": "/images/icons/tailwindcss.svg",
+    "PostgreSQL": "/images/icons/PostgreSQL.svg",
+    "Three.js": "/images/icons/Threejs.png",
+    "TypeScript": "/images/icons/Typescript.png",
+    "Next.js": "/images/icons/Nextjs.png"
   }
 }
