@@ -4,7 +4,7 @@ import { reactive } from 'vue'
 export const AppState = reactive({
   /** @type {{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}} active Item Info*/
   activeApp: {
-    img: ['src/assets/images/frontEnd.png', 'src/assets/images/frontEnd.png'],
+    img: ['/images/frontEnd.png', '/images/frontEnd.png'],
     title: 'Landing Page',
     description: 'The landing page your are currently looking at',
     frontEnd: ['Vue.js'],
@@ -47,7 +47,7 @@ export const AppState = reactive({
   /** @type {[{img, title, description, frontEnd, backEnd, webLink, dataBase, languages, cssFrameworks, githubLink, tags, appColor}]} active Item Info*/
   appList: [
     {
-      img: ['src/assets/images/apps/challenges1.jpg', 'src/assets/images/apps/challenges2.jpg', 'src/assets/images/apps/challenges3.jpg', 'src/assets/images/apps/challenges4.jpg'],
+      img: ['/images/apps/challenges1.jpg', '/images/apps/challenges2.jpg', '/images/apps/challenges3.jpg', '/images/apps/challenges4.jpg'],
       title: 'CodeWorks Challenges',
       description: "Myself and 3 other talented alumni had the privilege of contributing to a groundbreaking open-source project . We all play a pivotal role as the project founders and curators. We are in the final stages of building the initial code for the app's low mock release.",
       frontEnd: ['Vue.js'],
@@ -61,7 +61,7 @@ export const AppState = reactive({
       tags: ['web', 'favorite', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
-      img: ['src/assets/images/apps/keepr.png', 'src/assets/images/apps/keepr2.png', 'src/assets/images/apps/keepr3.png'],
+      img: ['/images/apps/keepr.png', '/images/apps/keepr2.png', '/images/apps/keepr3.png'],
       title: 'Keepr',
       description: 'Keepr, a dynamic web app, empowers users to share cherished memories through "keeps" – images posted and neatly stored in customizable vaults. Seamlessly create, organize, and collaborate on vaults with fellow users, fostering connections and preserving special moments. Keepr revolutionizes photo-sharing, enhancing personal connections and digital memories.',
       frontEnd: ['Vue.js'],
@@ -75,7 +75,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
     {
-      img: ['src/assets/images/apps/codeFitness.png', 'src/assets/images/apps/codeFitness2.png', 'src/assets/images/apps/codeFitness3.png', 'src/assets/images/apps/codeFitness4.png'],
+      img: ['/images/apps/codeFitness.png', '/images/apps/codeFitness2.png', '/images/apps/codeFitness3.png', '/images/apps/codeFitness4.png'],
       title: 'CodeFitness',
       description: 'CodeFitness transforms fitness into an engaging game. Users access a vast exercise library, crafting personalized routines. These routines are gamified, rewarding completion with points and levels. Join thriving communities, compete for top rankings, and unlock achievements, fostering motivation and camaraderie. CodeFitness reimagines workouts as an exhilarating journey towards better health.',
       frontEnd: ['Vue.js'],
@@ -89,7 +89,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'JavaScript', 'MongoDB', 'Bootstrap', 'NoSQL']
     },
     {
-      img: ['src/assets/images/apps/puppylovesuites.png', 'src/assets/images/apps/puppylovesuites2.png', 'src/assets/images/apps/puppylovesuites3.png',],
+      img: ['/images/apps/puppylovesuites.png', '/images/apps/puppylovesuites2.png', '/images/apps/puppylovesuites3.png',],
       title: 'PuppyLoveSuites',
       description: 'A web page created for a client that has driven traffic to there site. This website was a huge help in learning more about SEO as it was a focal point for the client.',
       frontEnd: ['Vue.js'],
@@ -103,7 +103,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'favorite', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
-      img: ['src/assets/images/apps/allSpice.png', 'src/assets/images/apps/allSpice2.png', 'src/assets/images/apps/allSpice3.png'],
+      img: ['/images/apps/allSpice.png', '/images/apps/allSpice2.png', '/images/apps/allSpice3.png'],
       title: 'All-Spice',
       description: 'All-Spice is a culinary haven in the digital world, where users curate their favorite recipes, discover a treasure trove of culinary delights, and express their admiration for dishes with the "favorite" feature. This web app elevates recipe sharing, making it a delectable journey for food enthusiasts to savor and explore.',
       frontEnd: ['Vue.js'],
@@ -117,7 +117,7 @@ export const AppState = reactive({
       tags: ['web', 'homePage', 'Vue.js', 'Express.js', 'Node.js', 'JavaScript', 'C#', 'MySQL', 'Bootstrap', 'SQL']
     },
     {
-      img: ['src/assets/images/apps/landing.png', 'src/assets/images/apps/landing2.png'],
+      img: ['/images/apps/landing.png', '/images/apps/landing2.png'],
       title: 'Landing Page',
       description: "The landing page you are currently on. I wanted to include this in the list because it helps show the way my landing page evolved on a second pass.",
       frontEnd: ['Vue.js'],
@@ -131,7 +131,7 @@ export const AppState = reactive({
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap']
     },
     {
-      img: ['src/assets/images/apps/oldLanding.png', 'src/assets/images/apps/oldLanding2.png', 'src/assets/images/apps/oldLanding3.png', 'src/assets/images/apps/oldLanding4.png',],
+      img: ['/images/apps/oldLanding.png', '/images/apps/oldLanding2.png', '/images/apps/oldLanding3.png', '/images/apps/oldLanding4.png',],
       title: 'Old Landing Page',
       description: "My old landing page. I made a new one because I wanted to take what I've learned over the months and develope something more maintainable and scalable. Three.js was super fun to figure out, but I'm glad I gave it another shot. ",
       frontEnd: ['Vue.js'],
@@ -145,7 +145,7 @@ export const AppState = reactive({
       tags: ['web', 'Vue.js', 'JavaScript', 'Bootstrap', 'Three.js']
     },
     {
-      img: ['src/assets/images/apps/saiyanClicker.png', 'src/assets/images/apps/saiyanClicker3.png', 'src/assets/images/apps/saiyanClicker2.png', 'src/assets/images/apps/saiyanClicker4.png',],
+      img: ['/images/apps/saiyanClicker.png', '/images/apps/saiyanClicker3.png', '/images/apps/saiyanClicker2.png', '/images/apps/saiyanClicker4.png',],
       title: 'Saiyan Clicker',
       description: "This was a lot of fun to make. It's a clicker game that you get to fight your way through enemies from Dragon Ball Z! There is a shop you can purchase upgrades from and unlockable characters. A great Javascript exercise and helped my learn a lot about Html and Css. You can even play it!",
       frontEnd: [],
@@ -160,7 +160,7 @@ export const AppState = reactive({
     },
 
     {
-      img: ['src/assets/images/apps/postIt.png', 'src/assets/images/apps/postIt2.png'],
+      img: ['/images/apps/postIt.png', '/images/apps/postIt2.png'],
       title: 'Postit',
       description: 'Postit is a react based full-stack application that uses PostgreSQL to create a web forum where users can create posts and comment on them. Can sign in using your google account!',
       frontEnd: ['React'],
@@ -174,7 +174,7 @@ export const AppState = reactive({
       tags: ['web', 'React', 'TypeScript', 'Tailwind', 'NextAuth.js', 'PostgreSQL', 'SQL']
     },
     {
-      img: ['src/assets/images/apps/glxTrvl.png', 'src/assets/images/apps/glxTrvl2.png'],
+      img: ['/images/apps/glxTrvl.png', '/images/apps/glxTrvl2.png'],
       title: 'glx-trvl',
       description: 'A reproduction of a futuristic galaxy travel agency.',
       frontEnd: ['React'],
@@ -187,7 +187,7 @@ export const AppState = reactive({
       appColor: '#18B0B0',
       tags: ['web', 'React', 'TypeScript', 'Tailwind']
     }, {
-      img: ['src/assets/images/apps/tower.png', 'src/assets/images/apps/tower2.png', 'src/assets/images/apps/tower3.png'],
+      img: ['/images/apps/tower.png', '/images/apps/tower2.png', '/images/apps/tower3.png'],
       title: 'Tower',
       description: 'Tower is a versatile web app facilitating event creation, discovery, and ticket reservations. Users effortlessly organize gatherings, explore diverse events, and secure tickets with ease. Tower streamlines event management, fosters community engagement, and simplifies the event-going experience, making it an essential tool for event enthusiasts and organizers alike.',
       frontEnd: ['Vue.js'],
@@ -279,19 +279,19 @@ export const AppState = reactive({
       name: 'Jane Doe',
       testimony: 'Did a really really... really good job, like, let me tell you. A Goood job.',
       title: 'Business Person',
-      img: 'src/assets/images/backEnd.png'
+      img: '/images/backEnd.png'
     },
     {
       name: 'Jorgis Mcborngus',
       testimony: 'Grumble grumlble mc-fumblerington goo. HRmmmmmmMMmm. Yes quite.',
       title: 'Hill Man',
-      img: 'src/assets/images/frontEnd.png'
+      img: '/images/frontEnd.png'
     },
     {
       name: 'Mr. Misterson',
       testimony: 'Kyle Peppersack is good at the thing that he does and he does it well.',
       title: 'Mister',
-      img: 'src/assets/images/business.jpg'
+      img: '/images/business.jpg'
     }
   ],
   accentColors: [

@@ -1,11 +1,10 @@
-// import { dev } from '../env'
+import { dev } from '../env'
 
 function log(type, content) {
-  // if (dev) {
-  //   // eslint-disable-next-line no-console
-  //   console[type](`[${type}] :: ${new Date().toLocaleTimeString()} :: `, ...content)
-  // } else 
-  {
+  if (dev) {
+    // eslint-disable-next-line no-console
+    console[type](`[${type}] :: ${new Date().toLocaleTimeString()} :: `, ...content)
+  } else {
     switch (type) {
       case 'log':
       case 'assert':
