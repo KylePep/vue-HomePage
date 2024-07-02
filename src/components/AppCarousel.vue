@@ -110,7 +110,15 @@ watch(activeAppImg, () => {
   background-color: transparent;
   width: 100%;
   height: auto;
-  min-height: 416px;
+  min-height: 200px;
+}
+
+@media only screen and (min-width: 992px) {
+  .img-container {
+
+    min-height: 416px;
+  }
+
 }
 
 .glassmorph {

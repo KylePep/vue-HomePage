@@ -172,6 +172,8 @@ img {
     border-top: solid 2px var(--bs-success);
     border-left: none;
   }
+
+
 }
 
 .modal-shadow {
