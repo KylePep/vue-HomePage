@@ -63,7 +63,7 @@ export const AppState = reactive({
     {
       img: ['/images/apps/keepr.png', '/images/apps/keepr2.png', '/images/apps/keepr3.png'],
       title: 'Keepr',
-      description: 'Keepr, a dynamic web app, empowers users to share cherished memories through "keeps" – images posted and neatly stored in customizable vaults. Seamlessly create, organize, and collaborate on vaults with fellow users, fostering connections and preserving special moments. Keepr revolutionizes photo-sharing, enhancing personal connections and digital memories.',
+      description: "Developing Keepr was an exciting experience focused on preserving memories. This web app lets users share and organize photos in customizable vaults, collaborating with friends to cherish special moments. Building Keepr improved my skills in C# and MySQL.",
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js', 'Node.js'],
       dataBase: 'MySQl',
@@ -77,7 +77,7 @@ export const AppState = reactive({
     {
       img: ['/images/apps/codeFitness.png', '/images/apps/codeFitness2.png', '/images/apps/codeFitness3.png', '/images/apps/codeFitness4.png'],
       title: 'CodeFitness',
-      description: 'CodeFitness transforms fitness into an engaging game. Users access a vast exercise library, crafting personalized routines. These routines are gamified, rewarding completion with points and levels. Join thriving communities, compete for top rankings, and unlock achievements, fostering motivation and camaraderie. CodeFitness reimagines workouts as an exhilarating journey towards better health.',
+      description: "CodeFitness was a blast to create, turning fitness into a gamified experience. Users can access a vast library of exercises, create personalized routines, and earn points for completing workouts. This project taught me a lot about integrating gamification into web apps to make user experiences more engaging and motivational.",
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js'],
       dataBase: 'MongoDB',
@@ -91,7 +91,7 @@ export const AppState = reactive({
     {
       img: ['/images/apps/puppylovesuites.png', '/images/apps/puppylovesuites2.png', '/images/apps/puppylovesuites3.png',],
       title: 'PuppyLoveSuites',
-      description: 'A web page created for a client that has driven traffic to there site. This website was a huge help in learning more about SEO as it was a focal point for the client.',
+      description: 'A web page created for a client that has driven traffic to their business. This website was a huge help in learning more about SEO as it was a focal point for the client.',
       frontEnd: ['Vue.js'],
       backEnd: [],
       dataBase: '',
@@ -105,7 +105,7 @@ export const AppState = reactive({
     {
       img: ['/images/apps/allSpice.png', '/images/apps/allSpice2.png', '/images/apps/allSpice3.png'],
       title: 'All-Spice',
-      description: 'All-Spice is a culinary haven in the digital world, where users curate their favorite recipes, discover a treasure trove of culinary delights, and express their admiration for dishes with the "favorite" feature. This web app elevates recipe sharing, making it a delectable journey for food enthusiasts to savor and explore.',
+      description: "Creating All-Spice was a delicious journey into the world of recipe sharing. This web app allows users to save their favorite recipes, discover new dishes, and favorite the ones they love. Working on this project enhanced my skills in designing user-friendly interfaces and curating content for food enthusiasts.",
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js', 'Node.js'],
       dataBase: 'MySQl',
@@ -176,7 +176,7 @@ export const AppState = reactive({
     {
       img: ['/images/apps/glxTrvl.png', '/images/apps/glxTrvl2.png'],
       title: 'glx-trvl',
-      description: 'A reproduction of a futuristic galaxy travel agency.',
+      description: 'A reproduction of a futuristic galaxy travel agency website using React.',
       frontEnd: ['React'],
       backEnd: [],
       dataBase: '',
@@ -189,7 +189,7 @@ export const AppState = reactive({
     }, {
       img: ['/images/apps/tower.png', '/images/apps/tower2.png', '/images/apps/tower3.png'],
       title: 'Tower',
-      description: 'Tower is a versatile web app facilitating event creation, discovery, and ticket reservations. Users effortlessly organize gatherings, explore diverse events, and secure tickets with ease. Tower streamlines event management, fosters community engagement, and simplifies the event-going experience, making it an essential tool for event enthusiasts and organizers alike.',
+      description: "Building Tower was a great project that taught me a lot about event management. It's a versatile web app where users can create events, discover new ones, and reserve tickets. This project really helped me understand how to streamline event management and boost community engagement.",
       frontEnd: ['Vue.js'],
       backEnd: ['Express.js'],
       dataBase: 'MongoDB',
